@@ -8,12 +8,12 @@ output:
     template: svm-latex-ms.tex
     number_sections: true
 title: | 
-        | Título
+        | "Título"
         | Subtítulo
         | Subtítulo
 author:
-- name: Nombre de el/la estudiante
-  affiliation: Afiliación, normalmente algo tal que "Estudiante, Universidad Autónoma de Santo Domingo (UASD)"
+- name: "José Alberto Meléndez Juan"
+  affiliation: "Estudiante, Universidad Autónoma de Santo Domingo (UASD)"
 abstract: "Resumen del manuscrito"
 keywords: "palabra clave 1, palabra clave 2"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
