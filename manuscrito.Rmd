@@ -8,12 +8,12 @@ output:
     template: svm-latex-ms.tex
     number_sections: true
 title: | 
-        | "Título"
+        | "Distribución espacial de representantes de la familia Rubiaceae en la parcela permanente Isla Barro Colorado"
         | Subtítulo
         | Subtítulo
 author:
 - name: "José Alberto Meléndez Juan"
-  affiliation: "Estudiante, Universidad Autónoma de Santo Domingo (UASD)"
+  affiliation: "Universidad Autónoma de Santo Domingo (UASD)"
 abstract: "Resumen del manuscrito"
 keywords: "palabra clave 1, palabra clave 2"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -32,7 +32,7 @@ header-includes:
 
 # Introducción
 
-\ldots
+asdasdafgfafadasdafada [@sun2007fast]
 
 # Metodología
 
@@ -40,7 +40,10 @@ header-includes:
 
 # Resultados
 
-\ldots
+|c1 |c2 |c3 |c4 |c5 |
+|---|---|---|---|---|
+|adasdas |adasdadsadaadadadasdasdsau <br /> dadasdadadasdasdsaad | adasd|aasd |asdsd |
+|adasddd |asadasdasd |adsadas |adad |asdasddad |
 
 # Discusión
 

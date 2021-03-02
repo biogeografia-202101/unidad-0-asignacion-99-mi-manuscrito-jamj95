@@ -38,16 +38,17 @@
 
 \setcounter{secnumdepth}{3}
 
+\usepackage{longtable,booktabs}
 
 
-\title{Título\\
+\title{``Distribución espacial de representantes de la familia Rubiaceae en la
+parcela permanente Isla Barro Colorado''\\
 Subtítulo\\
 Subtítulo  }
 
 
 
-\author{\Large Nombre de el/la estudiante\vspace{0.05in} \newline\normalsize\emph{Afiliación, normalmente algo tal que ``Estudiante, Universidad Autónoma
-de Santo Domingo (UASD)''}  }
+\author{\Large José Alberto Meléndez Juan\vspace{0.05in} \newline\normalsize\emph{Universidad Autónoma de Santo Domingo (UASD)}  }
 
 
 \date{}
@@ -93,10 +94,10 @@ de Santo Domingo (UASD)''}  }
 \makeatother
 \hypersetup{breaklinks=true,
             bookmarks=true,
-            pdfauthor={Nombre de el/la estudiante (Afiliación, normalmente algo tal que ``Estudiante, Universidad Autónoma
-de Santo Domingo (UASD)'')},
+            pdfauthor={José Alberto Meléndez Juan (Universidad Autónoma de Santo Domingo (UASD))},
              pdfkeywords = {palabra clave 1, palabra clave 2},  
-            pdftitle={Título\\
+            pdftitle={``Distribución espacial de representantes de la familia Rubiaceae en la
+parcela permanente Isla Barro Colorado''\\
 Subtítulo\\
 Subtítulo},
             colorlinks=true,
@@ -111,7 +112,8 @@ Subtítulo},
 \def\fps@figure{htbp}
 \makeatother
 
-\usepackage{pdflscape} \newcommand{\blandscape}{\begin{landscape}} \newcommand{\elandscape}{\end{landscape}}
+\usepackage{pdflscape} \newcommand{\blandscape}{\begin{landscape}}
+\newcommand{\elandscape}{\end{landscape}}
 
 
 % add tightlist ----------
@@ -134,8 +136,7 @@ Subtítulo},
 
 {
    \vskip 13.5pt\relax \normalsize\fontsize{11}{12} 
-\textbf{\authorfont Nombre de el/la estudiante} \hskip 15pt \emph{\small Afiliación, normalmente algo tal que ``Estudiante, Universidad Autónoma
-de Santo Domingo (UASD)''}   
+\textbf{\authorfont José Alberto Meléndez Juan} \hskip 15pt \emph{\small Universidad Autónoma de Santo Domingo (UASD)}   
 
 }
 
@@ -169,40 +170,48 @@ de Santo Domingo (UASD)''}
 \vskip 6.5pt
 
 
-\noindent  \hypertarget{introducciuxf3n}{%
-\section{Introducción}\label{introducciuxf3n}}
+\noindent  \section{Introducción}\label{introducciuxf3n}
+
+asdasdafgfafadasdafada (Sun, Rosin, Martin, \& Langbein, 2007)
+
+\section{Metodología}\label{metodologuxeda}
 
 \ldots
 
-\hypertarget{metodologuxeda}{%
-\section{Metodología}\label{metodologuxeda}}
+\section{Resultados}\label{resultados}
+
+\begin{longtable}[]{@{}lllll@{}}
+\toprule
+c1 & c2 & c3 & c4 & c5\tabularnewline
+\midrule
+\endhead
+adasdas & adasdadsadaadadadasdasdsau dadasdadadasdasdsaad & adasd & aasd
+& asdsd\tabularnewline
+adasddd & asadasdasd & adsadas & adad & asdasddad\tabularnewline
+\bottomrule
+\end{longtable}
+
+\section{Discusión}\label{discusiuxf3n}
+
+\section{Agradecimientos}\label{agradecimientos}
+
+\section{Información de soporte}\label{informaciuxf3n-de-soporte}
 
 \ldots
 
-\hypertarget{resultados}{%
-\section{Resultados}\label{resultados}}
-
-\ldots
-
-\hypertarget{discusiuxf3n}{%
-\section{Discusión}\label{discusiuxf3n}}
-
-\hypertarget{agradecimientos}{%
-\section{Agradecimientos}\label{agradecimientos}}
-
-\hypertarget{informaciuxf3n-de-soporte}{%
-\section{Información de soporte}\label{informaciuxf3n-de-soporte}}
-
-\ldots
-
-\hypertarget{script-reproducible}{%
 \section{\texorpdfstring{\emph{Script}
-reproducible}{Script reproducible}}\label{script-reproducible}}
+reproducible}{Script reproducible}}\label{script-reproducible}
 
 \ldots
 
-\hypertarget{referencias}{%
-\section{Referencias}\label{referencias}}
+\section*{Referencias}\label{referencias}
+\addcontentsline{toc}{section}{Referencias}
+
+\hypertarget{refs}{}
+\hypertarget{ref-sun2007fast}{}
+Sun, X., Rosin, P., Martin, R., \& Langbein, F. (2007). Fast and
+effective feature-preserving mesh denoising. \emph{IEEE Transactions on
+Visualization \& Computer Graphics}, (5), 925--938.
 
 
 
