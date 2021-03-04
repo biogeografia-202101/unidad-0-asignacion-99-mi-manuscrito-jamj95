@@ -8,11 +8,11 @@ output:
     template: svm-latex-ms.tex
     number_sections: true
 title: | 
-        | "Distribución espacial de representantes de la familia Rubiaceae en la parcela permanente Isla Barro Colorado"
+        | "Distribución y abundancia relativa de la familia Rubiaceae en la parcela permanente Isla Barro Colorado"
         | Subtítulo
         | Subtítulo
 author:
-- name: "José Alberto Meléndez Juan"
+- name: "J. Alberto Meléndez Juan"
   affiliation: "Universidad Autónoma de Santo Domingo (UASD)"
 abstract: "Resumen del manuscrito"
 keywords: "palabra clave 1, palabra clave 2"
@@ -31,8 +31,12 @@ header-includes:
 ---
 
 # Introducción
+Las comunidades vegetales de los bosques tropicales ejemplifican la diversidad y complejidad ecológica de la región neotropical. El estudio continuo de la riqueza y la abundancia relativa en estas comunidades permite identificar las especies raras, las cuales son más vulnerables a los cambios en su hábitat y propensas a extinguirse localmente [@Volkov_2003]. Conocer estos aspectos de las comunidades ecológicas y como se encuentran distribuidas en el espacio las especies que las componen, ofrece la oportunidad de comprender como evolucionan en el tiempo y los factores que inciden en su conservación [@moreno2001manual].
 
-asdasdafgfafadasdafada [@sun2007fast]
+Como se estructuran las comunidades ecológicas refiere al número de individuos de cada taxa que las componen[@https://doi.org/10.1111/j.1366-9516.2004.00069.x], además de su distribución en el espacio. Este número se encuentra sujeto a diversas variables las cuales aún no se conocen del todo ni en qué grado inciden en la estructura de la comunidad [@2008arXiv0803.3704N].
+
+La familia Rubiaceae es un importante grupo de plantas vasculares de distribución cosmopolita con una marcada diversidad en regiones tropicales y subtropicales [@davis2009global]. Las rubieaceas son especialmente diversas en el neotrópico y resulta un grupo idóneo para estudios ecológicos con énfasis en la estructura de las comunidades de la región. Este trabajo intenta cuestionar la relación entre abundancia relativa y distribución de las especies entre un mismo taxón superior, en este caso tratandose de la familia rubiaceae.
+El número de individuos de las distintas especies del mismo nivel trófico
 
 # Metodología
 
