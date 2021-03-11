@@ -8,7 +8,7 @@ output:
     template: svm-latex-ms.tex
     number_sections: true
 title: | 
-        | "Distribución y abundancia relativa de la familia Rubiaceae en la parcela permanente Isla Barro Colorado"
+        | Distribución y abundancia relativa de la familia Rubiaceae en la parcela permanente Isla Barro Colorado
         | Subtítulo
         | Subtítulo
 author:
@@ -30,19 +30,39 @@ header-includes:
   \newcommand{\elandscape}{\end{landscape}}
 ---
 
+```{r, include=FALSE}
+source("aed_Rub.R", local = knitr::knit_global())
+```
+
 # Introducción
-Las comunidades vegetales de los bosques tropicales ejemplifican la diversidad y complejidad ecológica de la región neotropical. El estudio continuo de la riqueza y la abundancia relativa en estas comunidades permite identificar las especies raras, las cuales son más vulnerables a los cambios en su hábitat y propensas a extinguirse localmente [@Volkov_2003]. Conocer estos aspectos de las comunidades ecológicas y como se encuentran distribuidas en el espacio las especies que las componen, ofrece la oportunidad de comprender como evolucionan en el tiempo y los factores que inciden en su conservación [@moreno2001manual].
+Las comunidades vegetales de los bosques neotropicales ejemplifican la diversidad y complejidad ecológica de la región tropical. El estudio continuo de la riqueza y la abundancia relativa en estas comunidades permite identificar las especies raras, las cuales son más vulnerables a los cambios en su hábitat y propensas a extinguirse localmente [@Volkov_2003]. Conocer estos aspectos de las comunidades ecológicas y como se encuentran distribuidas en el espacio las especies que las componen, ofrece la oportunidad de comprender como evolucionan en el tiempo y los factores que inciden en su conservación [@moreno2001manual].
+
+La familia Rubiaceae es un importante grupo de plantas vasculares de distribución cosmopolita con una marcada diversidad en regiones tropicales y subtropicales [@davis2009global]. Las rubieaceas son especialmente diversas en el neotrópico y resulta un grupo idóneo para estudios ecológicos con énfasis en la estructura de las comunidades de la región. Este trabajo intenta cuestionar la relación entre abundancia relativa y distribución de la familia rubiaceae. Conocer la relación entre la ocurrencia de las distintas especies de rubiaceas, las condiciones ambientales y propiedades del suelo que podrían determinar como se organizan las especies de plantas en la comunidad.
+Los parámetros de riqueza y abundancia relativa indicarán el aporte de la familia rubiaceae a la diversidad de la comunidad y su estructura.--- Muchas especies dentro de la familia rubiaceae se encuentran adaptadas a rangos elevados de ácides en el suelo y, además son consideradas acumuladoras de aluminio[@article]. Se estudia como varía la diversidad alpha con respecto a estas propiedades del suelo y otras condiciones ambientales medibles.
+Además estudios anteriores de la diversidad beta de la zona, especificamente del bosque tropical panameño, sugieren una tendencia a la disimilaridad en la composición de las comunidades entre sí que aumenta con la distancia en la cual las comunidades se encuentran separadas en el espacio. (comunidades comparadas lejanas unas de otras son más diferentes en cuanto a su composición floristica).
+
+
 
 Como se estructuran las comunidades ecológicas refiere al número de individuos de cada taxa que las componen[@https://doi.org/10.1111/j.1366-9516.2004.00069.x], además de su distribución en el espacio. Este número se encuentra sujeto a diversas variables las cuales aún no se conocen del todo ni en qué grado inciden en la estructura de la comunidad [@2008arXiv0803.3704N].
 
-La familia Rubiaceae es un importante grupo de plantas vasculares de distribución cosmopolita con una marcada diversidad en regiones tropicales y subtropicales [@davis2009global]. Las rubieaceas son especialmente diversas en el neotrópico y resulta un grupo idóneo para estudios ecológicos con énfasis en la estructura de las comunidades de la región. Este trabajo intenta cuestionar la relación entre abundancia relativa y distribución de las especies entre un mismo taxón superior, en este caso tratandose de la familia rubiaceae.
-El número de individuos de las distintas especies del mismo nivel trófico
+
 
 # Metodología
 
 \ldots
 
 # Resultados
+
+Como indica la tabla \ref{tab:abun_sp}
+
+```{r,echo=FALSE}
+    knitr::kable(abun_sp,
+                 caption = "\\label{tab:abun_sp}Abundancia por especie.")
+```
+
+``` {r, echo=FALSE, fig.cap="\\label{fig:abun_sp_q}Número de individuos de cada especie por hectárea."}
+abun_sp_q
+```
 
 |c1 |c2 |c3 |c4 |c5 |
 |---|---|---|---|---|

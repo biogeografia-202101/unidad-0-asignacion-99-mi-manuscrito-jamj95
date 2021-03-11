@@ -40,9 +40,18 @@
 
 \usepackage{longtable,booktabs}
 
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 
-\title{``Distribución y abundancia relativa de la familia Rubiaceae en la
-parcela permanente Isla Barro Colorado''\\
+\title{Distribución y abundancia relativa de la familia Rubiaceae en la parcela
+permanente Isla Barro Colorado\\
 Subtítulo\\
 Subtítulo  }
 
@@ -96,8 +105,8 @@ Subtítulo  }
             bookmarks=true,
             pdfauthor={J. Alberto Meléndez Juan (Universidad Autónoma de Santo Domingo (UASD))},
              pdfkeywords = {palabra clave 1, palabra clave 2},  
-            pdftitle={``Distribución y abundancia relativa de la familia Rubiaceae en la
-parcela permanente Isla Barro Colorado''\\
+            pdftitle={Distribución y abundancia relativa de la familia Rubiaceae en la parcela
+permanente Isla Barro Colorado\\
 Subtítulo\\
 Subtítulo},
             colorlinks=true,
@@ -172,8 +181,8 @@ Subtítulo},
 
 \noindent  \section{Introducción}\label{introducciuxf3n}
 
-Las comunidades vegetales de los bosques tropicales ejemplifican la
-diversidad y complejidad ecológica de la región neotropical. El estudio
+Las comunidades vegetales de los bosques neotropicales ejemplifican la
+diversidad y complejidad ecológica de la región tropical. El estudio
 continuo de la riqueza y la abundancia relativa en estas comunidades
 permite identificar las especies raras, las cuales son más vulnerables a
 los cambios en su hábitat y propensas a extinguirse localmente (Volkov,
@@ -182,6 +191,22 @@ comunidades ecológicas y como se encuentran distribuidas en el espacio
 las especies que las componen, ofrece la oportunidad de comprender como
 evolucionan en el tiempo y los factores que inciden en su conservación
 (Moreno, 2001).
+
+Conocer si existe relación entre la ocurrencia de las distintas especies
+de rubiaceas Son las condiciones ambientales y propiedades del suelo
+factores que determinan como se organizan las especies de plantas en la
+comunidad. Los parámetros de riqueza y abundancia relativa indicarán el
+aporte de la familia rubiaceae a la diversidad de la comunidad y su
+estructura. Como varía la diversidad alpha con respecto a condiciones
+ambientales medibles, como por ejemplo la ácidez del suelo. Muchas
+especies dentro de la familia rubiaceae son acidofilas y son
+consideradas acumuladoras de aluminio{[}{]}. Además estudios anteriores
+de la diversidad beta de la zona, especificamente del bosque tropical
+panameño, sugieren una tendencia a la disimilaridad en la composición de
+las comunidades entre sí que aumenta con la distancia en la cual las
+comunidades se encuentran separadas en el espacio. (comunidades
+comparadas lejanas unas de otras son más diferentes en cuanto a su
+composición floristica).
 
 Como se estructuran las comunidades ecológicas refiere al número de
 individuos de cada taxa que las componen(Ricotta, 2004), además de su
@@ -205,6 +230,59 @@ de las distintas especies del mismo nivel trófico
 \ldots
 
 \section{Resultados}\label{resultados}
+
+Como indica la tabla \ref{tab:abun_sp}
+
+\begin{longtable}[]{@{}lr@{}}
+\caption{\label{tab:abun_sp}Abundancia por especie.}\tabularnewline
+\toprule
+Latin & n\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+Latin & n\tabularnewline
+\midrule
+\endhead
+Faramea occidentalis & 24989\tabularnewline
+Alseis blackiana & 7928\tabularnewline
+Psychotria horizontalis & 2453\tabularnewline
+Coussarea curvigemmia & 2010\tabularnewline
+Palicourea guianensis & 1118\tabularnewline
+Randia armata & 937\tabularnewline
+Psychotria marginata & 761\tabularnewline
+Alibertia edulis & 417\tabularnewline
+Pentagonia macrophylla & 306\tabularnewline
+Guettarda foliacea & 252\tabularnewline
+Hamelia axillaris & 128\tabularnewline
+Macrocnemum roseum & 87\tabularnewline
+Posoqueria latifolia & 73\tabularnewline
+Psychotria limonensis & 70\tabularnewline
+Genipa americana & 67\tabularnewline
+Psychotria graciliflora & 65\tabularnewline
+Psychotria grandis & 57\tabularnewline
+Psychotria deflexa & 38\tabularnewline
+Amaioua corymbosa & 19\tabularnewline
+Psychotria chagrensis & 16\tabularnewline
+Psychotria acuminata & 14\tabularnewline
+Tocoyena pittieri & 8\tabularnewline
+Psychotria racemosa & 7\tabularnewline
+Psychotria cyanococca & 4\tabularnewline
+Chimarrhis parviflora & 3\tabularnewline
+Coutarea hexandra & 3\tabularnewline
+Psychotria brachiata & 3\tabularnewline
+Appunia seibertii & 2\tabularnewline
+Borojoa panamensis & 1\tabularnewline
+Psychotria hoffmannseggiana & 1\tabularnewline
+Rosenbergiodendron formosum & 1\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{figure}
+\centering
+\includegraphics{manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf}
+\caption{\label{fig:abun_sp_q}Número de individuos de cada especie por
+hectárea.}
+\end{figure}
 
 \begin{longtable}[]{@{}lllll@{}}
 \toprule
