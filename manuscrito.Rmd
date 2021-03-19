@@ -37,17 +37,13 @@ source("aed_Rub.R", local = knitr::knit_global())
 # Introducción
 Las comunidades vegetales de los bosques neotropicales ejemplifican la diversidad y complejidad ecológica de la región tropical. El estudio continuo de la riqueza y la abundancia relativa en estas comunidades permite identificar las especies raras, las cuales son más vulnerables a los cambios en su hábitat y propensas a extinguirse localmente [@Volkov_2003]. Conocer estos aspectos de las comunidades ecológicas y como se encuentran distribuidas en el espacio las especies que las componen, ofrece la oportunidad de comprender como evolucionan en el tiempo y los factores que inciden en su conservación [@moreno2001manual].
 
-La familia Rubiaceae es un importante grupo de plantas vasculares de distribución cosmopolita con una marcada diversidad en regiones tropicales y subtropicales [@davis2009global]. Las rubieaceas son especialmente diversas en el neotrópico y resulta un grupo idóneo para estudios ecológicos con énfasis en la estructura de las comunidades de la región. El presente estudio intenta averiguar la relación entre abundancia relativa de especies de la familia rubiaceae y su distribución en una porción de bosque húmedo tropical en la parcela permanente Barro Colorado Island, Panamá-----[]. Los parámetros de riqueza y abundancia relativa obtenidos mediante análisis de datos de los censos realizados en el área de estudio indicarán el aporte de la familia rubiaceae a la diversidad de su comunidad.
+La familia Rubiaceae es un importante grupo de plantas vasculares de distribución cosmopolita con una marcada diversidad en regiones tropicales y subtropicales [@davis2009global]. Las rubieaceas son especialmente diversas en el neotrópico y resulta un grupo idóneo para estudios ecológicos con énfasis en la estructura de las comunidades de la región. Muchas de estas especies están adaptadas a rangos elevados de ácides y otras condiciones específicas de los componentes del suelo, como diversos grados de concentración de distintos metales [@article]. Además de las condiciones ambientales, interacciones interespecíficas entre rubiaceas del sotobosque amazonico podrían jugar un papel importante en como se organizan estas especies de plantas en la comunidad vegetal [@TORRESLEITE2019151487]. Conocer la relación entre la ocurrencia de las distintas especies de rubiaceas en nuestra área de estudio forma parte de los objetivos de este trabajo.
 
-Muchas especies dentro de la familia rubiaceae se encuentran adaptadas a rangos elevados de ácides y otras condiciones específicas de los componentes del suelo, como diversos grados de concentración de distintos metales[@article]. En ese sentido, este trabajo aprovecha la información disponible sobre las características del hábitat en el cual crecen las poblaciones de plantas para conocer posibles patrones en la distribución de las especies objeto de este estudio y como varía la diversidad alpha con respecto a estas propiedades del terreno y otras condiciones ambientales medibles.
+Estudios realizados en el bosque tropical panameño sobre el grado de reemplazo entre especies de distintas comunidades o diversidad beta, sugieren una tendencia a la disimilaridad en la composición de las comunidades entre sí que aumenta con la distancia en la cual las comunidades se encuentran separadas en el espacio [@article_condit]. Sin embargo, estos trabajos no restan importancia a la variación del hábitat y se estima su importancia en el estudio de la composición de los ecosistemas.
 
-Además de las condiciones ambientales, estudios anteriores sugieren que interacciones interespecíficas entre rubiaceas del sotobosque amazonico (@TORRESLEITE2019151487) podrían determinar como se organizan estas especies de plantas en la comunidad vegetal y conocer la relación entre la ocurrencia de las distintas especies de rubiaceas en nuestra área de estudio forma parte de los objetivos de este trabajo. 
-
-Estudios anteriores de la diversidad beta de la zona, especificamente del bosque tropical panameño, sugieren una tendencia a la disimilaridad en la composición de las comunidades entre sí que aumenta con la distancia en la cual las comunidades se encuentran separadas en el espacio. (comunidades comparadas lejanas unas de otras son más diferentes en cuanto a su composición floristica).
+El presente estudio intenta averiguar la relación entre abundancia relativa de especies de la familia rubiaceae y su distribución en una porción de bosque húmedo tropical en la parcela permanente Barro Colorado Island (BCI), Panamá-----[Center for Tropical Forest Science?]. Los parámetros de riqueza y abundancia relativa obtenidos mediante análisis de datos de los censos realizados en BCI contribuyen a medir el aporte de la familia rubiaceae a la diversidad de su comunidad. En ese sentido, este trabajo aprovecha la información disponible sobre las características del hábitat en el cual crecen estas poblaciones de plantas para conocer posibles patrones en la distribución de las especies y como varía la diversidad alpha con respecto a estas propiedades del terreno y otras condiciones ambientales medibles.
 
 Como se estructuran las comunidades ecológicas refiere al número de individuos de cada taxa que las componen[@https://doi.org/10.1111/j.1366-9516.2004.00069.x], además de su distribución en el espacio. Este número se encuentra sujeto a diversas variables las cuales aún no se conocen del todo ni en qué grado inciden en la estructura de la comunidad [@2008arXiv0803.3704N].
-
-
 
 # Metodología
 
@@ -66,10 +62,16 @@ Como indica la tabla \ref{tab:abun_sp}
 abun_sp_q
 ```
 
-|c1 |c2 |c3 |c4 |c5 |
-|---|---|---|---|---|
-|adasdas |adasdadsadaadadadasdasdsau <br /> dadasdadadasdasdsaad | adasd|aasd |asdsd |
-|adasddd |asadasdasd |adsadas |adad |asdasddad |
+
+La riqueza de especies de rubiaceas se encuentra aglomerada en algunos lugares de BCI (ver figura \ref{fig:mapa_cuadros_riq}), en los cuales además se observa un aparente patrón al presentar el valor máximo en riqueza de la familia. 
+
+![Distribución de la riqueza de rubiaceas en BCI \label{fig:mapa_cuadros_riq}](mapa_cuadros_riq_rubic.png)
+
+
+
+La figura \ref{fig:mapa_cuadros_ph} presenta la distribución de la variable ácidez del sueloasdasdadaadadadadaddaddasdd.
+
+![pH del suelo en los distintos cuadros de 1ha \label{fig:mapa_cuadros_ph}](mapa_cuadros_ph.png)
 
 # Discusión
 
