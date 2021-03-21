@@ -13,6 +13,7 @@ library(sf)
 library(ez)
 library(psych)
 library(vegan)
+library(graphics)
 
 #' ### Cargar datos
 load('biodata/matriz_ambiental.Rdata')
@@ -62,7 +63,7 @@ p_cor_geomorf_ar <- env_num %>%
 p_cor_geomorf_ar
 
 #' #### Matriz de comunidad
-p_cor_mc <- mc_apcyn_melic_saptc %>%
+p_cor_mc_rubic <- mc_rubic %>%
   rename_all(gsub, pattern = '_| ', replacement = '\n') %>% 
-  ezCor(r_size_lims = c(4,8), label_size = 3)
-p_cor_mc
+  ezCor(r_size_lims = c(4,8), label_size = 2)
+p_cor_mc_rubic
