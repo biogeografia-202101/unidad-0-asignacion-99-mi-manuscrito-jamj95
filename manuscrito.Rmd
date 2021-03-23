@@ -47,9 +47,11 @@ Como se estructuran las comunidades ecológicas refiere al número de individuos
 
 # Metodología
 
-\ldots
+Se utilizó el índice P de Spearman para medir el grado de asociación entre la riqueza númerica de especies y la abundancia de la familia rubiaceae con las variables ambientales geomorfológicas y de la composición química de suelo.
 
 # Resultados
+Los valores del índice de Spearman no mostraron indicios de que exista una relación aparente entre la riqueza numérica de especies y la abundancia con las variables geomorfológicas del lugar. Sin embargo, según estos valores, la abundancia de las rubiaceas podría estar relacionada a variables de la compososición de suelo, mostrando asociación positiva para valores altos de Aluminio, Nitrógeno mineralizado y pH, como negativa correspondiente a altas concentraciones de otros minerales.
+#ad
 
 Como indica la tabla \ref{tab:abun_sp}
 
