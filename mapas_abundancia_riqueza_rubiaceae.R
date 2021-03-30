@@ -105,4 +105,3 @@ mapa_cuadros_riq_rubic <- mapView(
     zoom = 15.9)
 mapa_cuadros_riq_rubic
 mapa_cuadros_riq_rubic %>% mapshot(file = 'mapa_cuadros_riq_rubic.png')
-# intento sin pipa

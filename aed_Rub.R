@@ -59,11 +59,10 @@ sum(colSums(mc_rubic))
 abun_sp <- censo_rubic %>%
   group_by(Latin) %>% 
   count() %>% 
-  arrange(desc(n)) %>% 
-  rename('Nombre científico' = latin, n = 'n. de individuos')
+  arrange(desc(n))
 abun_sp
 
 #' ### Un gráfico para el manuscrito
 #' Gráfico de mosaicos de la abundancia por especie por cuadros
-abun_sp_q <- crear_grafico_mosaico_de_mc(mc_rubic, tam_rotulo = 5)
+abun_sp_q <- crear_grafico_mosaico_de_mc(mc_rubic, tam_rotulo = 7)
 abun_sp_q
