@@ -59,7 +59,8 @@ sum(colSums(mc_rubic))
 abun_sp <- censo_rubic %>%
   group_by(Latin) %>% 
   count() %>% 
-  arrange(desc(n))
+  arrange(desc(n)) %>% 
+  rename('Nombre científico' = latin, n = 'n. de individuos')
 abun_sp
 
 #' ### Un gráfico para el manuscrito
