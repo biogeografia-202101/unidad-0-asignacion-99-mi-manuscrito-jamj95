@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.17)  16 APR 2021 07:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.17)  20 APR 2021 05:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -591,7 +591,60 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 116.
 
 Package hyperref Info: Option `colorlinks' set `true' on input line 116.
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip55
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen136
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen137
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count110
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count111
+\leftroot@=\count112
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count113
+\DOTSCASE@=\count114
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box31
+\strutbox@=\box32
+\big@size=\dimen138
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count115
+\c@MaxMatrixCols=\count116
+\dotsspace@=\muskip11
+\c@parentequation=\count117
+\dspbrk@lvl=\count118
+\tag@help=\toks21
+\row@=\count119
+\column@=\count120
+\maxfields@=\count121
+\andhelp@=\toks22
+\eqnshift@=\dimen139
+\alignsep@=\dimen140
+\tagshift@=\dimen141
+\tagwidth@=\dimen142
+\totwidth@=\dimen143
+\lineht@=\dimen144
+\@envbody=\toks23
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
@@ -600,23 +653,23 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ) (./manuscrito.aux)
 \openout1 = `manuscrito.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 132.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 133.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
@@ -654,20 +707,19 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\big@size=\dimen136
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
-\scratchdimen=\dimen137
-\scratchbox=\box31
-\nofMPsegments=\count111
-\nofMParguments=\count112
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count113
-\MPscratchDim=\dimen138
-\MPnumerator=\count114
-\makeMPintoPDFobject=\count115
-\everyMPtoPDFconversion=\toks21
+\scratchcounter=\count122
+\scratchdimen=\dimen145
+\scratchbox=\box33
+\nofMPsegments=\count123
+\nofMParguments=\count124
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen146
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
+\everyMPtoPDFconversion=\toks26
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -683,34 +735,34 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 132.
+\AtBeginShipoutBox=\box34
+Package hyperref Info: Link coloring ON on input line 133.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count116
+\c@section@level=\count128
 )
-LaTeX Info: Redefining \ref on input line 132.
-LaTeX Info: Redefining \pageref on input line 132.
-LaTeX Info: Redefining \nameref on input line 132.
+LaTeX Info: Redefining \ref on input line 133.
+LaTeX Info: Redefining \pageref on input line 133.
+LaTeX Info: Redefining \nameref on input line 133.
 (./manuscrito.out) (./manuscrito.out)
 \@outlinefile=\write3
 \openout3 = `manuscrito.out'.
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <11> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 148.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 148.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 149.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 149.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <11> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 148.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 149.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 182.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 183.
 
-Overfull \hbox (1.36858pt too wide) in paragraph at lines 195--212
+Overfull \hbox (1.36858pt too wide) in paragraph at lines 196--213
 []\T1/ppl/m/n/10.95 La fa-milia Ru-bi-aceae es un im-por-tante grupo de plan-ta
 s vas-cu-lares de dis-tribu-ción cos-mopolita
  []
@@ -718,116 +770,117 @@ s vas-cu-lares de dis-tribu-ción cos-mopolita
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 240.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 241.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 240
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 241
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 240
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 241
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 240
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 241
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 240
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 241
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 259.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 260.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 
 LaTeX Warning: Reference `informaci\IeC {\'o}n suplementaria' on page 2 undefin
-ed on input line 263.
+ed on input line 264.
 
-[2]
-<manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf, id=54, 459.7175pt x 243.9
+[2] [3]
+<manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf, id=64, 459.7175pt x 243.9
 1125pt>
 File: manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pd
 f)
 <use manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf>
 Package pdftex.def Info: manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf  u
-sed on input line 359.
+sed on input line 372.
 (pdftex.def)             Requested size: 459.72337pt x 243.91435pt.
-<mapa_cuadros_abun_rubic.png, id=55, 995.72pt x 762.85pt>
+<mapa_cuadros_abun_rubic.png, id=65, 995.72pt x 762.85pt>
 File: mapa_cuadros_abun_rubic.png Graphic file (type png)
 <use mapa_cuadros_abun_rubic.png>
-Package pdftex.def Info: mapa_cuadros_abun_rubic.png  used on input line 366.
+Package pdftex.def Info: mapa_cuadros_abun_rubic.png  used on input line 379.
 (pdftex.def)             Requested size: 469.7661pt x 359.90144pt.
-<mapa_cuadros_riq_rubic.png, id=57, 995.72pt x 762.85pt>
+<mapa_cuadros_riq_rubic.png, id=67, 995.72pt x 762.85pt>
 File: mapa_cuadros_riq_rubic.png Graphic file (type png)
 <use mapa_cuadros_riq_rubic.png>
-Package pdftex.def Info: mapa_cuadros_riq_rubic.png  used on input line 373.
+Package pdftex.def Info: mapa_cuadros_riq_rubic.png  used on input line 386.
 (pdftex.def)             Requested size: 469.7661pt x 359.90144pt.
-<mapa_cuadros_ph.png, id=58, 995.72pt x 762.85pt>
+<mapa_cuadros_ph.png, id=68, 995.72pt x 762.85pt>
 File: mapa_cuadros_ph.png Graphic file (type png)
 <use mapa_cuadros_ph.png>
-Package pdftex.def Info: mapa_cuadros_ph.png  used on input line 380.
+Package pdftex.def Info: mapa_cuadros_ph.png  used on input line 393.
 (pdftex.def)             Requested size: 469.7661pt x 359.90144pt.
-[3]
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 394.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 407.
+[4 <./manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf>] [5 <./mapa_cuadros_
+abun_rubic.png>] [6 <./mapa_cuadros_riq_rubic.png>] [7 <./mapa_cuadros_ph.png>]
 
-Overfull \hbox (35.64655pt too wide) in paragraph at lines 432--435
+Overfull \hbox (35.64655pt too wide) in paragraph at lines 445--448
 \T1/ppl/m/n/10.95 dices and sta-tis-ti-cal in-fer-ence. In \T1/ppl/m/it/10.95 E
 col-ogy\T1/ppl/m/n/10.95 . Re-trieved from [][]$http : / / sites . google . com
  / site / miqueldecaceres/$[][] 
  []
 
-[4 <./manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf>] [5 <./mapa_cuadros_
-abun_rubic.png>] [6 <./mapa_cuadros_riq_rubic.png>] [7 <./mapa_cuadros_ph.png>]
 
-Overfull \hbox (1.02496pt too wide) in paragraph at lines 492--495
+Overfull \hbox (1.02496pt too wide) in paragraph at lines 510--513
 \T1/ppl/m/n/10.95 species abun-dance in ecol-ogy. \T1/ppl/m/it/10.95 Na-ture\T1
 /ppl/m/n/10.95 , \T1/ppl/m/it/10.95 424\T1/ppl/m/n/10.95 (6952), 1035--1037. []
 []$https : / / doi . org / 10 . 1038 / nature01883$[][] 
  []
 
 [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 506.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 506.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 524.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 524.
 (./manuscrito.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 506.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 506.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 524.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 524.
 Package rerunfilecheck Info: File `manuscrito.out' has not changed.
 (rerunfilecheck)             Checksum: 801573542BFB6FDEF17D3AC28872E929;910.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 506.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 524.
  ) 
 Here is how much of TeX's memory you used:
- 10288 strings out of 492982
- 144411 string characters out of 6134896
- 219816 words of memory out of 5000000
- 13681 multiletter control sequences out of 15000+600000
- 25696 words of font info for 51 fonts, out of 8000000 for 9000
+ 10890 strings out of 492982
+ 151242 string characters out of 6134896
+ 231316 words of memory out of 5000000
+ 14253 multiletter control sequences out of 15000+600000
+ 29364 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,31p,274b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,6n,31p,274b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/palatino/uplri8a.pfb>
-Output written on manuscrito.pdf (8 pages, 958074 bytes).
+ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/palatino/uplri8a.pfb>
+Output written on manuscrito.pdf (8 pages, 973763 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
+ 189 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 500000)
  85 words of extra memory for PDF output out of 10000 (max. 10000000)
 
