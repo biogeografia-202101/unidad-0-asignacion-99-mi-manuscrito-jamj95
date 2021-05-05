@@ -278,15 +278,14 @@ pruebas de medición de asociación, para lo que se calculó la distancia
 de Hellinger entre los cuadrantes considerados como objetos. Para esto,
 fué requerida la transformada de la matríz de comunidad por el método de
 Hellinger, el cual consiste en la radicación al cuadrado de la
-abundancia relativa \[ y_{ij}\] como muestra la fórmula
+abundancia relativa \(y_{ij}\) como muestra la fórmula
 \ref{eq:hell_transf}, donde \emph{j} refiere a cada especie o columna en
-la \textbf{matríz}, \emph{i} es la fila o cuadrante e \emph{i+}
-representa la suma de filas de la matríz del i-ésimo cuadrante (Legendre
-\& Gallagher, 2001). Además, la distancia euclidea entre cuadrantes en
-cuanto a la presencia de especies fué evaluada aplicando el índice de
-disimilaridad de Sorensen de la matríz normalizada, con valores de
-abundancia convertidos en valores binarios.\\
-\dots
+la matríz, \emph{i} es la fila o cuadrante e \emph{i+} representa la
+suma de filas de la matríz de la i-ésima fila (Legendre \& Gallagher,
+2001). Además, la distancia euclidea entre cuadrantes en cuanto a la
+presencia de especies fué evaluada aplicando el índice de disimilaridad
+de Jaccard de la matríz normalizada, con valores de abundancia
+convertidos en valores binarios (Borcard, Gillet, \& Legendre, 2018).
 
 \begin{equation} \label{eq:hell_transf}
 y' = \sqrt{\frac{y_{ij}}{y_{i+}}}
@@ -416,6 +415,11 @@ reproducible}{Script reproducible}}\label{script-reproducible}
 Appelhans, T., Detsch, F., Reudenbach, C., \& Woellauer, S. (2019).
 \emph{Mapview: Interactive viewing of spatial data in r}. Retrieved from
 \url{https://CRAN.R-project.org/package=mapview}
+
+\hypertarget{ref-borcard_legendre}{}
+Borcard, D., Gillet, F., \& Legendre, P. (2018). \emph{Numerical Ecology
+with R. Second Edition} (pp. 52--66).
+\url{https://doi.org/10.1007/978-3-319-71404-2}
 
 \hypertarget{ref-condit_et_al_2012}{}
 Condit, R., Chisholm, R. A., \& Hubbell, S. P. (2012). Thirty years of

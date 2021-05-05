@@ -47,7 +47,6 @@ mi_fam_t_chi %>% tibble
 #' 
 #' Tercero,  calculo la distancia euclídea.
 #' 
-mi_fam_t_chi_d <- dist(mi_fam_t_chi)
 mi_fam_t_chi_d %>% tidy
 #' 
 #' Finalmente, creo el "mapa de calor".
@@ -108,7 +107,7 @@ p_cor_geomorf_ar_spearman <- env_num %>%
 p_cor_geomorf_ar_spearman
 
 png(
-  filename = 'matriz_correlacion_geomorf_abun_riq_spearman.png',
+  filename = 'panel_cor_geomorf_abun_riq_spear.png',
   width = 1920, height = 1080, res = 110
 )
 p_cor_geomorf_ar_spearman

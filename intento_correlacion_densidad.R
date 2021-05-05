@@ -9,8 +9,16 @@ env_num_density <- bci_env_grid_density %>%
   rename_all(gsub, pattern = '_pct$', replacement = '') %>% 
   rename_all(gsub, pattern = '_| ', replacement = '\n')
 ##
-p_cor_envnum_density_suelo <- env_num_density %>% 
+p_cor_env_num_density_suelo_spear <- env_num_density %>% 
   dplyr::select(matches('^[A-T,Z]|abundancia|densidad|riqueza|^pH$', ignore.case = F)) %>% 
-  ezCor(r_size_lims = c(4,8), label_size = 3)
-p_cor_envnum_density_suelo
+  ezCorM(r_size_lims = c(4,8), label_size = 3, method = 'spearman')
+p_cor_env_num_density_suelo_spear
+
+png(
+  filename = 'p_cor_env_density_suelo_spear.png',
+  width = 1920, height = 1080, res = 125
+)
+p_cor_env_num_density_suelo_spear
+dev.off()
 ##dplyr::select_if(is.numeric) %>% 
+
