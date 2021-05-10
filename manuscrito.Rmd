@@ -73,14 +73,15 @@ Los análisis de agrupamiento posteriores realizados en este trabajo se basaron 
 
 Pruebas T de Student y ? Wilcoxon homogeneizan las medias y medianas de las variables ambientales en los grupos identificados, con lo que se busca determinar cuales valores podrían ser responsables(asociados) a la diferenciación en la composición de ambos grupos.
 Para lograr determinar que una especie se encontraba asociada a un determinado grupo se realizaron pruebas estadisticas de la hipotesis nula. Sobre la base de que las especies que se encontraban en cuadrantes pertenecientes a un determinado grupo lo hacían por obra del azar. Esta prueba se logró mediante reordenación aleatoria de los valores de ocurrencia y abundancia y comparando su distribución con los valores obtenidos anteriormente [@caceres2009associations]. Para estas pruebas de asociación y las subsiguientes se utilizon un valor de significancia de *P* = ?
-Se hace uso del indice IndVal [@dufrene_legendre] para conocer las especies cuyos valores de abundancia las puedan hacer indicadoras de un grupo en específico.por medio de permutaciones aleatorias de los sitios segun ocurrencia y abundancia de las especies [@borcard_legendre].
+Se hace uso del indice IndVal [@dufrene_legendre] para conocer las especies cuyos valores de abundancia las puedan hacer indicadoras de un grupo en específico por medio de permutaciones aleatorias de los sitios segun su ocurrencia y abundancia. Así mismo, se estudia el grado de asociación de las especies con cierta preferencia por las combinaciones de cuadrantes consideradas como grupos, utilizando prueba correlación de puntos biserial? [@borcard_legendre].
 
 # Resultados
 
 \dots
-La familia Rubiaceae en Barro Colorado se encuentra representada por 31 especies y 20 generos. El género *Psychotria* presenta la mayor cantidad de especies con 8?. La tabla \ref{tab:abun_sp} indica las abundancias de las especies de toda la comunidad que en total suman 41,838 individuos, con una abundancia media de 65 individuos y mediana ubicada en los 1,350 individuos. El mapa de cuadros de la figura \ref{fig:mapa_cuadros_riq} muestra la riqueza numérica de especies por cuadrante. Los valores de abundancia muestran un aparente patrón en algunos lugares de BCI, al presentar además el valor máximo en riqueza de la familia [ver figura \ref{fig:mapa_cuadros_abun_rubic}]. <!--El grado de asociación presente entre cuadrantes medido utilizando el indice de disimilaridad de Jaccard arrojó distintos valores para el grado de exclusividad entre sitios. Se encontró que estos valores eran más altos para los lugares más alejados entre sí, presentaban una media alta, además de valores extremos a lo largo de las observaciones en la serie-->.
+La familia Rubiaceae en Barro Colorado se encuentra representada por 31 especies y 20 generos. El género *Psychotria* presenta la mayor cantidad de especies con 8?. La tabla \ref{tab:abun_sp} indica las abundancias de las especies de toda la comunidad que en total suman 41,838 individuos, con una abundancia media de 65 individuos y mediana ubicada en los 1,350 individuos. El mapa de cuadros de la figura \ref{fig:mapa_cuadros_riq} contiene la riqueza numérica de especies por cuadrante. Los valores de abundancia muestran un aparente patrón en algunos lugares de BCI, al presentar además el valor máximo en riqueza de la familia [ver figura \ref{fig:mapa_cuadros_abun_rubic}]. <!--El grado de asociación presente entre cuadrantes medido utilizando el indice de disimilaridad de Jaccard arrojó distintos valores para el grado de exclusividad entre sitios. Se encontró que estos valores eran más altos para los lugares más alejados entre sí, presentaban una media alta, además de valores extremos a lo largo de las observaciones en la serie-->.
 Las pruebas de asociación entre la abundancia numérica de las distintas especies arrojaron 20 combinaciones de especies con asociación positiva.
 Los valores para el coeficiente de correlación de Spearman no mostraron evidencia de que exista relación entre la riqueza numérica de especies y la abundancia con las variables geomorfológicas notadas en la matríz de variables ambientales. Sin embargo,  el mismo análisis sugiere una posible relación entre la abundancia numérica de especies y la compososición del suelo, mostrando relación positiva con valores altos de Aluminio y Fósforo, así como negativa, para valores altos de pH y concentraciones de otros elementos (B, Ca, Cu, Fe, K, Mg, Mn, Zn y Nitrógeno mineralizado).
+La figura \ref{fig:mapa_cuadros_ph} presenta la distribución de la variable ácidez en el suelo de BCI.
 
 Se identificaron tres posibles grupos dentro de la comunidad. Estos grupos fueron determinados basandose en los valores de correlación entre la distancia cofenética de los dendrogramas generados y la matríz de distancias normalizada.  
 
@@ -102,6 +103,15 @@ Por otra parte, en el grupo 2(complete) siete especies resultan de interes por s
 En los grupos generados mediante ward solo Faramea occidentalis, Psychotria horizontalis y Alseis blackiana resultaron compatibles en el analisis.
 Las especies con preferencia por el grupo 1, evaden sistemáticamente al grupo 2, su ocurrencia se ve marcada por algun otro factor que determina la existencia de esta diferenciacion. Esto sucede de la misma manera para las especies con preferencia por el grupo 2. 
 
+El grupo 1 (2 en ward) contiene los sitios con tendencia a presentar valores altos de acidez y concentración de aluminio.Faramea occidentalis y su grosera abundancia podrían estar inclinando los resultados de estos analisis? Indicios de esto pudieron observarse en los valores del indice de correlación de Spearman el cual indicaba una relación significativa? de la abundancia con la acidez y el pH. 
+
+
+# Discusión
+Las variables cobre y fosforo en el suelo producieron una diferenciación entre los grupos determinados. Se   
+especies diagnosticas de determinadas variables ambientales
+La determinación de las especies indicadoras *Faramea occidentalis* y *Alseis blackiana* de los grupos 1 y dos puede estár asociada a la dominancia que presentan estas especies en la comunidad de rubiaceas. Especialmente *Faramea occidentalis*, cuya abundancia alcanza valores extremos dentro de todo BCI.
+Es importante que los analisis de agrupamiento pueden verse sesgados por la heterogeneidad morfométrica que pueden presentar las plantas de esta familia. Las especies de este grupo pueden presentar diversos hábitos de crecimiento, que van desde el porte herbáceo y arbustivo a arboles relativamente grandes. Esto hace que el hecho de que se incluya el criterio de dap de 10 mm en el momento de ser censadas promueve a alterar los datos, excluyendo especies de la comunidad de rubiaceas.
+
 #ad
 
 ```{r,echo=FALSE}
@@ -120,16 +130,8 @@ abun_sp_q
 
 
 
-<!--La figura \ref{fig:mapa_cuadros_ph} presenta la distribución de la variable ácidez del sueloasdasdadaadadadadaddaddasdd.-->
-
 ![pH del suelo en los distintos cuadros de 1ha \label{fig:mapa_cuadros_ph}](mapa_cuadros_ph.png)
-
-# Discusión
-Las variables cobre y fosforo en el suelo producieron una diferenciación entre los grupos determinados. Se   
-especies diagnosticas de determinadas variables ambientales
-La determinación de las especies indicadoras *Faramea occidentalis* y *Alseis blackiana* de los grupos 1 y dos puede estár asociada a la dominancia que presentan estas especies en la comunidad de rubiaceas. Especialmente *Faramea occidentalis*, cuya abundancia alcanza valores extremos dentro de todo BCI.
-Es importante que los analisis de agrupamiento pueden verse sesgados por la heterogeneidad morfométrica que pueden presentar las plantas de esta familia. Las especies de este grupo pueden presentar diversos hábitos de crecimiento, que van desde el porte herbáceo y arbustivo a arboles relativamente grandes. Esto hace que el hecho de que se incluya el criterio de dap de 10 mm en el momento de ser censadas promueve a alterar los datos, excluyendo especies de la comunidad de rubiaceas.
-
+![Diagrama PCA de los grupos de cuadrantes según variables de suelo \label{fig:grafico_pca_suelo}](grafico_pca_suelo.png)
 
 # Agradecimientos
 

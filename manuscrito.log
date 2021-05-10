@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.17)  9 MAY 2021 00:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.17)  10 MAY 2021 03:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -804,69 +804,85 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Warning: Reference `informaci\IeC {\'o}n suplementaria' on page 2 undefin
 ed on input line 267.
 
-[2] [3] [4]
-<manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf, id=68, 459.7175pt x 243.9
+[2]
+
+LaTeX Warning: Reference `fig:mapa_cuadros_ph' on page 3 undefined on input lin
+e 391.
+
+[3] [4] [5]
+<manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf, id=76, 459.7175pt x 243.9
 1125pt>
 File: manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pd
 f)
 <use manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf>
 Package pdftex.def Info: manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf  u
-sed on input line 460.
+sed on input line 517.
 (pdftex.def)             Requested size: 459.72337pt x 243.91435pt.
-<mapa_cuadros_abun_rubic.png, id=69, 995.72pt x 762.85pt>
+<mapa_cuadros_abun_rubic.png, id=77, 995.72pt x 762.85pt>
 File: mapa_cuadros_abun_rubic.png Graphic file (type png)
 <use mapa_cuadros_abun_rubic.png>
-Package pdftex.def Info: mapa_cuadros_abun_rubic.png  used on input line 467.
+Package pdftex.def Info: mapa_cuadros_abun_rubic.png  used on input line 524.
 (pdftex.def)             Requested size: 469.7661pt x 359.90144pt.
-<mapa_cuadros_riq_rubic.png, id=71, 995.72pt x 762.85pt>
+<mapa_cuadros_riq_rubic.png, id=79, 995.72pt x 762.85pt>
 File: mapa_cuadros_riq_rubic.png Graphic file (type png)
 <use mapa_cuadros_riq_rubic.png>
-Package pdftex.def Info: mapa_cuadros_riq_rubic.png  used on input line 474.
+Package pdftex.def Info: mapa_cuadros_riq_rubic.png  used on input line 531.
 (pdftex.def)             Requested size: 469.7661pt x 359.90144pt.
-<mapa_cuadros_ph.png, id=72, 995.72pt x 762.85pt>
+<mapa_cuadros_ph.png, id=80, 995.72pt x 762.85pt>
 File: mapa_cuadros_ph.png Graphic file (type png)
 <use mapa_cuadros_ph.png>
-Package pdftex.def Info: mapa_cuadros_ph.png  used on input line 481.
+Package pdftex.def Info: mapa_cuadros_ph.png  used on input line 536.
 (pdftex.def)             Requested size: 469.7661pt x 359.90144pt.
-[5 <./manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf>] [6 <./mapa_cuadros_
-abun_rubic.png>] [7 <./mapa_cuadros_riq_rubic.png>] [8 <./mapa_cuadros_ph.png>]
-LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 505.
+<grafico_pca_suelo.png, id=81, 598.48593pt x 341.77687pt>
+File: grafico_pca_suelo.png Graphic file (type png)
+<use grafico_pca_suelo.png>
+Package pdftex.def Info: grafico_pca_suelo.png  used on input line 537.
+(pdftex.def)             Requested size: 469.76683pt x 268.26935pt.
 
-Overfull \hbox (35.64655pt too wide) in paragraph at lines 548--551
+Overfull \hbox (17.01108pt too wide) in paragraph at lines 536--538
+[][]
+ []
+
+[6 <./manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf>] [7 <./mapa_cuadros_
+abun_rubic.png>] [8 <./mapa_cuadros_riq_rubic.png>] [9 <./mapa_cuadros_ph.png> 
+<./grafico_pca_suelo.png (PNG copy)>]
+LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 546.
+
+Overfull \hbox (35.64655pt too wide) in paragraph at lines 594--597
 \T1/ppl/m/n/10.95 dices and sta-tis-ti-cal in-fer-ence. In \T1/ppl/m/it/10.95 E
 col-ogy\T1/ppl/m/n/10.95 . Re-trieved from [][]$http : / / sites . google . com
  / site / miqueldecaceres/$[][] 
  []
 
-[9]
-Overfull \hbox (1.02496pt too wide) in paragraph at lines 624--627
+[10]
+Overfull \hbox (1.02496pt too wide) in paragraph at lines 670--673
 \T1/ppl/m/n/10.95 species abun-dance in ecol-ogy. \T1/ppl/m/it/10.95 Na-ture\T1
 /ppl/m/n/10.95 , \T1/ppl/m/it/10.95 424\T1/ppl/m/n/10.95 (6952), 1035--1037. []
 []$https : / / doi . org / 10 . 1038 / nature01883$[][] 
  []
 
-[10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 638.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 638.
+[11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 684.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 684.
 (./manuscrito.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 638.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 638.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 684.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 684.
 Package rerunfilecheck Info: File `manuscrito.out' has not changed.
-(rerunfilecheck)             Checksum: 801573542BFB6FDEF17D3AC28872E929;910.
+(rerunfilecheck)             Checksum: 8926125F6BE6A327181F241D030D2DF3;963.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 638.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 684.
  ) 
 Here is how much of TeX's memory you used:
- 10895 strings out of 492982
- 151306 string characters out of 6134896
- 231316 words of memory out of 5000000
- 14253 multiletter control sequences out of 15000+600000
+ 10903 strings out of 492982
+ 151463 string characters out of 6134896
+ 232271 words of memory out of 5000000
+ 14259 multiletter control sequences out of 15000+600000
  29364 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,31p,274b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,6n,31p,274b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
@@ -877,10 +893,10 @@ e/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/palatino/uplri8a.pfb>
-Output written on manuscrito.pdf (10 pages, 980022 bytes).
+Output written on manuscrito.pdf (11 pages, 1014811 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 173 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 500000)
- 85 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 215 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
