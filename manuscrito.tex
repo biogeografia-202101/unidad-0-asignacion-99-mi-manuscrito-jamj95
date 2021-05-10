@@ -184,41 +184,44 @@ Subtítulo},
 
 Las comunidades vegetales de los bosques neotropicales ejemplifican la
 diversidad y complejidad ecológica de la región tropical. El estudio
-continuo de la riqueza y la abundancia relativa en estas comunidades
-permite identificar las especies raras, las cuales son más vulnerables a
-los cambios en su hábitat y por lo tanto propensas a extinguirse
-localmente (Volkov, Banavar, Hubbell, \& Maritan, 2003). Conocer estos
-aspectos de las comunidades ecológicas y como se encuentran distribuidas
-en el espacio las especies que las componen, ofrece la oportunidad de
-comprender como evolucionan en el tiempo y los factores que inciden en
-su conservación (Moreno, 2001).
+continuo de su riqueza y abundancia relativa permite identificar las
+especies raras, las cuales son más vulnerables a los cambios en su
+hábitat y por lo tanto propensas a extinguirse localmente (Volkov,
+Banavar, Hubbell, \& Maritan, 2003). Conocer estos aspectos de las
+comunidades ecológicas y como se encuentran distribuidas en el espacio
+las especies que las componen, ofrece la oportunidad de comprender como
+evolucionan en el tiempo y los factores que inciden en su conservación
+(Moreno, 2001).
 
 La familia Rubiaceae es un importante grupo de plantas vasculares de
 distribución cosmopolita con una marcada diversidad en regiones
 tropicales y subtropicales (Davis et al., 2009). Muchas de las especies
 que componen esta familia se encuentran adaptadas a la vida en la
-penúmbra, y prosperan bajo la sombra del dosel selvatico neotropical,
-región en la cual son especialmente diversas. En estas selvas
-tropicales, la organización de las comunidades de plantas del sotobosque
-depende en gran medida de las interacciónes existentes entre las
-distintas especies que lo habitan (Torres-Leite et al., 2019). Es
-preciso señalar que estudios anteriores realizados en el bosque tropical
-panameño sobre el grado de reemplazo entre especies de distintas
-comunidades o diversidad beta, sugieren una tendencia a la disimilaridad
-entre comunidades en cuanto a su composición, esta aumentando con la
-distancia en la cual se encuentran separadas en el espacio (Condit et
-al., 2002). Sin embargo, estos trabajos no restan importancia a la
-variabilidad del hábitat y se estima su importancia en el estudio de la
-composición de estos ecosistemas.
+penúmbra, y prosperan bajo la sombra del dosel selvatico . En estas
+selvas tropicales, el grado de ordenación y riqueza de las comunidades
+que componen el sotobosque depende en gran medida de interacciónes
+existentes entre las distintas especies (Torres-Leite et al., 2019) y de
+factores ambientales del lugar, ya que algunas de estas especies estan
+adaptadas a rangos elevados de acidez y otras condiciones específicas de
+los componentes del suelo, como la concentración de distintos metales
+(Jansen, Robbrecht, Beeckman, \& Smets, 2000) Es preciso señalar que
+estudios anteriores realizados en el bosque tropical panameño sobre el
+grado de reemplazo entre especies de distintas comunidades o diversidad
+beta, sugieren una tendencia a la disimilaridad entre comunidades en
+cuanto a su composición, esta aumentando en función de la distancia en
+la cual se encuentran separadas en el espacio (Condit et al., 2002). Sin
+embargo, estos trabajos no restan importancia a la variabilidad del
+hábitat y se estima su importancia en el estudio de la composición de
+estos ecosistemas.
 
 .Si bien es cierto que la distribución de la abundancia de especies
 depende de características que definen una comunidad en particular,
 existiendo una proporción variable de especies dominantes, con una
 abundancia alta en comparación con las especies raras y menos
 abundantes, las medidas para la distribución de la abundancia relativa
-se encuentran sujetas a diversas variables las cuales aún no se conocen
-del todo ni en qué grado inciden en la estructura de la comunidad (Néda,
-Horvat, Toháti, Derzsi, \& Balogh, 2008).
+se encuentran sujetas a mecanismos que aún no se conocen del todo ni en
+qué grado inciden en la estructura de la comunidad (Néda, Horvat,
+Toháti, Derzsi, \& Balogh, 2008).
 
 El presente estudio intenta la relación entre abundancia relativa de
 especies de la familia rubiaceae y su distribución en una porción de
@@ -237,14 +240,14 @@ del terreno y otras condiciones ambientales medibles.
 
 La parcela permanente BCI es una estación de censo permanente
 administrada por el Instituto Smithsoniano de Investigaciones Tropicales
-ubicada en el centro de la isla Barro Colorado en la cuenca del canal de
-Panamá, con las coordenadas 09\(^\circ\)~09'N, 079\(^\circ\)~50'O. Es un
-polígono de 50 hectáreas cuadradas en el cual se han contabilizado todos
-los arboles con más de 10 mm de diámetro a la altura del pecho cada
-cinco años desde 1985 (Hubbell \& Foster, 1983, Hubbell et al. (1990),
-Condit, Chisholm, \& Hubbell (2012), Condit, Pérez, Lao, Aguilar, \&
-Hubbell (2017)); en este estudio se utilizaron las datos del censo
-realizado en 2015.
+ubicada en el centro de la isla Barro Colorado en el lago Gatún, con las
+coordenadas 09\(^\circ\)~09'N, 079\(^\circ\)~50'O. La parcela consiste
+en un polígono de 50 hectáreas cuadradas en el cual se han contabilizado
+todos los arboles con más de 10 mm de diámetro a la altura del pecho
+cada cinco años desde 1985 (Hubbell \& Foster, 1983, Hubbell et al.
+(1990), Condit, Chisholm, \& Hubbell (2012), Condit, Pérez, Lao,
+Aguilar, \& Hubbell (2017)); en este estudio se utilizaron las datos del
+censo realizado en 2015.
 
 Los datos referentes a estos censos fueron manejados en R (R Core Team
 (2020)) partiendo de su disposición en dos matrices de comunidad y
@@ -279,24 +282,79 @@ de Hellinger entre los cuadrantes considerados como objetos. Para esto,
 fué requerida la transformada de la matríz de comunidad por el método de
 Hellinger, el cual consiste en la radicación al cuadrado de la
 abundancia relativa \(y_{ij}\) como muestra la fórmula
-\ref{eq:hell_transf}, donde \emph{j} refiere a cada especie o columna en
+\ref{eq:hell_transf}. Donde \emph{j} refiere a cada especie o columna en
 la matríz, \emph{i} es la fila o cuadrante e \emph{i+} representa la
 suma de filas de la matríz de la i-ésima fila (Legendre \& Gallagher,
 2001). Además, la distancia euclidea entre cuadrantes en cuanto a la
 presencia de especies fué evaluada aplicando el índice de disimilaridad
 de Jaccard de la matríz normalizada, con valores de abundancia
-convertidos en valores binarios (Borcard, Gillet, \& Legendre, 2018).
+convertidos en valores binarios (Borcard, Gillet, \& Legendre, 2018). De
+la misma manera, se utiliza la métrica de Jaccard aplicada a la matriz
+de comunidad transpuesta y convertida a datos de presencia/ausencia para
+medir el grado de asociación entre especies.
 
 \begin{equation} \label{eq:hell_transf}
 y' = \sqrt{\frac{y_{ij}}{y_{i+}}}
 \end{equation}
 
 \dots
-Para conocer la relación de la ocurrencia entre las especies y su
-distribución en BCI, se utilizó el coeficiente de Spearman para medir el
-grado de correlación entre las variables riqueza númerica de especies y
-la abundancia con las variables ambientales geomorfológicas y la
-composición química del suelo.
+Para poder comparar la relación entre las especies según su abundancia
+númerica, se utilizó estandarización chi cuadrado de la matríz de
+comunidad transpuesta (Legendre \& Gallagher, 2001). La ocurrencia entre
+las especies y su distribución en BCI fué examinada por medio de el
+coeficiente de correlación entre rangos de Spearman para medir el grado
+de asosiación entre las variables riqueza númerica de especies y la
+abundancia con las variables ambientales geomorfológicas y la
+composición química del suelo(Borcard et al., 2018). Utilizando métodos
+jerarquicos aglomerativos de asociación entre pares de cuadrantes (según
+su composición de especies). El criterio de enlace utilizado fué enlace
+promedio de pares no ponderados (upgma). Estos análisis de agrupamiento
+generaron dendrogramas que posteriormente fueron examinados en paralelo
+con la matríz de distancias normalizada utilizando correlación
+cofenetica entre ambas para determinar el número ideal de grupos
+conformados por los cuadrantes.
+
+Los criterios utilizados para determinar los métodos apropiados a la
+hora de realizar dendrogramas que reflejaran los grupos circunscritos.
+Se tomaron en cuenta los dendrogramas generados por los métodos de
+agrupamiento ward, enlace completo y upgma. Estos se compararon entre sí
+con el objetivo de identificar grupos consistentes. La correlación
+cofenética resultante del método upgma fué la más alta de las
+observadas, seguida por el metodo ward. En cuanto a las anchuras de
+silueta promedio, en el método ward el programa sugirió 2 grupos
+presentes, 2 para complete y 2 con un posible 3 para upgma. Fué
+utilizado un mapa de calor para cada método con el fin de analisar de
+manera visual las distancias entre sitios y compararlas con los analisis
+estadisticos. Se hizo uso de los métodos de remuestreo bootstrap y
+boostrap multiescalar para conocer la probabilidad de exito en la
+inferencia del número de grupos y la identidad de sus componentes. Las
+reparticiones se basaron en una probabilidad de 91\% o más de acierto
+para el metodo bootstrap y de un 95\% para boostrap multiescalar. Estos
+resultados sugieren 2 grupos con 95\% o más de confianza en cada caso
+para el metodo ward; 12 grupos sugeridos por los estandares establecidos
+para bootstrap y 10 grupos para bootstrap multiescalar para el metodo
+por medio de enlace completo; y 4 y 5 respectivamente para el método
+upgma. Los análisis de agrupamiento posteriores realizados en este
+trabajo se basaron en los métodos ward y por enlace completo. La
+decisión se justifica al encontrarse patrones consistentes en la
+composición y número de grupos en ambos métodos. Los valores de
+corelación cofenética para el método de ward (0.657) tuvieron una
+diferencia absoluta menor al compararles con el método por enlace
+completo (0.615) que con el método upgma (0.723). Para el método ward se
+consideraron como validos un grupo con 34 sitios y otro conformado por
+16; para el método por enlace completo se obtuvieron tambien 2 grupos
+que incluyen 20 y 30 cuadrantes.
+
+Pruebas T de Student y ? Wilcoxon homogeneizan las medias y medianas de
+las variables ambientales en los grupos identificados, con lo que se
+busca determinar cuales valores podrían ser responsables(asociados) a la
+diferenciación en la composición de ambos grupos.
+
+Se hace uso del indice IndVal (Dufrene \& Legendre, 1997) para conocer
+las especies cuyos valores de abundancia las puedan hacer indicadoras de
+un grupo en específico.por medio de permutaciones aleatorias de los
+sitios segun ocurrencia y abundancia de las especies (Borcard et al.,
+2018).
 
 \section{Resultados}\label{resultados}
 
@@ -310,17 +368,48 @@ ubicada en los 1,350 individuos. El mapa de cuadros de la figura
 \ref{fig:mapa_cuadros_riq} muestra la riqueza numérica de especies por
 cuadrante. Los valores de abundancia muestran un aparente patrón en
 algunos lugares de BCI, al presentar además el valor máximo en riqueza
-de la familia {[}ver figura \ref{fig:mapa_cuadros_abun_rubic}{]}.
+de la familia {[}ver figura \ref{fig:mapa_cuadros_abun_rubic}{]}. . Las
+pruebas de asociación entre la abundancia numérica de las distintas
+especies arrojaron 20 combinaciones de especies con asociación positiva.
+Los valores para el coeficiente de correlación de Spearman no mostraron
+evidencia de que exista relación entre la riqueza numérica de especies y
+la abundancia con las variables geomorfológicas notadas en la matríz de
+variables ambientales. Sin embargo, el mismo análisis sugiere una
+posible relación entre la abundancia numérica de especies y la
+compososición del suelo, mostrando relación positiva con valores altos
+de Aluminio y Fósforo, así como negativa, para valores altos de pH y
+concentraciones de otros elementos (B, Ca, Cu, Fe, K, Mg, Mn, Zn y
+Nitrógeno mineralizado).
 
-Los valores para el coeficiente de Spearman de correlación entre rangos
-no mostraron evidencia de que exista relación entre la riqueza numérica
-de especies y la abundancia con las variables geomorfológicas notadas en
-la matríz de variables ambientales. Sin embargo, el mismo análisis
-sugiere una posible relación entre la abundancia y la compososición del
-suelo, mostrando relación positiva con valores altos de Aluminio y
-Fósforo, así como negativa, para valores altos de pH y concentraciones
-de otros elementos (B, Ca, Cu, Fe, K, Mg, Mn, Zn y Nitrógeno
-mineralizado). \#ad
+Se identificaron tres posibles grupos dentro de la comunidad. Estos
+grupos fueron determinados basandose en los valores de correlación entre
+la distancia cofenética de los dendrogramas generados y la matríz de
+distancias normalizada.
+
+valor de p para la variable \emph{P}fosforo respecto a los grupos 1 y 2
+de complete\_k2 es 0.0000347 para student y 0.000408 para
+wilcoxon(significativos). Para la variable \emph{Cu}cobre fueron 0.0127
+student y 0.0333 wilx (casi significativos). Otros valores casi
+significativos de variables asociadas a la diferenciacion de los grupos
+fueron: abundancia global (0.0808 T, 0.0685 W); \emph{Al} (0.0867 W);
+riqueza global (0.0314W)
+
+De manera similar para los grupos de ward\_k2 el valor p para
+\emph{P}fosforo fue 0.000370 para student y 0.0129 para wilcoxon. Para
+\emph{Cu}cobre fue 0.00726 sTdnt y 0.0115 Wilcx. valores casi
+significativos: riqueza global(0.0243 T, 0.0115 W);abundancia
+global(0.0331 T, 0.0375 W); \emph{Mn}(0.0341 T, 0.0405 W);
+\emph{Fe}(0.0454 T, 0.0688 W); \emph{Ca} (0.0789 W)
+
+nivel de significancia p=0.01(significtv), y 0.1(casi significtv)
+
+En complete, el grupo 1 (verde) pareciera asociarse con el cobre y el
+grupo 2 (gris) con el fosforo. Los sitios de ambos grupos son
+comparables con los mapas de concentración de P y Cu del aed\_6 y
+parecen coincidir.
+
+Para ward pasa algo muy parecido, solo que los colores de los grupos
+están invertidos 2(verde) y 1(gris). Igual \#ad
 
 \begin{longtable}[]{@{}lr@{}}
 \caption{\label{tab:abun_sp}Abundancia por especie.}\tabularnewline
@@ -396,6 +485,16 @@ cuadrante.}
 
 \section{Discusión}\label{discusiuxf3n}
 
+Las variables cobre y fosforo en el suelo producieron una diferenciación
+entre los grupos determinados. Se\\
+Es importante que los analisis de agrupamiento pueden verse sesgados por
+la heterogeneidad morfométrica que pueden presentar las plantas de esta
+familia. Las especies de este grupo pueden presentar diversos hábitos de
+crecimiento, que van desde el porte herbáceo y arbustivo a arboles
+relativamente grandes. Esto hace que el hecho de que se incluya el
+criterio de dap de 10 mm en el momento de ser censadas promueve a
+alterar los datos, excluyendo especies de la comunidad de rubiaceas.
+
 \section{Agradecimientos}\label{agradecimientos}
 
 \section{Información de soporte}\label{informaciuxf3n-de-soporte}
@@ -450,6 +549,11 @@ De Caceres, M., \& Legendre, P. (2009). Associations between species and
 groups of sites: Indices and statistical inference. In \emph{Ecology}.
 Retrieved from \url{http://sites.google.com/site/miqueldecaceres/}
 
+\hypertarget{ref-dufrene_legendre}{}
+Dufrene, M., \& Legendre, P. (1997). Species assemblages and indicator
+species: The need for a flexible asymmetrical approach. \emph{Ecological
+Monographs}, \emph{67}, 345--366. \url{https://doi.org/10.2307/2963459}
+
 \hypertarget{ref-hubell_foster_1983}{}
 Hubbell, S. P., \& Foster, R. B. (1983). Diversity of canopy trees in a
 neotropical forest and implications for conservation. In T. Whitmore, A.
@@ -468,6 +572,12 @@ Sciences}, \emph{330}(1257), 269--281.
 Hubbell, S., Condit, R., \& Foster, R. (2021). Forest Census Plot on
 Barro Colorado Island. Retrieved March 23, 2021, from
 \url{http://ctfs.si.edu/webatlas/datasets/bci/}
+
+\hypertarget{ref-article}{}
+Jansen, S., Robbrecht, E., Beeckman, H., \& Smets, E. (2000). Aluminium
+accumulation in rubiaceae: An additional character for the delimitation
+of the subfamily rubioideae? \emph{IAWA Journal}, \emph{21}.
+\url{https://doi.org/10.1163/22941932-90000245}
 
 \hypertarget{ref-legendre_galllagher_2001}{}
 Legendre, P., \& Gallagher, E. (2001). Ecologically meaningful
