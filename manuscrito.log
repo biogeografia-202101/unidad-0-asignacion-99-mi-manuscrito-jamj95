@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.17)  10 MAY 2021 03:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.17)  11 MAY 2021 05:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -762,7 +762,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <11> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 183.
 
-Overfull \hbox (1.36858pt too wide) in paragraph at lines 196--216
+Overfull \hbox (1.36858pt too wide) in paragraph at lines 195--218
 []\T1/ppl/m/n/10.95 La fa-milia Ru-bi-aceae es un im-por-tante grupo de plan-ta
 s vas-cu-lares de dis-tribu-ción cos-mopolita
  []
@@ -770,47 +770,51 @@ s vas-cu-lares de dis-tribu-ción cos-mopolita
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 244.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 249.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 244
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 249
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 244
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 249
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 244
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 249
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 244
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 249
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 263.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 268.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 
 LaTeX Warning: Reference `informaci\IeC {\'o}n suplementaria' on page 2 undefin
-ed on input line 267.
+ed on input line 272.
 
 [2]
 
+LaTeX Warning: Reference `fig:grafico_pca_suelo' on page 3 undefined on input l
+ine 356.
+
+
 LaTeX Warning: Reference `fig:mapa_cuadros_ph' on page 3 undefined on input lin
-e 391.
+e 382.
 
 [3] [4] [5]
-<manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf, id=76, 459.7175pt x 243.9
+<manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf, id=80, 459.7175pt x 243.9
 1125pt>
 File: manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pd
 f)
@@ -818,22 +822,22 @@ f)
 Package pdftex.def Info: manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf  u
 sed on input line 517.
 (pdftex.def)             Requested size: 459.72337pt x 243.91435pt.
-<mapa_cuadros_abun_rubic.png, id=77, 995.72pt x 762.85pt>
+<mapa_cuadros_abun_rubic.png, id=81, 995.72pt x 762.85pt>
 File: mapa_cuadros_abun_rubic.png Graphic file (type png)
 <use mapa_cuadros_abun_rubic.png>
 Package pdftex.def Info: mapa_cuadros_abun_rubic.png  used on input line 524.
 (pdftex.def)             Requested size: 469.7661pt x 359.90144pt.
-<mapa_cuadros_riq_rubic.png, id=79, 995.72pt x 762.85pt>
+<mapa_cuadros_riq_rubic.png, id=83, 995.72pt x 762.85pt>
 File: mapa_cuadros_riq_rubic.png Graphic file (type png)
 <use mapa_cuadros_riq_rubic.png>
 Package pdftex.def Info: mapa_cuadros_riq_rubic.png  used on input line 531.
 (pdftex.def)             Requested size: 469.7661pt x 359.90144pt.
-<mapa_cuadros_ph.png, id=80, 995.72pt x 762.85pt>
+<mapa_cuadros_ph.png, id=84, 995.72pt x 762.85pt>
 File: mapa_cuadros_ph.png Graphic file (type png)
 <use mapa_cuadros_ph.png>
 Package pdftex.def Info: mapa_cuadros_ph.png  used on input line 536.
 (pdftex.def)             Requested size: 469.7661pt x 359.90144pt.
-<grafico_pca_suelo.png, id=81, 598.48593pt x 341.77687pt>
+<grafico_pca_suelo.png, id=85, 598.48593pt x 341.77687pt>
 File: grafico_pca_suelo.png Graphic file (type png)
 <use grafico_pca_suelo.png>
 Package pdftex.def Info: grafico_pca_suelo.png  used on input line 537.
@@ -869,17 +873,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 684.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 684.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 684.
 Package rerunfilecheck Info: File `manuscrito.out' has not changed.
-(rerunfilecheck)             Checksum: 8926125F6BE6A327181F241D030D2DF3;963.
+(rerunfilecheck)             Checksum: 9C79027DA46DCB35E4A70C7BAC811B1D;1208.
 
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 684.
  ) 
 Here is how much of TeX's memory you used:
- 10903 strings out of 492982
- 151463 string characters out of 6134896
- 232271 words of memory out of 5000000
- 14259 multiletter control sequences out of 15000+600000
+ 10907 strings out of 492982
+ 151553 string characters out of 6134896
+ 230399 words of memory out of 5000000
+ 14262 multiletter control sequences out of 15000+600000
  29364 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,6n,31p,274b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -893,10 +897,10 @@ e/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/palatino/uplri8a.pfb>
-Output written on manuscrito.pdf (11 pages, 1014811 bytes).
+Output written on manuscrito.pdf (11 pages, 1015569 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 219 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

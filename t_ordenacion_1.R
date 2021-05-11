@@ -146,7 +146,7 @@ legend(
 #' Si hago lo mismo, pero usando mi análisis de agrupamiento anterior (*scripts* "aa_analisis_de_agrupamiento_*"), no obtengo resultados consistentes, al menos en mi caso.
 #' 
 # (mi_cluster_anterior <- grupos_upgma_k2)
-(mi_cluster_anterior <- grupos_ward_k3)
+(mi_cluster_anterior <- grupos_ward_k2)
 (mi_cluster_anterior_l <- levels(mi_cluster_anterior))
 (mi_cluster_anterior_l_seq <- 1:length(mi_cluster_anterior_l))
 grafico_base <- plot(
