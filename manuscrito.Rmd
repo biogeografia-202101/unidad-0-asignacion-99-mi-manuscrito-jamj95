@@ -55,7 +55,7 @@ A fin de conocer las características distintivas de los datos conservados en la
 
 #Medición de asociación
 
-<!--Se realizó análisis multivariado de los datos de composición de la comunidad para poner a prueba las hipótesis ecológicas planteadas, uno de ellos fueron-->Para las pruebas de medición de asociación, se calculó la distancia Euclidea entre los cuadrantes considerados como objetos. Para esto, fué requerida la transformada de la matríz de comunidad por el método de Hellinger, el cual consiste en la radicación al cuadrado de la abundancia relativa $y_{ij}$ (cociente resultante de cada valor de abundancia entre la suma de los sitios) como muestra la fórmula \ref{eq:hell_transf}. Donde *j* refiere a cada especie o columna en la matríz, *i* es la fila o cuadrante e *i+* representa la suma de filas de la matríz de la i-ésima fila [@legendre_galllagher_2001]. Además, la distancia euclidea entre cuadrantes en cuanto a la presencia de especies fué evaluada aplicando el índice de disimilaridad de Jaccard de la matríz normalizada, con valores de abundancia convertidos en valores binarios [@borcard_legendre]. De la misma manera, se utiliza la métrica de Jaccard aplicada a la matriz de comunidad transpuesta y convertida a datos de presencia/ausencia para medir el grado de asociación entre especies.
+<!--Se realizó análisis multivariado de los datos de composición de la comunidad para poner a prueba las hipótesis ecológicas planteadas, uno de ellos fueron-->Para las pruebas de medición de asociación, se calculó la distancia Euclidea entre los cuadrantes considerados como objetos. Para esto, fué requerida la transformada de la matríz de comunidad por el método de Hellinger, el cual consiste en la radicación al cuadrado de la abundancia relativa $y_{ij}$ (cociente resultante de cada valor de abundancia entre la suma de los sitios) como muestra la fórmula \ref{eq:hell_transf}. Donde *j* refiere a cada especie o columna en la matríz, *i* es la fila o cuadrante e *i+* representa la suma de filas de la matríz de la i-ésima fila [@legendre_galllagher_2001]. Además, la distancia euclidea entre cuadrantes en cuanto a la ocurrencia de especies fué evaluada aplicando el índice de disimilaridad de Jaccard de la matríz normalizada, con valores de abundancia convertidos en valores binarios [@borcard_legendre]. De la misma manera, se utiliza la métrica de Jaccard aplicada a la matriz de comunidad transpuesta y convertida a datos de presencia/ausencia para medir el grado de asociación entre especies.
 \begin{equation} \label{eq:hell_transf}
 y' = \sqrt{\frac{y_{ij}}{y_{i+}}}
 \end{equation}
@@ -78,11 +78,16 @@ Los análisis de agrupamiento posteriores realizados en este trabajo se basaron 
 Se hace uso del índice IndVal [@dufrene_legendre] para conocer las especies que pudieran ser consideradas características de cada grupo por medio de permutaciones aleatorias de los sitios según la ocurrencia de las especies y su abundancia. Así mismo, se estudia el grado de asociación de las especies con cierta preferencia por las combinaciones de cuadrantes consideradas como grupos, indicado por el coeficiente de correlación biserial puntual [@borcard_legendre].
 Se llevó acabo un acercamiento parecido al anterior durante las pruebas estadisticas de la hipotesis nula, sobre la base de que las especies que se encontraban en cuadrantes pertenecientes a un determinado grupo lo hacían por obra del azar. Esta prueba se logró mediante reordenación aleatoria de los valores de abundancia y comparando su distribución con los valores obtenidos anteriormente [@caceres2009associations]. Para estas pruebas de asociación y las subsiguientes se declaro un valor de significancia de *P* =0.05.
 
-Las carasteristicas de la varianza en los datos de las variables ambientales en BCI fueron estudiadas mediante análisis de sus componentes principales (PCA)[@borcard_legendre]. Este conjunto de métodos permite resumir la multidimensionalidad de las variables y explicar la varianza y los posibles patrones que estos podrían seguir, lo que ayudó a determinar cuales variables ambientales inciden en la composición de especies de los cuadrantes. En la figura \ref{fig:grafico_pca_suelo} se observan los cuadrantes agrupados por el método jerarquico UPGMA? y presentados sobre las escalas de varianza relativas del primer y segundo componentes principales.
+Las carasteristicas de la varianza en los datos de las variables ambientales en BCI fueron estudiadas mediante análisis de sus componentes principales (PCA)[@borcard_legendre]. Este conjunto de métodos permitió resumir la multidimensionalidad de las variables, explicar la varianza y los posibles patrones que estos podrían seguir, lo que ayudó a determinar cuales variables ambientales inciden en la composición de especies de los cuadrantes.<!--\ref{fig:grafico_pca_suelo}se observan los cuadrantes agrupados por el método jerarquico UPGMA? y presentados sobre las escalas de varianza relativas del primer y segundo componentes principales.-->
 
 # Resultados
 
 La familia Rubiaceae en Barro Colorado se encuentra representada por 31 especies y 20 generos. El género *Psychotria* presenta la mayor cantidad de especies con 8. La tabla \ref{tab:abun_sp} indica las abundancias de las especies de toda la comunidad que en total suman 41,838 individuos, con una abundancia media de 65 individuos y mediana ubicada en los 1,350 individuos. El mapa de cuadros de la figura \ref{fig:abun_sp_q} contiene la riqueza numérica de especies por cuadrante. Los valores de abundancia muestran un aparente patrón en la parte centro-occidental de BCI, en donde además se encuentran los sitios con la mayor abundancia de la familia [ver figura \ref{fig:mapa_cuadros_abun_rubic}].<!--Las pruebas de asociación entre la abundancia numérica de las distintas especies arrojaron 20 combinaciones de especies con asociación positiva-->
+```{r,echo=FALSE}
+    knitr::kable(abun_sp,
+                 caption = "\\label{tab:abun_sp}Abundancia por especie.")
+```
+
 
 ``` {r, echo=FALSE, fig.cap="\\label{fig:abun_sp_q}Número de individuos de cada especie por cuadrante."}
 abun_sp_q
@@ -95,11 +100,16 @@ Los valores para el coeficiente de Spearman presentados en el panel de correlaci
 <!--En complete, el grupo 1 (verde) pareciera asociarse con el cobre y el grupo 2 (gris) con el fosforo. Los sitios de ambos grupos son comparables con los mapas de concentración de P y Cu del aed_6 y parecen coincidir.
 Para Ward pasa algo muy parecido, solo que los colores de los grupos están invertidos 2(verde) y 1(gris).-->Las especies *Alseis blackiana* y *Psychotria limonensis* fueron las especies que obtuvieron un alto valor de confianza en los análisis de especies indicadoras del grupo 1 (grupo 2 en Ward). Para el caso del grupo 2 (1 en Ward), las especies indicadoras fueron *Faramea occidentalis*, *Psychotria horizontalis* y *Coussarea curvigemmia*<!--esta ultima másomenos-->.
 Las ocurrencia de *A. blackiana* y *Pentagonia macrophylla* indican su preferencia por el grupo 1 (complete). Por otra parte, en el grupo 2 (complete) siete especies resultan de interes por su ocurrencia: la muy dominante *F. occidentalis*; *Psychotria deflexa*, *P. racemosa*, *P. horizontalis*, *Posoqueria latifolia*, *Alibertia edulis* y *Coussarea curvigemmia*. En los grupos generados mediante Ward solo *F. occidentalis*, *P. horizontalis* y *A. blackiana* resultaron compatibles en el analisis de fidelidad de asociación.
-El grupo 1 (2 en Ward) contiene los sitios con tendencia a presentar valores altos de ácidez [\ref{fig:mapa_cuadros_ph}] y concentración de aluminio.<!--Indicios de esto pudieron observarse en los valores del indice de correlación de Spearman el cual indicaba una relación significativa? de la abundancia con la acidez y el pH.-->
+El grupo 1 (2 en Ward) contiene los sitios con tendencia a presentar valores altos de ácidez [\ref{fig:mapa_cuadros_ph}] y concentración de aluminio.<!--Indicios de esto pudieron observarse en los valores del indice de correlación de Spearman el cual indicaba una relación significativa? de la abundancia con la ácidez y el pH.-->
+Los gráficos de barras \ref{fig:env_suelo_pca_bar_quebrd} y \ref{fig:env_geomorf_pca_bar_quebrd} muestran los componentes principales de la varianza en las variables de componentes del suelo y geomorfológicas de BCI. La varianza acumulada de los PC1 y PC2 logran explicar el 73.1% y el 43.6% de la varianza total respectivamente. En estos gráficos se incluyen los valores predichos por el modelo de la bara quebrada representado por la línea roja formando la curva. 
 
 ![Abundancia de rubiaceas en BCI \label{fig:mapa_cuadros_abun_rubic}](mapa_cuadros_abun_rubic.png)
 
 ![pH del suelo en los cuadros de 1ha \label{fig:mapa_cuadros_ph}](mapa_cuadros_ph.png)
+
+![Componentes príncipales de la varianza en las variables de suelo en BCI. \label{fig:env_suelo_pca_bar_quebrd}](env_suelo_pca_bar_quebrd.png)
+
+![Componentes príncipales de la varianza en la geomorfología de BCI. \label{fig:env_geomorf_pca_bar_quebrd}](env_geomorf_pca_bar_quebrd.png)
 
 # Discusión
 
@@ -108,24 +118,13 @@ Las especies con preferencia por el grupo 1, evaden sistemáticamente al grupo 2
 <!--El grado de asociación presente entre cuadrantes medido utilizando el indice de disimilaridad de Jaccard arrojó distintos valores para el grado de exclusividad entre sitios. Se encontró que estos valores eran más altos para los lugares más alejados entre sí, presentaban una media alta, además de valores extremos a lo largo de las observaciones en la serie-->
 Los análisis de agrupamiento pueden verse sesgados por la heterogeneidad morfométrica que pueden presentar las plantas de esta familia. Estas especies presentan diversos hábitos de crecimiento, desde porte herbáceo y arbustivo a árboles relativamente grandes. Esto hace que el hecho de que se incluya el criterio de dap de 10 mm en el momento de ser censadas podría estar excluyendo especies clave en el rompecabezas.
 
-#ad
-
-
-
-
-
 <!--![Distribución de la riqueza de rubiaceas en BCI \label{fig:mapa_cuadros_riq}](mapa_cuadros_riq_rubic.png)
--->
-![Diagrama PCA de los grupos de cuadrantes según variables de suelo \label{fig:grafico_pca_suelo}](grafico_pca_suelo.png)
+![Diagrama PCA de los grupos de cuadrantes según variables de suelo \label{fig:grafico_pca_suelo}](grafico_pca_suelo.png)-->
 
 # Agradecimientos
 
 # Información de soporte
 
-```{r,echo=FALSE}
-    knitr::kable(abun_sp,
-                 caption = "\\label{tab:abun_sp}Abundancia por especie.")
-```
 
 \ldots
 

@@ -65,6 +65,17 @@ env_suelo_pca <- rda(env_suelo, scale = TRUE)
 env_suelo_pca
 summary(env_suelo_pca)
 #' 
+#' para variables geomorfológicas
+#' 
+env_geomorf <- bci_env_grid %>% 
+  st_drop_geometry %>% 
+  select_if(is.numeric) %>% 
+  select(-id) %>% 
+  dplyr::select(-matches('^[A-T,Z,U]|^pH$', ignore.case = F))
+env_geomorf %>% tibble
+env_geomorf_pca <- rda(env_geomorf, scale = TRUE)
+summary(env_geomorf_pca)
+#'  
 #' Para agilizar la producción de scripts analíticos de referencia, trasladaré las explicaciones de cada resultado a los vídeos regulares que alojo en el repositorio de la asignatura. En ellos explicaré cómo interpretar éste y otros resultados.
 #' 
 #' En el vídeo asociado, explico el significado de:
@@ -84,7 +95,16 @@ cleanplot.pca(env_suelo_pca, scaling = 1, mar.percent = 0.08, cex.char1 = 0.7)
 cleanplot.pca(env_suelo_pca, scaling = 2, mar.percent = 0.04, cex.char1 = 0.7)
 par(mfrow = c(1, 1))
 #' 
-#' Comparar distribución de los sitios en biplots con distribución real en el mapa:
+#' #' para variables geomorfológicas
+#' 
+screeplot(env_geomorf_pca, bstick = TRUE)
+#'
+par(mfrow = c(1, 2))
+cleanplot.pca(env_geomorf, scaling = 1, mar.percent = 0.08, cex.char1 = 0.7)
+cleanplot.pca(env_geomorf, scaling = 2, mar.percent = 0.04, cex.char1 = 0.7)
+par(mfrow = c(1, 1))
+#' 
+#' #' Comparar distribución de los sitios en biplots con distribución real en el mapa:
 #' 
 #' ### Generar mapa de cuadros sin simbología
 #' 
