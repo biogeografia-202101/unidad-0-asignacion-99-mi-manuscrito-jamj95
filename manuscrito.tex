@@ -222,20 +222,20 @@ abundancia alta en comparación con las especies raras y menos
 abundantes, las medidas para la distribución de la abundancia relativa
 se encuentran sujetas a interacciones que aún no se conocen del todo ni
 en qué grado inciden en la estructura de la comunidad (Néda, Horvat,
-Toháti, Derzsi, \& Balogh, 2008). El presente estudio intenta la
-relación entre abundancia relativa de especies de la familia Rubiaceae y
-su distribución en una porción de bosque tropical en la parcela
-permanente Barro Colorado Island (en lo adelante BCI), Colón, Panamá.
-Las parcelas permanentes como BCI son una excelente fuente de datos
-demográficos y posibilitan el estudio continuo de la diversidad a nivel
-local y contribuyen a medir el aporte de la familia Rubiaceae a la
-diversidad de su comunidad. En ese sentido, este trabajo aprovecha la
-información disponible (Hubbell, Condit, \& Foster, 2021) y herramientas
-de libre acceso (Martínez Batlle, 2020) para conocer posibles patrones
-de asociación entre estas especies, y como varía la diversidad con
-respecto a las características del hábitat en el cual crecen estas
-poblaciones de plantas y otras condiciones ambientales mediante análisis
-estadístico de datos de los censos realizados en Barro Colorado.
+Toháti, Derzsi, \& Balogh, 2008). El presente estudio evalúa la relación
+entre abundancia relativa de especies de la familia Rubiaceae y su
+distribución en una porción de bosque tropical en la parcela permanente
+Barro Colorado Island (en lo adelante BCI), Colón, Panamá. Las parcelas
+permanentes como BCI son una excelente fuente de datos demográficos y
+posibilitan el estudio continuo de la diversidad a nivel local y
+contribuyen a medir el aporte de la familia Rubiaceae a la diversidad de
+su comunidad. En ese sentido, este trabajo aprovecha la información
+disponible (Hubbell, Condit, \& Foster, 2021) y herramientas de libre
+acceso (Martínez Batlle, 2020) para conocer posibles patrones de
+asociación entre estas especies, y como varía la diversidad con respecto
+a las características del hábitat en el cual crecen estas poblaciones de
+plantas y otras condiciones ambientales mediante análisis estadístico de
+datos de los censos realizados en BCI.
 
 \section{Metodología}\label{metodologuxeda}
 
@@ -245,25 +245,25 @@ centro de la isla artificial Barro Colorado, con las coordenadas
 09\(^\circ\)~09'N, 079\(^\circ\)~50'O. La parcela consiste en un
 polígono de 50 hectáreas cuadradas en el cual se han contabilizado todos
 los arboles con más de 10 mm de diámetro a la altura del pecho cada
-cinco años desde 1985 (Hubbell \& Foster, 1983, Hubbell et al. (1990),
-Condit, Chisholm, \& Hubbell (2012), Condit, Pérez, Lao, Aguilar, \&
-Hubbell (2017)); en este estudio se utilizaron las datos del censo
-realizado en 2015.
+cinco años desde 1985 (Condit, Chisholm, \& Hubbell, 2012; Condit,
+Pérez, Lao, Aguilar, \& Hubbell, 2017; Hubbell \& Foster, 1983; Hubbell
+et al., 1990). En este estudio se utilizaron las datos del censo
+realizado en el año 2015.
 
-Los datos referentes a estos censos fueron manejados en R (R Core Team
-(2020)) partiendo de su disposición en dos matrices de comunidad y
-ambiental de cada uno de los 50 cuadrantes de una hectárea que componen
-BCI (Martínez Batlle, 2020). Estas matrices contienen datos de las
-variables ambientales como condiciones edáficas, tipo de hábitat,
-variación topográfica y clasificación etaria del bosque, y datos
-demográficos y georeferenciación espacial de todos los individuos
-censados. Se adaptaron \emph{scripts} reproducibles recuperados de
-Martínez Batlle (2020), utilizando la colección de paquetes
-multifuncionales \emph{Tidyverse} (Wickham, 2017), paquetes gráficos y
-de procesamiento de datos espaciales para la representación de mapas y
-figuras como \texttt{mapview} (Appelhans, Detsch, Reudenbach, \&
-Woellauer, 2019) y \emph{simplefeatures} (Pebesma, 2018); y herramientas
-de análisis estadístico como \texttt{vegan} (Oksanen et al., 2019),
+Los datos referentes a cada uno de los 50 cuadrantes de una hectárea que
+componen BCI fueron manejados en R (R Core Team (2020)), partiendo de su
+disposición en dos matrices: de comunidad y ambiental (Martínez Batlle,
+2020). Estas matrices contienen datos de las variables ambientales como
+condiciones edáficas, tipo de hábitat, variación topográfica y
+clasificación etaria del bosque, y datos demográficos y
+georeferenciación espacial de todos los individuos censados. Se
+adaptaron \emph{scripts} reproducibles recuperados de Martínez Batlle
+(2020), utilizando la colección de paquetes multifuncionales
+\emph{Tidyverse} (Wickham, 2017), paquetes gráficos y de procesamiento
+de datos espaciales para la representación de mapas y figuras como
+\texttt{mapview} (Appelhans, Detsch, Reudenbach, \& Woellauer, 2019) y
+\emph{simplefeatures} (Pebesma, 2018); y herramientas de análisis
+estadístico como \texttt{vegan} (Oksanen et al., 2019),
 \texttt{indicspecies} (De Caceres \& Legendre, 2009), entre otros (ver
 \ref{información suplementaria}).
 
@@ -348,12 +348,12 @@ de asociación y las subsiguientes se declaro un valor de significancia
 de \emph{P} =0.05.
 
 Las carasteristicas de la varianza en los datos de las variables
-ambientales en BCI fueron estudiadas mediante análisis de sus
-componentes principales (PCA)(Borcard et al., 2018). Este conjunto de
-métodos permitió resumir la multidimensionalidad de las variables,
-explicar la varianza y los posibles patrones que estos podrían seguir,
-lo que ayudó a determinar cuales variables ambientales inciden en la
-composición de especies de los cuadrantes.
+ambientales en BCI fueron estudiadas mediante sus componentes
+principales (PCA) (Borcard et al., 2018). Este método permitió resumir
+la multidimensionalidad de las variables, explicar la varianza y los
+posibles patrones que estos podrían seguir, lo que ayudó a determinar
+cuales variables ambientales inciden en la composición de especies de
+los cuadrantes.
 
 \section{Resultados}\label{resultados}
 
@@ -428,7 +428,7 @@ Nitrógeno mineralizado).
 \begin{figure}
 \centering
 \includegraphics{panel_cor_suelo_abun_riq_rubic_spear.png}
-\caption{Correlacion entre la diversidad y abundancia de rubiaceas y las
+\caption{Correlacion entre la diversidad/abundancia de rubiaceas y las
 variables edafológicas \label{fig:panel_cor_suelo_abun_riq_rubic}}
 \end{figure}
 
@@ -441,23 +441,23 @@ Ward, el valor \emph{P} para la variable fósforo fue de 0.000370 y
 0.00726 para cobre. Otros valores para otras variables fueron: 0.0341
 (Manganeso), 0.0454 (hierro), 0.0243 y 0.0331 (riqueza y abundancia
 global). Las especies \emph{Alseis blackiana} y \emph{Psychotria
-limonensis} fueron las especies que obtuvieron un alto valor de
-confianza en los análisis de especies indicadoras del grupo 1 (grupo 2
-en Ward). Para el caso del grupo 2 (1 en Ward), las especies indicadoras
-fueron \emph{Faramea occidentalis}, \emph{Psychotria horizontalis} y
-\emph{Coussarea curvigemmia}. Las ocurrencia de \emph{A. blackiana} y
-\emph{Pentagonia macrophylla} indican su preferencia por el grupo 1
+limonensis} fueron las que obtuvieron un valor alto de confianza en los
+análisis de especies indicadoras del grupo 1 (grupo 2 en Ward). Para el
+caso del grupo 2 (1 en Ward), las especies indicadoras fueron
+\emph{Faramea occidentalis}, \emph{Psychotria horizontalis} y
+\emph{Coussarea curvigemmia}. La ocurrencia de \emph{A. blackiana} y
+\emph{Pentagonia macrophylla} indica su preferencia por el grupo 1
 (complete). Por otra parte, en el grupo 2 (complete) siete especies
 resultan de interes por su ocurrencia: la muy dominante \emph{F.
 occidentalis}; \emph{Psychotria deflexa}, \emph{P. racemosa}, \emph{P.
 horizontalis}, \emph{Posoqueria latifolia}, \emph{Alibertia edulis} y
 \emph{Coussarea curvigemmia}. En los grupos generados mediante Ward solo
 \emph{F. occidentalis}, \emph{P. horizontalis} y \emph{A. blackiana}
-resultaron compatibles en el analisis de fidelidad de asociación. El
+resultaron compatibles en las pruebas de fidelidad de asociación. El
 grupo 1 (2 en Ward) contiene los sitios con tendencia a presentar
 valores altos de ácidez {[}\ref{fig:mapa_cuadros_ph}{]} y concentración
-de aluminio. Los gráficos de barras \ref{fig:env_suelo_pca_bar_quebrd} y
-\ref{fig:env_geomorf_pca_bar_quebrd} muestran los componentes
+de aluminio. Los gráficos de barras (figura
+\ref{fig:pca_suelo_geomorf_br_stick}) muestran los componentes
 principales de la varianza en las variables de componentes del suelo y
 geomorfológicas de BCI. La varianza acumulada de los PC1 y PC2 logran
 explicar el 73.1\% y el 43.6\% de la varianza total respectivamente. En
@@ -479,16 +479,9 @@ bara quebrada representado por la línea roja formando la curva.
 
 \begin{figure}
 \centering
-\includegraphics{env_suelo_pca_bar_quebrd.png}
+\includegraphics{env_suelo_geomorf_pca_br_stick.png}
 \caption{Componentes príncipales de la varianza en las variables de
-suelo en BCI. \label{fig:env_suelo_pca_bar_quebrd}}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics{env_geomorf_pca_bar_quebrd.png}
-\caption{Componentes príncipales de la varianza en la geomorfología de
-BCI. \label{fig:env_geomorf_pca_bar_quebrd}}
+suelo y geomorfología en BCI. \label{fig:pca_suelo_geomorf_br_stick}}
 \end{figure}
 
 \section{Discusión}\label{discusiuxf3n}

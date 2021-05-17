@@ -71,10 +71,21 @@ env_geomorf <- bci_env_grid %>%
   st_drop_geometry %>% 
   select_if(is.numeric) %>% 
   select(-id) %>% 
-  dplyr::select(-matches('^[A-T,Z,U]|^pH$', ignore.case = F))
+  dplyr::select(-matches('^[A-T,Z,U]|^pH$', ignore.case = F)) %>% 
+  rename_all(gsub, pattern = '_pct$', replacement = '') %>% 
+  rename_all(gsub, pattern = '_| ', replacement = '\n')
 env_geomorf %>% tibble
 env_geomorf_pca <- rda(env_geomorf, scale = TRUE)
 summary(env_geomorf_pca)
+#' 
+#'  Cobre y fosforo? idk
+#'    
+env_fosforo_cobre <- bci_env_grid %>% 
+  st_drop_geometry %>% 
+  dplyr::select(matches ('^P$|Cu$', ignore.case = F))
+env_fosforo_cobre %>% tibble
+env_fosforo_cobre_pca <- rda(env_fosforo_cobre, scale = TRUE)
+summary(env_fosforo_cobre_pca)
 #'  
 #' Para agilizar la producción de scripts analíticos de referencia, trasladaré las explicaciones de cada resultado a los vídeos regulares que alojo en el repositorio de la asignatura. En ellos explicaré cómo interpretar éste y otros resultados.
 #' 
@@ -88,20 +99,20 @@ summary(env_geomorf_pca)
 #' 
 screeplot(env_suelo_pca, bstick = TRUE)
 #' 
-#' Usando función `cleanplot.pca`
+#' biplot Usando función `cleanplot.pca`
 #' 
 par(mfrow = c(1, 2))
 cleanplot.pca(env_suelo_pca, scaling = 1, mar.percent = 0.08, cex.char1 = 0.7)
 cleanplot.pca(env_suelo_pca, scaling = 2, mar.percent = 0.04, cex.char1 = 0.7)
 par(mfrow = c(1, 1))
 #' 
-#' #' para variables geomorfológicas
+#' #' biplot para variables geomorfológicas
 #' 
 screeplot(env_geomorf_pca, bstick = TRUE)
 #'
 par(mfrow = c(1, 2))
-cleanplot.pca(env_geomorf, scaling = 1, mar.percent = 0.08, cex.char1 = 0.7)
-cleanplot.pca(env_geomorf, scaling = 2, mar.percent = 0.04, cex.char1 = 0.7)
+cleanplot.pca(env_geomorf_pca, scaling = 1, mar.percent = 0.08, cex.char1 = 0.7)
+cleanplot.pca(env_geomorf_pca, scaling = 2, mar.percent = 0.04, cex.char1 = 0.7)
 par(mfrow = c(1, 1))
 #' 
 #' #' Comparar distribución de los sitios en biplots con distribución real en el mapa:
@@ -165,8 +176,8 @@ legend(
 #' 
 #' Si hago lo mismo, pero usando mi análisis de agrupamiento anterior (*scripts* "aa_analisis_de_agrupamiento_*"), no obtengo resultados consistentes, al menos en mi caso.
 #' 
-# (mi_cluster_anterior <- grupos_upgma_k2)
-(mi_cluster_anterior <- grupos_ward_k2)
+(mi_cluster_anterior <- grupos_complete_k2)
+# (mi_cluster_anterior <- grupos_ward_k2)
 (mi_cluster_anterior_l <- levels(mi_cluster_anterior))
 (mi_cluster_anterior_l_seq <- 1:length(mi_cluster_anterior_l))
 grafico_base <- plot(

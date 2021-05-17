@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.17)  12 MAY 2021 05:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.17)  17 MAY 2021 03:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -837,66 +837,59 @@ t line 430.
 (pdftex.def)             Requested size: 469.7482pt x 264.23335pt.
 [5 <./manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf> <./panel_cor_suelo_a
 bun_riq_rubic_spear.png (PNG copy)>]
-<mapa_cuadros_abun_rubic.png, id=92, 995.72pt x 762.85pt>
+<mapa_cuadros_abun_rubic.png, id=91, 995.72pt x 762.85pt>
 File: mapa_cuadros_abun_rubic.png Graphic file (type png)
 <use mapa_cuadros_abun_rubic.png>
 Package pdftex.def Info: mapa_cuadros_abun_rubic.png  used on input line 469.
 (pdftex.def)             Requested size: 469.7661pt x 359.90144pt.
-<mapa_cuadros_ph.png, id=94, 995.72pt x 762.85pt>
+<mapa_cuadros_ph.png, id=93, 995.72pt x 762.85pt>
 File: mapa_cuadros_ph.png Graphic file (type png)
 <use mapa_cuadros_ph.png>
 Package pdftex.def Info: mapa_cuadros_ph.png  used on input line 476.
 (pdftex.def)             Requested size: 469.7661pt x 359.90144pt.
-<env_suelo_pca_bar_quebrd.png, id=95, 526.96875pt x 357.58594pt>
-File: env_suelo_pca_bar_quebrd.png Graphic file (type png)
-<use env_suelo_pca_bar_quebrd.png>
-Package pdftex.def Info: env_suelo_pca_bar_quebrd.png  used on input line 482.
-(pdftex.def)             Requested size: 469.78067pt x 318.77974pt.
-<env_geomorf_pca_bar_quebrd.png, id=96, 526.96875pt x 357.58594pt>
-File: env_geomorf_pca_bar_quebrd.png Graphic file (type png)
-<use env_geomorf_pca_bar_quebrd.png>
-Package pdftex.def Info: env_geomorf_pca_bar_quebrd.png  used on input line 489
-.
-(pdftex.def)             Requested size: 469.78067pt x 318.77974pt.
+<env_suelo_geomorf_pca_br_stick.png, id=94, 663.98062pt x 338.01282pt>
+File: env_suelo_geomorf_pca_br_stick.png Graphic file (type png)
+<use env_suelo_geomorf_pca_br_stick.png>
+Package pdftex.def Info: env_suelo_geomorf_pca_br_stick.png  used on input line
+ 482.
+(pdftex.def)             Requested size: 469.75783pt x 239.13976pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 520.
-[6] [7 <./mapa_cuadros_abun_rubic.png>] [8 <./mapa_cuadros_ph.png>] [9 <./env_s
-uelo_pca_bar_quebrd.png (PNG copy)>] [10 <./env_geomorf_pca_bar_quebrd.png (PNG
- copy)>]
-Overfull \hbox (35.64655pt too wide) in paragraph at lines 568--571
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 513.
+[6] [7 <./mapa_cuadros_abun_rubic.png>] [8 <./mapa_cuadros_ph.png>]
+Overfull \hbox (35.64655pt too wide) in paragraph at lines 561--564
 \T1/ppl/m/n/10.95 dices and sta-tis-ti-cal in-fer-ence. In \T1/ppl/m/it/10.95 E
 col-ogy\T1/ppl/m/n/10.95 . Re-trieved from [][]$http : / / sites . google . com
  / site / miqueldecaceres/$[][] 
  []
 
-[11]
-Overfull \hbox (1.02496pt too wide) in paragraph at lines 644--647
+[9 <./env_suelo_geomorf_pca_br_stick.png (PNG copy)>]
+Overfull \hbox (1.02496pt too wide) in paragraph at lines 637--640
 \T1/ppl/m/n/10.95 species abun-dance in ecol-ogy. \T1/ppl/m/it/10.95 Na-ture\T1
 /ppl/m/n/10.95 , \T1/ppl/m/it/10.95 424\T1/ppl/m/n/10.95 (6952), 1035--1037. []
 []$https : / / doi . org / 10 . 1038 / nature01883$[][] 
  []
 
-[12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 658.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 658.
+[10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 651.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 651.
 (./manuscrito.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 658.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 658.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 651.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 651.
 Package rerunfilecheck Info: File `manuscrito.out' has not changed.
 (rerunfilecheck)             Checksum: EED9B9DDDA94E66FB8500FAA1956A351;1248.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 658.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 651.
  ) 
 Here is how much of TeX's memory you used:
- 10915 strings out of 492982
- 151864 string characters out of 6134896
- 232631 words of memory out of 5000000
- 14267 multiletter control sequences out of 15000+600000
+ 10907 strings out of 492982
+ 151693 string characters out of 6134896
+ 230555 words of memory out of 5000000
+ 14262 multiletter control sequences out of 15000+600000
  29364 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,31p,274b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,6n,31p,274b,355s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
@@ -907,10 +900,10 @@ e/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/palatino/uplri8a.pfb>
-Output written on manuscrito.pdf (12 pages, 1328615 bytes).
+Output written on manuscrito.pdf (10 pages, 1314651 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
- 193 compressed objects within 2 object streams
- 53 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 217 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
