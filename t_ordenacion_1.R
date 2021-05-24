@@ -106,7 +106,7 @@ cleanplot.pca(env_suelo_pca, scaling = 1, mar.percent = 0.08, cex.char1 = 0.7)
 cleanplot.pca(env_suelo_pca, scaling = 2, mar.percent = 0.04, cex.char1 = 0.7)
 par(mfrow = c(1, 1))
 #' 
-#' #' biplot para variables geomorfológicas
+#' #' screeplot para variables geomorfológicas
 #' 
 screeplot(env_geomorf_pca, bstick = TRUE)
 #'
@@ -176,8 +176,9 @@ legend(
 #' 
 #' Si hago lo mismo, pero usando mi análisis de agrupamiento anterior (*scripts* "aa_analisis_de_agrupamiento_*"), no obtengo resultados consistentes, al menos en mi caso.
 #' 
+par(mfrow = c(1, 2))
 (mi_cluster_anterior <- grupos_complete_k2)
-# (mi_cluster_anterior <- grupos_ward_k2)
+#(mi_cluster_anterior <- grupos_ward_k2)
 (mi_cluster_anterior_l <- levels(mi_cluster_anterior))
 (mi_cluster_anterior_l_seq <- 1:length(mi_cluster_anterior_l))
 grafico_base <- plot(
@@ -185,7 +186,7 @@ grafico_base <- plot(
   display = "wa",
   scaling = 1,
   type = "n",
-  main = "PCA y grupos"
+  main = "PCA y grupos Complete"
 )
 abline(v = 0, lty = "dotted")
 abline(h = 0, lty = "dotted")
@@ -203,6 +204,34 @@ legend(
   col = 1 + c(mi_cluster_anterior_l_seq),
   pt.cex = 2
 )
+#' 
+(mi_cluster_anterior <- grupos_ward_k2)
+(mi_cluster_anterior_l <- levels(mi_cluster_anterior))
+(mi_cluster_anterior_l_seq <- 1:length(mi_cluster_anterior_l))
+grafico_base <- plot(
+  env_suelo_pca,
+  display = "wa",
+  scaling = 1,
+  type = "n",
+  main = "PCA y grupos Ward"
+)
+abline(v = 0, lty = "dotted")
+abline(h = 0, lty = "dotted")
+for (i in mi_cluster_anterior_l_seq) {
+  points(puntuaciones[mi_cluster_anterior == i, ],
+         pch = (14 + i),
+         cex = 2,
+         col = i + 1)
+}
+text(puntuaciones, row.names(env_suelo), cex = 1, pos = 3)
+legend(
+  "topright", # Otras alternativas: "bottomleft", "bottomright" y "topleft"
+  paste("Grupo", c(mi_cluster_anterior_l_seq)),
+  pch = 14 + c(mi_cluster_anterior_l_seq),
+  col = 1 + c(mi_cluster_anterior_l_seq),
+  pt.cex = 2
+)
+par(mfrow = c(1, 1))
 #' 
 #' Esto podría significar que las tendencias/patrones de mi matriz de comunidad (cuadros de 1 Ha de BCI según composición), no se asocian/no son consistentes con variables de suelo según el PCA. Es probable que, usando una combinación diferente de variables ambientales, se puedan extraer patrones. No recomiendo identificar variables ambientales de forma meramente heurística, porque sería equivalente a pescar; recomiendo construir una matriz ambiental de variables seleccionadas a partir de patrones de dependencia identificados en scripts anteriores. Concretamente, en el script [aa_analisis_de_agrupamiento_3_variables_ambientales_segun_grupos.R](aa_analisis_de_agrupamiento_3_variables_ambientales_segun_grupos.R) identifiqué posibles variables asociadas según los distintos agrupamientos realizados. Si fuese tu caso, te recomiendo construir una matriz ambiental con dichas variables y probar la consistencia de los métodos de ordenación y agrupamiento.
 #' 
@@ -285,24 +314,24 @@ plot(mi_fam_ca,
      main = "Análisis de correspondencia, escalamiento 1"
 )
 plot(mi_fam_ca,
-     scaling = 2, # Por defecto scaling=2, lo escribo sólo para fines didáticos
+     scaling = 2, # Por defecto scaling=2, lo escribo sólo para fines didácticos
      main = "Análisis de correspondencia, escalamiento 2")
 par(mfrow = c(1, 1))
 #' 
-#' Excluyendo especie *Thevetia ahouai*, abreviada como *Thevahou*.
+#' Excluyendo especie *Thevetia ahouai*, abreviada como *Thevahou*. #' excluyendo Amaioua corymbosa
 #' 
-mi_fam_ca <- cca(mi_fam[, -grep('Thevahou', colnames(mi_fam))])
+mi_fam_ca <- cca(mi_fam[, -grep('Amaicory', colnames(mi_fam))])
 summary(mi_fam_ca)
 summary(mi_fam_ca, scaling = 1)
 screeplot(mi_fam_ca, bstick = TRUE, npcs = length(mi_fam_ca$CA$eig))
 par(mfrow = c(1, 2))
 plot(mi_fam_ca,
      scaling = 1,
-     main = "CA, escalamiento 1, sin Thevetia ahouai"
+     main = "CA, escalamiento 1, sin Amaioua corymbosa"
 )
 plot(mi_fam_ca,
      scaling = 2,
-     main = "CA, escalamiento 2, sin Thevetia ahouai")
+     main = "CA, escalamiento 2, sin Amaioua corymbosa")
 par(mfrow = c(1, 1))
 #' 
 #' Análisis de coordenadas principales (PCoA)
@@ -311,24 +340,24 @@ par(mfrow = c(1, 1))
 #' 
 #' La función que realiza el PCoA en `{vegan}` es `cmdscale` (de *Classical (Metric) Multidimensional Scaling*), y se le suministra una matriz de distancias.
 #' 
-mi_fam_d_bray <- vegdist(mi_fam, method = 'bray') # En realidad, 'bray' es la opción por defecto
-mi_fam_d_bray_pcoa <- cmdscale(
-  mi_fam_d_bray,
+mi_fam_d_jacc <- vegdist(mi_fam, method = 'jaccard') # En realidad, 'bray' es la opción por defecto
+mi_fam_d_jacc_pcoa <- cmdscale(
+  mi_fam_d_jacc,
   k = (nrow(mi_fam) - 1),
   add = T,
   eig = TRUE)
-round(mi_fam_d_bray_pcoa$eig, 2)
-round(sum(mi_fam_d_bray_pcoa$eig[mi_fam_d_bray_pcoa$eig<0]),2)
-round(sum(mi_fam_d_bray_pcoa$eig[mi_fam_d_bray_pcoa$eig>=0]),2)
-ordiplot(scores(mi_fam_d_bray_pcoa, choices = c(1, 2)),
+round(mi_fam_d_jacc_pcoa$eig, 2)
+round(sum(mi_fam_d_jacc_pcoa$eig[mi_fam_d_jacc_pcoa$eig<0]),2)
+round(sum(mi_fam_d_jacc_pcoa$eig[mi_fam_d_jacc_pcoa$eig>=0]),2)
+ordiplot(scores(mi_fam_d_jacc_pcoa, choices = c(1, 2)),
          type = "t",
-         main = "PCoA con promedios ponderados de especies")
+         main = "PCoA de distancias Jaccard con promedios ponderados de especies")
 abline(h = 0, lty = 3)
 abline(v = 0, lty = 3)
-mi_fam_d_bray_pcoa_wa <- wascores(mi_fam_d_bray_pcoa$points[, 1:2], mi_fam)
+mi_fam_d_jacc_pcoa_wa <- wascores(mi_fam_d_jacc_pcoa$points[, 1:2], mi_fam)
 text(
-  mi_fam_d_bray_pcoa_wa,
-  rownames(mi_fam_d_bray_pcoa_wa),
+  mi_fam_d_jacc_pcoa_wa,
+  rownames(mi_fam_d_jacc_pcoa_wa),
   cex = 0.7, col = "red")
-(mi_fam_d_bray_pcoa_env <- envfit(mi_fam_d_bray_pcoa, env_num))
-plot(mi_fam_d_bray_pcoa_env, p.max = 0.05, col = 3)
+(mi_fam_d_jacc_pcoa_env <- envfit(mi_fam_d_jacc_pcoa, env_num))
+plot(mi_fam_d_jacc_pcoa_env, p.max = 0.05, col = 3)
