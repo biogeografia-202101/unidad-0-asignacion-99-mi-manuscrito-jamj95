@@ -264,7 +264,7 @@ par(mfrow = c(1, 1))
 biplot(
   mi_fam_hel_pca,
   main = "PCA, escalamiento 2, ajuste a variables ambientales")
-(mi_fam_hel_pca_envfit <- envfit(mi_fam_hel_pca, env_suelo, scaling = 2))
+ <- envfit(mi_fam_hel_pca, env_suelo, scaling = 2))
 plot(mi_fam_hel_pca_envfit, p.max = 0.05 , col = 3)
 #' 
 #' Comento los resultados en el vídeo asociado. También probaré ajuste con todas las numéricas de la matriz ambiental, excluyendo por supuesto la columna `id`:
