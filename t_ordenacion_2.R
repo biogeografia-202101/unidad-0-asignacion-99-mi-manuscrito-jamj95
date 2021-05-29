@@ -15,7 +15,7 @@ library(vegan)
 library(tidyverse)
 library(sf)
 source('biodata/funciones.R')
-#' 
+#'
 #' ### Cargar datos
 #' 
 load('biodata/Rubiaceae.Rdata')

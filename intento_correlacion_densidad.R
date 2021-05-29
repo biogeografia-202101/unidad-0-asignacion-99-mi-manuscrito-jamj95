@@ -1,4 +1,4 @@
-bci_env_grid_density <- bci_env_grid %>% 
+bci_env_density <- bci_env_grid %>% 
   mutate(area= st_area(geometry), densidad_indiv = abundancia_global/area)
 env_num_density <- bci_env_grid_density %>%
   dplyr::select(-id, -matches('^U.*')) %>% 

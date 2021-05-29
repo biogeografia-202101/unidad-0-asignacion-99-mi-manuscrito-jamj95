@@ -48,7 +48,7 @@ El presente estudio evalúa<!--resaltar--> la relación entre abundancia relativ
 
 # Metodología
 
-## Ámbito de estudio
+##Ámbito de estudio
 
 
 La parcela permanente BCI es una estación de censo permanente administrada por el Center for Tropical Forest Science ubicada en el centro de la isla artificial Barro Colorado, con las coordenadas 09$^\circ$&nbsp;09'N, 079$^\circ$&nbsp;50'O. La parcela consiste en un polígono de 50 hectáreas cuadradas en el cual se han contabilizado <!--de manera periódica--> todos los arboles con más de 10 mm de diámetro a la altura del pecho cada cinco años desde 1985 [@hubell_foster_1983; @hubell_et_all_1990; @condit_et_al_2012; @condit_et_al_2017]. En este estudio se utilizaron las datos del censo realizado en el año 2015<!--(dap) [@web_bci]-->.
@@ -70,20 +70,27 @@ x_1,x_2 = \sqrt{\sum_{j=1}^{p} \left[ \sqrt{\frac{y_{1j}}{y_{1+}}}  - \sqrt{\fra
 -->
 Para poder comparar la relación entre las especies según su abundancia númerica, se utilizó estandarización *ji*-cuadrado de la matríz de comunidad transpuesta [@legendre_galllagher_2001]. La ocurrencia entre las especies y su distribución en BCI fué examinada por medio de el coeficiente de correlación entre rangos de Spearman para medir el grado de asosiación entre las variables riqueza númerica de especies y la abundancia con las variables ambientales geomorfológicas y la composición química del suelo [@borcard_legendre].
 
-#Análisis de agrupamiento
+##Análisis de agrupamiento
 
-Tanto el método jerarquico aglomerativo de asociación entre pares de cuadrantes (según su composición de especies) bajo el criterio de enlace completo y el método Ward basado en la varianza mínima, fueron utilizados en un acercamiento preliminar al análisis de agrupamiento para contrastar su eficacia y lograr conseguir grupos consistentes entre ambos [@borcard_legendre]. Estos generaron dendrogramas que posteriormente fueron examinados en paralelo con la matríz de distancias de cuerdas [@legendre_galllagher_2001] utilizando correlación cofenética entre ambos para determinar el número ideal de grupos.
-Se hizo uso de los métodos de remuestreo bootstrap y boostrap multiescalar para conocer la probabilidad de éxito en la inferencia del número de grupos y la identidad de sus componentes [@borcard_legendre]. Las reparticiones se basaron en una probabilidad de 91% o más de acierto para el método bootstrap y de un 95% para boostrap multiescalar. Estos resultados sugieren 2 grupos con 95% o más de confianza en cada caso para el metodo Ward; 12 grupos sugeridos por los estandares establecidos para bootstrap y 10 grupos para bootstrap multiescalar para el método por medio de enlace completo.
-Para cada método de agrupamiento se consideraron como válidos: un grupo con 34 cuadrantes y un segundo conformado por 16 formulados por el método Ward, y dos grupos por enlace completo que incluyen 20 y 30 sitios.
-<!--En cuanto a las anchuras de silueta promedio, en el método Ward el programa sugirió 2 grupos presentes, 2 para complete y 2 con un posible 3 para upgma. Fué utilizado un mapa de calor para cada método con el fin de analizar de manera visual las distancias entre sitios y compararlas con los analisis estadisticos. 
+Tanto el método jerarquico aglomerativo de asociación entre pares de cuadrantes (según su composición de especies) bajo el criterio de enlace completo y el método Ward basado en la varianza mínima, fueron utilizados en un acercamiento preliminar al análisis de agrupamiento para contrastar su eficacia y lograr conseguir grupos consistentes entre ambos [@borcard_legendre]. Estos generaron dendrogramas que posteriormente fueron examinados en paralelo con la matríz de comunidad convertida a distancias de cuerdas [@legendre_galllagher_2001] utilizando correlación cofenética entre ambos para determinar el número ideal de grupos. Además, se utilizó remuestreo bootstrap y boostrap multiescalar para conocer la probabilidad de éxito en la inferencia del número de grupos y la identidad de sus componentes [@borcard_legendre]. Las reparticiones se basaron en una probabilidad de 91% o más de acierto para el método bootstrap y de un 95% para boostrap multiescalar. 
+
+
+Puesto que se encontraron patrones consistentes en la composición y número de grupos entre los métodos examinados, los análisis de agrupamiento posteriores realizados en este trabajo se basaron en los producidos mediante enlace completo, para el cual se consideraron dos grupos compuestos por 20 y 30 cuadrantes.
+
+<!--Estos resultados sugieren 2 grupos con 95% o más de confianza en cada caso para el metodo Ward; 12 grupos sugeridos por los estandares establecidos para bootstrap y 10 grupos para bootstrap multiescalar para el método por medio de enlace completo.-->
+
+<!--un grupo con 34 cuadrantes y un segundo conformado por 16 formulados por el método Ward, y dos grupos por enlace completo que incluyen 20 y 30 sitios.
+En cuanto a las anchuras de silueta promedio, en el método Ward el programa sugirió 2 grupos presentes, 2 para complete y 2 con un posible 3 para upgma. Fué utilizado un mapa de calor para cada método con el fin de analizar de manera visual las distancias entre sitios y compararlas con los analisis estadisticos. 
 Los análisis de agrupamiento posteriores realizados en este trabajo se basaron en los métodos Ward y por enlace completo. La decisión se justifica al encontrarse patrones consistentes en la composición y número de grupos en ambos métodos. Los valores de correlación cofenética para el método Ward (0.657) tuvieron una diferencia absoluta menor al compararles con el método por enlace completo (0.615) que con el método upgma (0.723).-->  <!--otra vaina es que bootstrap y el corte del árbol basado en la altura para upgma dejaban pila de grupos afuera y eso no ta de na -->
  
 <!--Pruebas T de Student y ? Wilcoxon homogeneizan las medias y medianas de las variables ambientales en los grupos identificados, con lo que se busca determinar cuales valores podrían ser responsables(asociados) a la diferenciación en la composición de ambos grupos.-->
 
-Se utiliza la métrica del valor indicador o "IndVal" [@dufrene_legendre] para conocer las especies que pudieran ser consideradas características de cada grupo por medio de permutaciones aleatorias de los sitios según la ocurrencia de las especies y su abundancia. Así mismo, se estudia el grado de asociación de las especies con cierta preferencia por las combinaciones de cuadrantes consideradas como grupos, indicado por el coeficiente de correlación biserial puntual [@borcard_legendre].
+Para conocer cuales especies pudieran ser consideradas características de cada grupo, se utiliza la métrica del valor indicador o "IndVal" [@dufrene_legendre]
+
+Se utiliza la métrica del valor indicador o "IndVal" [@dufrene_legendre] para conocer cuales especies pudieran ser consideradas características de cada grupo por medio de permutaciones aleatorias de los sitios según la ocurrencia de las especies y su abundancia. Así mismo, se estudia el grado de asociación de las especies con cierta preferencia por las combinaciones de cuadrantes consideradas como grupos, indicado por el coeficiente de correlación biserial puntual [@borcard_legendre].
 Se llevó acabo un acercamiento parecido al anterior durante las pruebas estadisticas de la hipotesis nula, sobre la base de que las especies que se encontraban en cuadrantes pertenecientes a un determinado grupo lo hacían por obra del azar. Esta prueba se logró mediante reordenación aleatoria de los valores de abundancia y comparando su distribución con los valores obtenidos anteriormente [@caceres2009associations]. Para estas pruebas de asociación y las subsiguientes se declaro un valor de significancia *P* = 0.05.
 
-# Ordenación
+##Ordenación
 
 Las carasteristicas de la varianza en los datos ambientales en BCI fueron estudiados mediante análisis de sus componentes principales (PCA) [@borcard_legendre]. Este método permitió resumir la multidimensionalidad de las variables, explicar la varianza y los posibles patrones que estos podrían seguir. Esto se realizó también para la matríz de comunidad, con valores de abundancia normalizados por la transformada Hellinger, además de un análisis de correspondencia (CA) de la misma matríz.<!--\ref{fig:grafico_pca_suelo}se observan los cuadrantes agrupados por el método jerarquico UPGMA? y presentados sobre las escalas de varianza relativas del primer y segundo componentes principales.--> De manera alternativa, se realiza un análisis de las coordenadas principales (PCoA) para ayudar a conocer la relación entre las especies, utilizando el coeficiente de disimilaridad de Jaccard como medida, y a su vez usando los promedios ponderados por los valores de abundancia para permitir su representación en los diagramas *biplot* [@borcard_legendre].
 
@@ -91,10 +98,11 @@ Se realizó un acercamiento restringido de la ordenación para probar el grado d
 
 Puntuaciones de las variables sitios con promedios ponderados de los resultados de RDA y datos de abundancia
 
-# Análisis de la diversidad
+#Análisis de la diversidad
 
-Con la finalidad de asignar medidas apropiadas a la diversidad de especies de la familia Rubiaceae en BCI, se recurre a la aplicación de los índices, números, ratio¿. Además, se examina la correlación de Pearson entre estas medidas y las variables ambientales que aparentaron tener algun efecto en la riqueza de especies y la equidad.  y método de rarefacción con el cual se obtuvo el valor esperado de riqueza en base al número de individuos del cuadrante con la menor abundancia... 
+Con la finalidad de asignar medidas apropiadas a la diversidad de especies de la familia Rubiaceae en BCI, números, ratio¿. Además, se examina la correlación de Pearson entre estas medidas y las variables ambientales que aparentan tener algun efecto en la riqueza y equidad de la comunidad.  y método de rarefacción con el cual se obtuvo el valor esperado de riqueza en base al número de individuos del cuadrante con la menor abundancia... 
 
+se recurrió a la aplicación de varios índices y otras medidas de la diversidad, aprovechando su relación entre sí, con la finalidad de asignar un valor apropiado y comparable de la diversidad de especies de la familia Rubiaceae en BCI.
 
 
 <!--Para probar la relación existente entre los cuandrantes en los grupos generados por Complete y las variables de suelo, se posicionaron la relación entre los resultados del PCA-->
@@ -154,10 +162,11 @@ Se destaca un grupo de cuadrantes en los cuales *Psychotria horizontalis* y *Psy
 
 # Diversidad
 
-La riqueza de la familia aumenta con el hierro, así tambien la equidad. Además, parece que la riqueza aumenta en los suelos con un alto contenido de nitrógeno en el suelo y en su forma mineralizada. La equidad también es mayor hacia el norte de bci.
+La riqueza de la familia aumenta con el hierro, así tambien la equidad. Además, parece que la riqueza aumenta en los suelos con un alto contenido de nitrógeno en el suelo y en su forma mineralizada. La equidad también es mayor hacia el norte de bci [\ref{fig:panel_cor_indics_diversidad1_columnnas_quitadas}].
 
 <Poner aquí curva rarefaccion leyenda: Gráfico con curva de acumulación de especies. Las barras horizontales muestran el valor de riqueza estimado en cada sitio para un esfuerzo de muestreo equivalente a 341 individuos (abundancia en el cuadrante 50).>
 
+Aparte del cuadrante 50, los sitios con la mayor riqueza presentan también mucha abundancia. las especies dominantes están adaptadas a reclutar nuevos individuos con y sin interferencia de otras especies? Las especies menos abundantes están adaptadas a vivir apretujadas? Es todo esto casualidad?
 
 <!--Excluir el potasio modificó la relación entre el aluminio y el pH....... comentar.-->
 
@@ -182,6 +191,8 @@ El grupo 2 (1 en Ward) contiene los sitios con tendencia a presentar valores alt
 ![Biplot de PCoA de las distancias de Jaccard. Las distancias entre especies están ponderadas en base a sus valores de abundancia. \label{fig:pcoa_sps_jacc_var_ambient}](pcoa_sps_jacc_var_ambient.png)
 
 ![Triplot del RDA de los valores de abundancia transformados. Las variables ambientales que se observan fueron las seleccionadas para restringir la varianza explicada de los datos de comunidad. \label{fig:rda_triplot_var_selec_4_escal2}](rda_triplot_var_selec_4_escal2.png)
+
+![Valores para el índice de correlación de Pearson entre varias medidas de diversidad y las variables ambientales destacadas.  \label{fig:panel_cor_indics_diversidad1_columnnas_quitadas}](panel_cor_indcs_diversidad1_columnas_quitadas.png)
 
 
 # Discusión

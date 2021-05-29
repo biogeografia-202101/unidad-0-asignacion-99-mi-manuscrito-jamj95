@@ -216,11 +216,11 @@ variables ambientales que allí imperan.
 Actualmente, la distribución de la abundancia de las especies se explica
 por medio de los mecanismos que definen a una comunidad en particular.
 Pudiendo existir en esta una proporción variable de especies dominantes,
-con una abundancia alta en comparación con las especies raras y menos
-abundantes, las medidas para la distribución de la abundancia relativa
-se encuentran sujetas a interacciones que aún no se conocen del todo ni
-en qué grado inciden en la estructura de la comunidad (Néda, Horvat,
-Toháti, Derzsi, \& Balogh, 2008).
+relativamente más abundantes en comparación con las especies raras, las
+medidas para la distribución de la abundancia relativa se encuentran
+sujetas a interacciones que aún no se conocen del todo ni en qué grado
+inciden en la estructura de la comunidad (Néda, Horvat, Toháti, Derzsi,
+\& Balogh, 2008).
 
 El presente estudio evalúa la relación entre abundancia relativa de
 especies de la familia Rubiaceae y su distribución en una porción de
@@ -252,10 +252,10 @@ et al., 1990). En este estudio se utilizaron las datos del censo
 realizado en el año 2015.
 
 Los datos referentes a cada uno de los 50 cuadrantes de una hectárea que
-componen BCI fueron manejados en R (R Core Team (2020)), partiendo de su
+componen BCI fueron manejados en R (R Core Team, 2020), partiendo de su
 disposición en dos matrices: de comunidad y ambiental (Martínez Batlle,
-2020). Estas matrices contienen datos de las variables ambientales como
-condiciones edáficas, tipo de hábitat, variación topográfica y
+2020). Estas matrices contienen datos de las variables ambientales,
+tales como condiciones edáficas, tipo de hábitat, topografía del lugar,
 clasificación etaria del bosque, y datos demográficos y
 georeferenciación espacial de todos los individuos censados. Se
 adaptaron \emph{scripts} reproducibles recuperados de Martínez Batlle
@@ -276,10 +276,10 @@ correlación lineal entre variables de ambas matrices, esto permitió
 obtener una perspectiva general y ayudó a determinar los procedimientos
 posteriores que se detallan acontinuación.
 
-\section{Medición de asociación}\label{mediciuxf3n-de-asociaciuxf3n}
+\subsection{Medición de asociación}\label{mediciuxf3n-de-asociaciuxf3n}
 
 Para las pruebas de medición de asociación, se calculó la distancia
-Euclidea entre los cuadrantes considerados como objetos. Para esto, fué
+euclídea entre los cuadrantes considerados como objetos. Para esto, fué
 requerida la transformada de la matríz de comunidad por el método de
 Hellinger, el cual consiste en la radicación al cuadrado de la
 abundancia relativa \(y_{ij}\) (cociente resultante de cada valor de
@@ -287,7 +287,7 @@ abundancia entre la suma de los sitios) como muestra la fórmula
 \ref{eq:hell_transf}. Donde \emph{j} refiere a cada especie o columna en
 la matríz, \emph{i} es la fila o cuadrante e \emph{i+} representa la
 suma de filas de la matríz de la i-ésima fila (Legendre \& Gallagher,
-2001). Además, la distancia euclidea entre cuadrantes en cuanto a la
+2001). Además, la distancia euclídea entre cuadrantes en cuanto a la
 ocurrencia de especies fué evaluada aplicando el índice de disimilaridad
 de Jaccard de la matríz normalizada, con valores de abundancia
 convertidos en valores binarios (Borcard, Gillet, \& Legendre, 2018). De
@@ -308,7 +308,7 @@ de asosiación entre las variables riqueza númerica de especies y la
 abundancia con las variables ambientales geomorfológicas y la
 composición química del suelo (Borcard et al., 2018).
 
-\section{Análisis de agrupamiento}\label{anuxe1lisis-de-agrupamiento}
+\subsection{Análisis de agrupamiento}\label{anuxe1lisis-de-agrupamiento}
 
 Tanto el método jerarquico aglomerativo de asociación entre pares de
 cuadrantes (según su composición de especies) bajo el criterio de enlace
@@ -316,24 +316,28 @@ completo y el método Ward basado en la varianza mínima, fueron
 utilizados en un acercamiento preliminar al análisis de agrupamiento
 para contrastar su eficacia y lograr conseguir grupos consistentes entre
 ambos (Borcard et al., 2018). Estos generaron dendrogramas que
-posteriormente fueron examinados en paralelo con la matríz de distancias
-de cuerdas (Legendre \& Gallagher, 2001) utilizando correlación
-cofenética entre ambos para determinar el número ideal de grupos. Se
-hizo uso de los métodos de remuestreo bootstrap y boostrap multiescalar
-para conocer la probabilidad de éxito en la inferencia del número de
-grupos y la identidad de sus componentes (Borcard et al., 2018). Las
-reparticiones se basaron en una probabilidad de 91\% o más de acierto
-para el método bootstrap y de un 95\% para boostrap multiescalar. Estos
-resultados sugieren 2 grupos con 95\% o más de confianza en cada caso
-para el metodo Ward; 12 grupos sugeridos por los estandares establecidos
-para bootstrap y 10 grupos para bootstrap multiescalar para el método
-por medio de enlace completo. Para cada método de agrupamiento se
-consideraron como válidos: un grupo con 34 cuadrantes y un segundo
-conformado por 16 formulados por el método Ward, y dos grupos por enlace
-completo que incluyen 20 y 30 sitios.
+posteriormente fueron examinados en paralelo con la matríz de comunidad
+convertida a distancias de cuerdas (Legendre \& Gallagher, 2001)
+utilizando correlación cofenética entre ambos para determinar el número
+ideal de grupos. Además, se utilizó remuestreo bootstrap y boostrap
+multiescalar para conocer la probabilidad de éxito en la inferencia del
+número de grupos y la identidad de sus componentes (Borcard et al.,
+2018). Las reparticiones se basaron en una probabilidad de 91\% o más de
+acierto para el método bootstrap y de un 95\% para boostrap
+multiescalar.
+
+Puesto que se encontraron patrones consistentes en la composición y
+número de grupos entre los métodos examinados, los análisis de
+agrupamiento posteriores realizados en este trabajo se basaron en los
+producidos mediante enlace completo, para el cual se consideraron dos
+grupos compuestos por 20 y 30 cuadrantes.
+
+Para conocer cuales especies pudieran ser consideradas características
+de cada grupo, se utiliza la métrica del valor indicador o ``IndVal''
+(Dufrene \& Legendre, 1997)
 
 Se utiliza la métrica del valor indicador o ``IndVal'' (Dufrene \&
-Legendre, 1997) para conocer las especies que pudieran ser consideradas
+Legendre, 1997) para conocer cuales especies pudieran ser consideradas
 características de cada grupo por medio de permutaciones aleatorias de
 los sitios según la ocurrencia de las especies y su abundancia. Así
 mismo, se estudia el grado de asociación de las especies con cierta
@@ -348,7 +352,7 @@ comparando su distribución con los valores obtenidos anteriormente
 (Cáceres \& Legendre, 2009). Para estas pruebas de asociación y las
 subsiguientes se declaro un valor de significancia \emph{P} = 0.05.
 
-\section{Ordenación}\label{ordenaciuxf3n}
+\subsection{Ordenación}\label{ordenaciuxf3n}
 
 Las carasteristicas de la varianza en los datos ambientales en BCI
 fueron estudiados mediante análisis de sus componentes principales (PCA)
@@ -379,12 +383,17 @@ resultados de RDA y datos de abundancia
 \section{Análisis de la diversidad}\label{anuxe1lisis-de-la-diversidad}
 
 Con la finalidad de asignar medidas apropiadas a la diversidad de
-especies de la familia Rubiaceae en BCI, se recurre a la aplicación de
-los índices, números, ratio¿. Además, se examina la correlación de
-Pearson entre estas medidas y las variables ambientales que aparentaron
-tener algun efecto en la riqueza de especies y la equidad. y método de
-rarefacción con el cual se obtuvo el valor esperado de riqueza en base
-al número de individuos del cuadrante con la menor abundancia\ldots{}
+especies de la familia Rubiaceae en BCI, números, ratio¿. Además, se
+examina la correlación de Pearson entre estas medidas y las variables
+ambientales que aparentan tener algun efecto en la riqueza y equidad de
+la comunidad. y método de rarefacción con el cual se obtuvo el valor
+esperado de riqueza en base al número de individuos del cuadrante con la
+menor abundancia\ldots{}
+
+se recurrió a la aplicación de varios índices y otras medidas de la
+diversidad, aprovechando su relación entre sí, con la finalidad de
+asignar un valor apropiado y comparable de la diversidad de especies de
+la familia Rubiaceae en BCI.
 
 \section{Resultados}\label{resultados}
 
@@ -557,7 +566,7 @@ entre los cuadrantes.
 
 En cuanto a los \emph{triplots} generados por RDA mostrados en la figura
 \ref{fig:rda_triplot_var_selec_4_escal2} se destacan los la distancia
-euclidea conservada entre las especies. Estas últimas se disponen en
+euclídea conservada entre las especies. Estas últimas se disponen en
 forma de abanico¿ algunas resultan aberraciones, muy alejadas del punto
 de intercepto, sitios emjambrados en el origen y las especies en
 dispuestas en forma de abanico a su alrededor. Esto indica poca
@@ -578,7 +587,14 @@ ambientales.
 La riqueza de la familia aumenta con el hierro, así tambien la equidad.
 Además, parece que la riqueza aumenta en los suelos con un alto
 contenido de nitrógeno en el suelo y en su forma mineralizada. La
-equidad también es mayor hacia el norte de bci.
+equidad también es mayor hacia el norte de bci
+{[}\ref{fig:panel_cor_indics_diversidad1_columnnas_quitadas}{]}.
+
+Aparte del cuadrante 50, los sitios con la mayor riqueza presentan
+también mucha abundancia. las especies dominantes están adaptadas a
+reclutar nuevos individuos con y sin interferencia de otras especies?
+Las especies menos abundantes están adaptadas a vivir apretujadas? Es
+todo esto casualidad?
 
 El grupo 2 (1 en Ward) contiene los sitios con tendencia a presentar
 valores altos de acidez {[}\ref{fig:mapa_cuadros_ph}{]} y concentración
@@ -650,6 +666,14 @@ entre especies están ponderadas en base a sus valores de abundancia.
 variables ambientales que se observan fueron las seleccionadas para
 restringir la varianza explicada de los datos de comunidad.
 \label{fig:rda_triplot_var_selec_4_escal2}}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{panel_cor_indcs_diversidad1_columnas_quitadas.png}
+\caption{Valores para el índice de correlación de Pearson entre varias
+medidas de diversidad y las variables ambientales destacadas.
+\label{fig:panel_cor_indics_diversidad1_columnnas_quitadas}}
 \end{figure}
 
 \section{Discusión}\label{discusiuxf3n}
