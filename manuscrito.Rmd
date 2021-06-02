@@ -100,10 +100,11 @@ Puntuaciones de las variables sitios con promedios ponderados de los resultados 
 
 #Análisis de la diversidad
 
-Con la finalidad de asignar medidas apropiadas a la diversidad de especies de la familia Rubiaceae en BCI, números, ratio¿. Además, se examina la correlación de Pearson entre estas medidas y las variables ambientales que aparentan tener algun efecto en la riqueza y equidad de la comunidad.  y método de rarefacción con el cual se obtuvo el valor esperado de riqueza en base al número de individuos del cuadrante con la menor abundancia... 
+Con la finalidad de asignar medidas apropiadas a la diversidad de especies de la familia Rubiaceae en BCI, y aprovechando su relación con los índices de Shannon y Simpson, se emplearon los números de diversidad de Hill, la fórmula de la entropía de Rengi y el índice de equidad de Pielou. Se examinó la posible correlación entre estas medidas y las variables ambientales que aparentaron tener algun efecto en la riqueza y equidad de la comunidad [@borcard_legendre]. Además, se obtuvo el valor esperado de riqueza para todos los sitios, mediante interpolación por rarefacción al número de individuos del cuadrante con la menor abundancia. Finalmente, se estima el valor de la riqueza de la familia Rubiaceae en todo Barro Colorado mediante las colecciones de funciones *SpadeR* y *iNEXT* [@spader_chao], modificadas por @jose_ramon_martinez_batlle_2020_4402362.
 
-se recurrió a la aplicación de varios índices y otras medidas de la diversidad, aprovechando su relación entre sí, con la finalidad de asignar un valor apropiado y comparable de la diversidad de especies de la familia Rubiaceae en BCI.
+La representatibidad de la parcela permanente comparada con el valor posible real de la riqueza de esta familia a nivel local?
 
+Estimar la riqueza que se conseguiría con más parcelas de censo en BCI? 
 
 <!--Para probar la relación existente entre los cuandrantes en los grupos generados por Complete y las variables de suelo, se posicionaron la relación entre los resultados del PCA-->
 
@@ -124,9 +125,9 @@ abun_sp_q
 ```
 
 
-Los valores para el coeficiente de Spearman presentados en el panel de correlación de la figura \ref{fig:panel_cor_suelo_abun_riq_rubic} no mostraron evidencia de que exista relación entre la riqueza numérica de especies y la abundancia con las variables geomorfológicas notadas en la matríz de variables ambientales. Sin embargo, el mismo análisis sugiere una posible relación entre la abundancia numérica de especies y la compososición del suelo, mostrando relación positiva con valores altos de Aluminio y Fósforo. Así como negativa, para valores altos de pH y concentraciones de otros elementos<!--(B, Ca, Cu, Fe, K, Mg, Mn, Zn y Nitrógeno mineralizado)-->.
+Los valores para el coeficiente de Spearman presentados en el panel de correlación de la figura \ref{fig:panel_cor_suelo_abun_riq_rubic_spear} no mostraron evidencia de que exista relación entre la riqueza numérica de especies y la abundancia con las variables geomorfológicas notadas en la matríz de variables ambientales. Sin embargo, el mismo análisis sugiere una posible relación entre la abundancia numérica de especies y la compososición del suelo, mostrando relación positiva con valores altos de Aluminio y Fósforo. Así como negativa, para valores altos de pH y concentraciones de otros elementos<!--(B, Ca, Cu, Fe, K, Mg, Mn, Zn y Nitrógeno mineralizado)-->.
 
-![Correlacion de Pearson entre la diversidad/abundancia de rubiaceas y las variables edafológicas \label{fig:panel_cor_suelo_abun_riq_rubic}](panel_cor_suelo_abun_riq_rubic_spear.png)
+!Panel de correlacion de Spearman entre la diversidad/abundancia de rubiaceas y las variables edafológicas \label{fig:panel_cor_suelo_abun_riq_rubic_spear}](panel_cor_suelo_abun_riq_rubic_spear.png)
 
 <!--La figura \ref{fig:mapa_cuadros_ph} presenta la distribución de la ácidez en el suelo de BCI.-->Las variables fósforo y cobre obtuvieron valores de *P* 0.0000347 y 0.0127 "significativos" en las pruebas de correlación respecto a los grupos 1 y 2 formulados por complete.<!--fueron 0.0000347 y 0.000408 para wilcoxon(significativos). Para la de variables asociadas a la diferenciacion de los grupos fuevariable *Cu* fueron 0.0127 student y 0.0333 wilx. Otro valor de *P* algo "menos significativo" fue 0.0808, correspondiente a la abundancia de toda la comunidad.(0.0808 T, 0.0685 W); *Al* (0.0867 W); riqueza global (0.0314W)--> De manera similar, para los grupos producidos mediante Ward el valor *P* para la variable fósforo fue de 0.000370 y 0.00726 para cobre. Otros valores para otras variables fueron: 0.0341 (Manganeso), 0.0454 (hierro), 0.0243 y 0.0331 (riqueza y abundancia de todas las familias en BCI).<!--para student y 0.0129 para wilcoxon. Para *Cu*cobre fue 0.00726 sTdnt y 0.0115 Wilcx. valores casi significativos: riqueza global(0.0243 T, 0.0115 W);abundancia global(0.0331 T, 0.0375 W); *Mn*(0.0341 T, 0.0405 W); *Fe*(0.0454 T, 0.0688 W); *Ca* (0.0789 W)nivel de significancia p=0.01(significtv), y 0.1(casi significtv)-->
 <!--En complete, el grupo 1 (verde) pareciera asociarse con el cobre y el grupo 2 (gris) con el fósforo. Los sitios de ambos grupos son comparables con los mapas de concentración de P y Cu del aed_6 y parecen coincidir.
@@ -164,7 +165,9 @@ Se destaca un grupo de cuadrantes en los cuales *Psychotria horizontalis* y *Psy
 
 La riqueza de la familia aumenta con el hierro, así tambien la equidad. Además, parece que la riqueza aumenta en los suelos con un alto contenido de nitrógeno en el suelo y en su forma mineralizada. La equidad también es mayor hacia el norte de bci [\ref{fig:panel_cor_indics_diversidad1_columnnas_quitadas}].
 
-<Poner aquí curva rarefaccion leyenda: Gráfico con curva de acumulación de especies. Las barras horizontales muestran el valor de riqueza estimado en cada sitio para un esfuerzo de muestreo equivalente a 341 individuos (abundancia en el cuadrante 50).>
+<Poner aquí curva rarefaccion leyenda: Gráfico con curva de acumulación de especies. Las barras horizontales muestran el valor de la riqueza estimada en cada sitio para un esfuerzo de muestreo equivalente a 341 individuos (abundancia en el cuadrante 50).> \ref{fig:rarefaccion_min_abun}
+
+Sitio 1 con la menor riqueza presenta una de las mayores dominancias. También el sitio 28 aunque no tanto por el número de especies presentado, sino más bien por su desorbitada abundancia (1414 indiv.) . 50 con la menor abundancia.
 
 Aparte del cuadrante 50, los sitios con la mayor riqueza presentan también mucha abundancia. las especies dominantes están adaptadas a reclutar nuevos individuos con y sin interferencia de otras especies? Las especies menos abundantes están adaptadas a vivir apretujadas? Es todo esto casualidad?
 
@@ -192,7 +195,9 @@ El grupo 2 (1 en Ward) contiene los sitios con tendencia a presentar valores alt
 
 ![Triplot del RDA de los valores de abundancia transformados. Las variables ambientales que se observan fueron las seleccionadas para restringir la varianza explicada de los datos de comunidad. \label{fig:rda_triplot_var_selec_4_escal2}](rda_triplot_var_selec_4_escal2.png)
 
-![Valores para el índice de correlación de Pearson entre varias medidas de diversidad y las variables ambientales destacadas.  \label{fig:panel_cor_indics_diversidad1_columnnas_quitadas}](panel_cor_indcs_diversidad1_columnas_quitadas.png)
+![Correlación entre diversidad/equidad y algunas de las variables ambientales destacadas. $N0$: riqueza de especies; $H$: entropía de Shannon; $Hb2$: entropía de Shannon con 2 como base del logaritmo; $N1$ y $N2$: Números de Hill; $N1b2$: Número de Hill 1 en base log 2; $J$: Equidad de Pielou; $E10$ y $E20$: ratios de Hill 1 y 2.  \label{fig:panel_cor_indics_diversidad1_columnnas_quitadas}](panel_cor_indcs_diversidad1_columnas_quitadas.png)
+
+![Curva de rarefacción. Las barras horizontales muestran el valor de la riqueza estimada en cada sitio para un esfuerzo de muestreo equivalente a 341 individuos (abundancia en el cuadrante 50). \label{fig:rarefaccion_min_abun}](rarefaccion_min_abun.png)
 
 
 # Discusión
@@ -201,7 +206,7 @@ El grupo 2 (1 en Ward) contiene los sitios con tendencia a presentar valores alt
 Las especies con preferencia por el grupo 1 evaden sistemáticamente al grupo 2 y viceversa. Esta diferenciación en la ocurrencia de las especies no se explica del todo con las variables ambientales medidas en BCI y es posible que exista algun otro factor que determina la ordenación de esta comunidad de plantas. La cobertura del dosel arbóreo podría ser una de estas variables a considerarse, puesto que las especies dominantes en la comunidad son a la vez tolerantes a la sombra (@grandtner2013dictionary).
 <!--Los análisis de asociación realizados indicaban que el contenido de aluminio y la acidez del suelo pareciera estar caracterizando la incidencia de la familia Rubiaceae frente a otras especies de plantas.El índice de correlación de Spearman indicaba--> la relación entre la abundancia de la familia y el contenido de alumínio y fósforo. Esto coincidió con los análisis de la varianza explicada entre variables, aunque solo para la concentración de fósforo. Adicionalmente, la comunidad de rubiaceas pareciera poder dividirse en dos grupos relativamente bien diferenciados entre sí por sus diferencias en el contenido de *Cu* y *P* del suelo. <!--Otros trabajos anteriores se han referido a la tolerancia de esta familia hacia los metales pesados()-->. Es probable que las especies indicadoras del grupo con un mayor contenido de cobre estén mostrando preferencia por estas condiciones ambientales. Sin embargo, el pH y la mayoría de componentes del suele en BCI tienen valores bastante homogéneos y más bien se presentan pequeños gradientes entre algunos lugares, lo cual evita que este tipo de acercamiento sea concluyente.
   
-<!--El grado de asociación presente entre cuadrantes medido utilizando el indice de disimilaridad de Jaccard arrojó distintos valores para el grado de exclusividad entre sitios. Se encontró que estos valores eran más altos para los lugares más alejados entre sí, presentaban una media alta, además de valores extremos a lo largo de las observaciones en la serie-->
+<!--El grado de asociación presente entre cuadrantes medido utilizando el indice de disimilaridad de Jaccard arrojó distintos valores para el grado de exclusividad entre sitios. Se encontró que estos valores eran más altos para los lugares más alejados entre sí, presentaban una media alta, además de valores extremos a lo largo de las observaciones en la serie de cuadrantes-->
 Los análisis de agrupamiento pueden verse sesgados por la heterogeneidad morfométrica que pueden presentar las plantas de esta familia. Estas especies presentan diversos hábitos de crecimiento, desde porte herbáceo y arbustivo a árboles relativamente grandes. Esto hace que el hecho de que se incluya el criterio de dap de 10 mm en el momento de ser censadas podría estar excluyendo especies clave en el rompecabezas.
 
 <!--![Distribución de la riqueza de rubiaceas en BCI \label{fig:mapa_cuadros_riq}](mapa_cuadros_riq_rubic.png)

@@ -213,7 +213,7 @@ rarecurve(
   xlab = "Número de individuos (tamaño de muestra)",
   ylab = "Especies",
   label = TRUE,
-  col = "blue"
+  col = "blue", cex = 0.4
 )
 #' 
 #' ### Riqueza de especies, estimación y comparación, "completitud de muestra" (existe en el diccionario) (Chao y Chiu, 2016)
@@ -245,7 +245,7 @@ mi_fam_combinada <- colSums(mi_fam)
 mi_fam_combinada %>% sort
 mi_fam_combinada_chao <- estimacion_riqueza_chao(
   mc = mi_fam_combinada,
-  n_raras = 14)
+  n_raras = 18)
 mi_fam_combinada_chao$asintoticos_estimacion
 mi_fam_combinada_chao$no_asintoticos_rarefaccion_extrapolacion
 mi_fam_combinada_chao$no_asintoticos_rarefaccion_extrapolacion_grafico

@@ -383,17 +383,23 @@ resultados de RDA y datos de abundancia
 \section{Análisis de la diversidad}\label{anuxe1lisis-de-la-diversidad}
 
 Con la finalidad de asignar medidas apropiadas a la diversidad de
-especies de la familia Rubiaceae en BCI, números, ratio¿. Además, se
-examina la correlación de Pearson entre estas medidas y las variables
-ambientales que aparentan tener algun efecto en la riqueza y equidad de
-la comunidad. y método de rarefacción con el cual se obtuvo el valor
-esperado de riqueza en base al número de individuos del cuadrante con la
-menor abundancia\ldots{}
+especies de la familia Rubiaceae en BCI, y aprovechando su relación con
+los índices de Shannon y Simpson, se emplearon los números de diversidad
+de Hill, la fórmula de la entropía de Rengi y el índice de equidad de
+Pielou. Se examinó la posible correlación entre estas medidas y las
+variables ambientales que aparentaron tener algun efecto en la riqueza y
+equidad de la comunidad (Borcard et al., 2018). Además, se obtuvo el
+valor esperado de riqueza para todos los sitios, mediante interpolación
+por rarefacción al número de individuos del cuadrante con la menor
+abundancia. Finalmente, se estima el valor de la riqueza de la familia
+Rubiaceae en todo Barro Colorado mediante las colecciones de funciones
+\emph{SpadeR} y \emph{iNEXT} (Chao, Ma, Hsieh, \& Chiu, 2016),
+modificadas por Martínez Batlle (2020).
 
-se recurrió a la aplicación de varios índices y otras medidas de la
-diversidad, aprovechando su relación entre sí, con la finalidad de
-asignar un valor apropiado y comparable de la diversidad de especies de
-la familia Rubiaceae en BCI.
+La representatibidad de la parcela permanente comparada con el valor
+posible real de la riqueza de esta familia a nivel local?
+
+Estimar la riqueza que se conseguiría con más parcelas de censo en BCI?
 
 \section{Resultados}\label{resultados}
 
@@ -461,22 +467,18 @@ cuadrante.}
 \end{figure}
 
 Los valores para el coeficiente de Spearman presentados en el panel de
-correlación de la figura \ref{fig:panel_cor_suelo_abun_riq_rubic} no
-mostraron evidencia de que exista relación entre la riqueza numérica de
-especies y la abundancia con las variables geomorfológicas notadas en la
-matríz de variables ambientales. Sin embargo, el mismo análisis sugiere
-una posible relación entre la abundancia numérica de especies y la
-compososición del suelo, mostrando relación positiva con valores altos
-de Aluminio y Fósforo. Así como negativa, para valores altos de pH y
-concentraciones de otros elementos.
+correlación de la figura \ref{fig:panel_cor_suelo_abun_riq_rubic_spear}
+no mostraron evidencia de que exista relación entre la riqueza numérica
+de especies y la abundancia con las variables geomorfológicas notadas en
+la matríz de variables ambientales. Sin embargo, el mismo análisis
+sugiere una posible relación entre la abundancia numérica de especies y
+la compososición del suelo, mostrando relación positiva con valores
+altos de Aluminio y Fósforo. Así como negativa, para valores altos de pH
+y concentraciones de otros elementos.
 
-\begin{figure}
-\centering
-\includegraphics{panel_cor_suelo_abun_riq_rubic_spear.png}
-\caption{Correlacion de Pearson entre la diversidad/abundancia de
+!Panel de correlacion de Spearman entre la diversidad/abundancia de
 rubiaceas y las variables edafológicas
-\label{fig:panel_cor_suelo_abun_riq_rubic}}
-\end{figure}
+\label{fig:panel_cor_suelo_abun_riq_rubic_spear}{]}(panel\_cor\_suelo\_abun\_riq\_rubic\_spear.png)
 
 Las variables fósforo y cobre obtuvieron valores de \emph{P} 0.0000347 y
 0.0127 ``significativos'' en las pruebas de correlación respecto a los
@@ -590,6 +592,13 @@ contenido de nitrógeno en el suelo y en su forma mineralizada. La
 equidad también es mayor hacia el norte de bci
 {[}\ref{fig:panel_cor_indics_diversidad1_columnnas_quitadas}{]}.
 
+ \ref{fig:rarefaccion_min_abun}
+
+Sitio 1 con la menor riqueza presenta una de las mayores dominancias.
+También el sitio 28 aunque no tanto por el número de especies
+presentado, sino más bien por su desorbitada abundancia (1414 indiv.) .
+50 con la menor abundancia.
+
 Aparte del cuadrante 50, los sitios con la mayor riqueza presentan
 también mucha abundancia. las especies dominantes están adaptadas a
 reclutar nuevos individuos con y sin interferencia de otras especies?
@@ -671,9 +680,21 @@ restringir la varianza explicada de los datos de comunidad.
 \begin{figure}
 \centering
 \includegraphics{panel_cor_indcs_diversidad1_columnas_quitadas.png}
-\caption{Valores para el índice de correlación de Pearson entre varias
-medidas de diversidad y las variables ambientales destacadas.
+\caption{Correlación entre diversidad/equidad y algunas de las variables
+ambientales destacadas. \(N0\): riqueza de especies; \(H\): entropía de
+Shannon; \(Hb2\): entropía de Shannon con 2 como base del logaritmo;
+\(N1\) y \(N2\): Números de Hill; \(N1b2\): Número de Hill 1 en base log
+2; \(J\): Equidad de Pielou; \(E10\) y \(E20\): ratios de Hill 1 y 2.
 \label{fig:panel_cor_indics_diversidad1_columnnas_quitadas}}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{rarefaccion_min_abun.png}
+\caption{Curva de rarefacción. Las barras horizontales muestran el valor
+de la riqueza estimada en cada sitio para un esfuerzo de muestreo
+equivalente a 341 individuos (abundancia en el cuadrante 50).
+\label{fig:rarefaccion_min_abun}}
 \end{figure}
 
 \section{Discusión}\label{discusiuxf3n}
@@ -742,6 +763,11 @@ with R. Second Edition} (pp. 52--66).
 Cáceres, M. D., \& Legendre, P. (2009). Associations between species and
 groups of sites: Indices and statistical inference. \emph{Ecology},
 \emph{90}(12), 3566--3574.
+
+\hypertarget{ref-spader_chao}{}
+Chao, A., Ma, K. H., Hsieh, T. C., \& Chiu, C.-H. (2016). \emph{SpadeR:
+Species-richness prediction and diversity estimation with r}. Retrieved
+from \url{https://CRAN.R-project.org/package=SpadeR}
 
 \hypertarget{ref-condit_et_al_2012}{}
 Condit, R., Chisholm, R. A., \& Hubbell, S. P. (2012). Thirty years of
