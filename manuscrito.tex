@@ -183,9 +183,12 @@ diversidad y complejidad ecológica de la región tropical. El estudio
 continuo de su riqueza y abundancia relativa permite identificar las
 especies raras, las cuales son más vulnerables a los cambios en su
 hábitat y por lo tanto propensas a extinguirse localmente (Volkov,
-Banavar, Hubbell, \& Maritan, 2003). Claramente existe entonces la
-necesidad de conocer como se encuentran asociadas estas especies entre
-sí dentro de las comunidades ecológicas para ayudar a comprender los
+Banavar, Hubbell, \& Maritan, 2003). Adicionalmente, monitorear la
+diversidad como propiedad de las comunidades vivientes resulta de suma
+importancia para analizar el efecto que tiene la transformación de los
+ecosistemas en las comunidades naturales. Claramente existe entonces la
+necesidad de conocer como se encuentran asociadas las especies entre sí
+dentro de las comunidades ecológicas para ayudar a comprender los
 factores que inciden en su conservación (Moreno, 2001).
 
 La familia Rubiaceae es un importante grupo de plantas vasculares de
@@ -213,46 +216,46 @@ posibles patrones acerca de su distribución, y se plantea la posibilidad
 de que existan especies con algún grado de asociación respecto a las
 variables ambientales que allí imperan.
 
-Actualmente, la distribución de la abundancia de las especies se explica
-por medio de los mecanismos que definen a una comunidad en particular.
-Pudiendo existir en esta una proporción variable de especies dominantes,
-relativamente más abundantes en comparación con las especies raras, las
-medidas para la distribución de la abundancia relativa se encuentran
-sujetas a interacciones que aún no se conocen del todo ni en qué grado
-inciden en la estructura de la comunidad (Néda, Horvat, Toháti, Derzsi,
-\& Balogh, 2008).
+Aunque la distribución de la abundancia de las especies actualmente es
+en buena parte atribuida a los mecanismos que definen a una comunidad en
+particular, como la prevalencia de especies dominantes, relativamente
+más abundantes en comparación con las especies raras. Las medidas para
+la distribución de la abundancia relativa se encuentran sujetas a
+interacciones que aún no se conocen del todo, ni en qué grado inciden en
+la estructura de la comunidad (Néda, Horvat, Toháti, Derzsi, \& Balogh,
+2008).
 
 El presente estudio evalúa la relación entre abundancia relativa de
 especies de la familia Rubiaceae y su distribución en una porción de
 bosque tropical en la parcela permanente Barro Colorado Island (en lo
-adelante BCI), Colón, Panamá. Las parcelas permanentes son una excelente
-fuente de datos demográficos y posibilitan el estudio continuo de la
-diversidad a nivel local y contribuyen a medir el aporte de la familia
-Rubiaceae a la diversidad de su comunidad. En ese sentido, este trabajo
-aprovecha la información disponible (Hubbell, Condit, \& Foster, 2021) y
-herramientas de libre acceso (Martínez Batlle, 2020), para conocer
-posibles patrones de asociación entre estas especies, y como varía la
-diversidad con respecto a las características del hábitat en el cual
-crecen estas poblaciones de plantas y otras condiciones ambientales
-mediante análisis estadístico de datos de los censos realizados en BCI.
+adelante BCI), Colón, Panamá. Las parcelas permanentes, como BCI, son
+una excelente fuente de datos demográficos y posibilitan el estudio
+continuo de la diversidad a nivel local y contribuyen a medir el aporte
+de la familia Rubiaceae a la diversidad de su comunidad. En ese sentido,
+este trabajo aprovecha la información disponible (Hubbell, Condit, \&
+Foster, 2021), y herramientas de libre acceso (Martínez Batlle, 2020),
+para conocer posibles patrones de asociación entre estas especies, como
+varía la diversidad con respecto a las características del hábitat en el
+cual crecen estas poblaciones de plantas, y otras condiciones
+ambientales mediante análisis estadístico de datos de los censos
+realizados en BCI.
 
 \section{Metodología}\label{metodologuxeda}
 
 \subsection{Ámbito de estudio}\label{uxe1mbito-de-estudio}
 
-La parcela permanente BCI es una estación de censo permanente
-administrada por el Center for Tropical Forest Science ubicada en el
-centro de la isla artificial Barro Colorado, con las coordenadas
-09\(^\circ\)~09'N, 079\(^\circ\)~50'O. La parcela consiste en un
-polígono de 50 hectáreas cuadradas en el cual se han contabilizado todos
-los arboles con más de 10 mm de diámetro a la altura del pecho cada
-cinco años desde 1985 (Condit, Chisholm, \& Hubbell, 2012; Condit,
-Pérez, Lao, Aguilar, \& Hubbell, 2017; Hubbell \& Foster, 1983; Hubbell
-et al., 1990). En este estudio se utilizaron las datos del censo
-realizado en el año 2015.
+BCI es una estación de censo permanente administrada por el Center for
+Tropical Forest Science ubicada en el centro de la isla artificial Barro
+Colorado, con las coordenadas 09\(^\circ\)~09'N, 079\(^\circ\)~50'O. La
+parcela consiste en un polígono de 50 hectáreas cuadradas en el cual se
+han contabilizado todos los arboles con más de 10 mm de diámetro a la
+altura del pecho cada cinco años desde 1985 (Condit, Chisholm, \&
+Hubbell, 2012; Condit, Pérez, Lao, Aguilar, \& Hubbell, 2017; Hubbell \&
+Foster, 1983; Hubbell et al., 1990). En este estudio se utilizaron las
+datos del censo realizado en el año 2015.
 
 Los datos referentes a cada uno de los 50 cuadrantes de una hectárea que
-componen BCI fueron manejados en R (R Core Team, 2020), partiendo de su
+componen BCI, fueron manejados en R (R Core Team, 2020), partiendo de su
 disposición en dos matrices: de comunidad y ambiental (Martínez Batlle,
 2020). Estas matrices contienen datos de las variables ambientales,
 tales como condiciones edáficas, tipo de hábitat, topografía del lugar,
@@ -260,10 +263,10 @@ clasificación etaria del bosque, y datos demográficos y
 georeferenciación espacial de todos los individuos censados. Se
 adaptaron \emph{scripts} reproducibles recuperados de Martínez Batlle
 (2020), utilizando la colección de paquetes multifuncionales
-\emph{Tidyverse} (Wickham, 2017), paquetes gráficos y de procesamiento
+\texttt{Tidyverse} (Wickham, 2017), paquetes gráficos y de procesamiento
 de datos espaciales para la representación de mapas y figuras como
 \texttt{mapview} (Appelhans, Detsch, Reudenbach, \& Woellauer, 2019) y
-\emph{simplefeatures} (Pebesma, 2018); y herramientas de análisis
+\texttt{simplefeatures} (Pebesma, 2018); y herramientas de análisis
 estadístico como \texttt{vegan} (Oksanen et al., 2019),
 \texttt{indicspecies} (De Caceres \& Legendre, 2009), entre otros (ver
 \ref{información suplementaria}).
@@ -279,17 +282,17 @@ posteriores que se detallan acontinuación.
 \subsection{Medición de asociación}\label{mediciuxf3n-de-asociaciuxf3n}
 
 Para las pruebas de medición de asociación, se calculó la distancia
-euclídea entre los cuadrantes considerados como objetos. Para esto, fué
-requerida la transformada de la matríz de comunidad por el método de
+euclídea entre los cuadrantes considerados como objetos. Para esto, fue
+requerida la transformada de la matriz de comunidad por el método de
 Hellinger, el cual consiste en la radicación al cuadrado de la
 abundancia relativa \(y_{ij}\) (cociente resultante de cada valor de
 abundancia entre la suma de los sitios) como muestra la fórmula
 \ref{eq:hell_transf}. Donde \emph{j} refiere a cada especie o columna en
-la matríz, \emph{i} es la fila o cuadrante e \emph{i+} representa la
-suma de filas de la matríz de la i-ésima fila (Legendre \& Gallagher,
+la matriz, \emph{i} es la fila o cuadrante e \emph{i+} representa la
+suma de filas de la matriz de la i-ésima fila (Legendre \& Gallagher,
 2001). Además, la distancia euclídea entre cuadrantes en cuanto a la
-ocurrencia de especies fué evaluada aplicando el índice de disimilaridad
-de Jaccard de la matríz normalizada, con valores de abundancia
+ocurrencia de especies fue evaluada aplicando el índice de disimilaridad
+de Jaccard de la matriz normalizada, con valores de abundancia
 convertidos en valores binarios (Borcard, Gillet, \& Legendre, 2018). De
 la misma manera, se utiliza la métrica de Jaccard aplicada a la matriz
 de comunidad transpuesta y convertida a datos de presencia/ausencia para
@@ -300,9 +303,9 @@ y' = \sqrt{\frac{y_{ij}}{y_{i+}}}
 \end{equation}
 
 Para poder comparar la relación entre las especies según su abundancia
-númerica, se utilizó estandarización \emph{ji}-cuadrado de la matríz de
+númerica, se utilizó estandarización \emph{ji}-cuadrado de la matriz de
 comunidad transpuesta (Legendre \& Gallagher, 2001). La ocurrencia entre
-las especies y su distribución en BCI fué examinada por medio de el
+las especies y su distribución en BCI fue examinada por medio de el
 coeficiente de correlación entre rangos de Spearman para medir el grado
 de asosiación entre las variables riqueza númerica de especies y la
 abundancia con las variables ambientales geomorfológicas y la
@@ -314,35 +317,30 @@ Tanto el método jerarquico aglomerativo de asociación entre pares de
 cuadrantes (según su composición de especies) bajo el criterio de enlace
 completo y el método Ward basado en la varianza mínima, fueron
 utilizados en un acercamiento preliminar al análisis de agrupamiento
-para contrastar su eficacia y lograr conseguir grupos consistentes entre
-ambos (Borcard et al., 2018). Estos generaron dendrogramas que
-posteriormente fueron examinados en paralelo con la matríz de comunidad
-convertida a distancias de cuerdas (Legendre \& Gallagher, 2001)
-utilizando correlación cofenética entre ambos para determinar el número
-ideal de grupos. Además, se utilizó remuestreo bootstrap y boostrap
-multiescalar para conocer la probabilidad de éxito en la inferencia del
-número de grupos y la identidad de sus componentes (Borcard et al.,
-2018). Las reparticiones se basaron en una probabilidad de 91\% o más de
-acierto para el método bootstrap y de un 95\% para boostrap
-multiescalar.
+para contrastar su eficacia en conseguir grupos consistentes y con
+significado ecológico (Borcard et al., 2018). Estos generaron
+dendrogramas que posteriormente son comparados con la matriz de
+distancia de cuerdas (Legendre \& Gallagher, 2001), utilizando
+correlación cofenética entre ambos para determinar el número ideal de
+grupos. Además, se utilizó remuestreo bootstrap y boostrap multiescalar
+para conocer la probabilidad de éxito en la inferencia del número de
+grupos y la identidad de sus componentes (Borcard et al., 2018). Las
+reparticiones se basaron en una probabilidad de 91\% o más de acierto
+para el método bootstrap y de un 95\% para boostrap multiescalar.
 
 Puesto que se encontraron patrones consistentes en la composición y
 número de grupos entre los métodos examinados, los análisis de
 agrupamiento posteriores realizados en este trabajo se basaron en los
 producidos mediante enlace completo, para el cual se consideraron dos
-grupos compuestos por 20 y 30 cuadrantes.
+grupos compuestos por 20 y 30 cuadrantes, respectivamente.
 
-Para conocer cuales especies pudieran ser consideradas características
-de cada grupo, se utiliza la métrica del valor indicador o ``IndVal''
-(Dufrene \& Legendre, 1997)
-
-Se utiliza la métrica del valor indicador o ``IndVal'' (Dufrene \&
-Legendre, 1997) para conocer cuales especies pudieran ser consideradas
-características de cada grupo por medio de permutaciones aleatorias de
-los sitios según la ocurrencia de las especies y su abundancia. Así
-mismo, se estudia el grado de asociación de las especies con cierta
-preferencia por las combinaciones de cuadrantes consideradas como
-grupos, indicado por el coeficiente de correlación biserial puntual
+Para conocer cuales especies son características o se encuentran
+asociadas a cada grupo, se utiliza la métrica del ``valor indicador'' o
+IndVal (Dufrene \& Legendre, 1997), la cual está basada en permutaciones
+aleatorias de los sitios según la ocurrencia de las especies y su
+abundancia. Así mismo, se estudia el grado de asociación de las especies
+con cierta preferencia por las combinaciones de cuadrantes consideradas
+como grupos, indicado por el coeficiente de correlación biserial puntual
 (Borcard et al., 2018). Se llevó acabo un acercamiento parecido al
 anterior durante las pruebas estadisticas de la hipotesis nula, sobre la
 base de que las especies que se encontraban en cuadrantes pertenecientes
@@ -350,7 +348,7 @@ a un determinado grupo lo hacían por obra del azar. Esta prueba se logró
 mediante reordenación aleatoria de los valores de abundancia y
 comparando su distribución con los valores obtenidos anteriormente
 (Cáceres \& Legendre, 2009). Para estas pruebas de asociación y las
-subsiguientes se declaro un valor de significancia \emph{P} = 0.05.
+subsiguientes se utilizó un nivel de significancia \(\alpha = 0.05\).
 
 \subsection{Ordenación}\label{ordenaciuxf3n}
 
@@ -359,9 +357,9 @@ fueron estudiados mediante análisis de sus componentes principales (PCA)
 (Borcard et al., 2018). Este método permitió resumir la
 multidimensionalidad de las variables, explicar la varianza y los
 posibles patrones que estos podrían seguir. Esto se realizó también para
-la matríz de comunidad, con valores de abundancia normalizados por la
+la matriz de comunidad, con valores de abundancia normalizados por la
 transformada Hellinger, además de un análisis de correspondencia (CA) de
-la misma matríz. De manera alternativa, se realiza un análisis de las
+la misma matriz. De manera alternativa, se realiza un análisis de las
 coordenadas principales (PCoA) para ayudar a conocer la relación entre
 las especies, utilizando el coeficiente de disimilaridad de Jaccard como
 medida, y a su vez usando los promedios ponderados por los valores de
@@ -369,51 +367,56 @@ abundancia para permitir su representación en los diagramas
 \emph{biplot} (Borcard et al., 2018).
 
 Se realizó un acercamiento restringido de la ordenación para probar el
-grado de dependencia de los datos de la matríz de comunidad con la
-matríz ambiental, mediante ajuste lineal en un análisis de redundancia
-(RDA) (Borcard et al., 2018), utilizando la matríz de comunidad
+grado de dependencia de los datos de la matriz de comunidad con la
+matriz ambiental, mediante ajuste lineal en un análisis de redundancia
+(RDA) (Borcard et al., 2018), utilizando la matriz de comunidad
 transformada por Hellinger. Se seleccionaron las variables que
 presentaron cierto grado de asociación, y (a discreción y de manera
 secuencial) se excluyeron algunas de estas, con el objetivo de reducir
 el grado de colinealidad entre las variables independientes restantes.
 
-Puntuaciones de las variables sitios con promedios ponderados de los
-resultados de RDA y datos de abundancia
-
-\section{Análisis de la diversidad}\label{anuxe1lisis-de-la-diversidad}
+\subsection{Análisis de la
+diversidad}\label{anuxe1lisis-de-la-diversidad}
 
 Con la finalidad de asignar medidas apropiadas a la diversidad de
-especies de la familia Rubiaceae en BCI, y aprovechando su relación con
-los índices de Shannon y Simpson, se emplearon los números de diversidad
-de Hill, la fórmula de la entropía de Rengi y el índice de equidad de
-Pielou. Se examinó la posible correlación entre estas medidas y las
-variables ambientales que aparentaron tener algun efecto en la riqueza y
-equidad de la comunidad (Borcard et al., 2018). Además, se obtuvo el
-valor esperado de riqueza para todos los sitios, mediante interpolación
-por rarefacción al número de individuos del cuadrante con la menor
-abundancia. Finalmente, se estima el valor de la riqueza de la familia
-Rubiaceae en todo Barro Colorado mediante las colecciones de funciones
-\emph{SpadeR} y \emph{iNEXT} (Chao, Ma, Hsieh, \& Chiu, 2016),
-modificadas por Martínez Batlle (2020).
+especies, y aprovechando su relación con los índices de Shannon y
+Simpson, se empleó la serie de números de diversidad de Hill, la fórmula
+de la entropía de Rengi y el índice de equidad de Pielou. Se examinó la
+posible correlación entre estas medidas y las variables ambientales que
+aparentaron tener algun efecto en la riqueza y equidad de la comunidad
+(Borcard et al., 2018). Además, mediante interpolación por rarefacción
+al número de individuos del cuadrante con la menor abundancia, se
+compara el valor esperado de riqueza para todos los sitios.
+Adicionalmente, se estima la riqueza de la familia Rubiaceae que
+resultaría de aumentar al doble el muestreo realizado en BCI, mediante
+los métodos de extrapolación incluidos en las colecciones de funciones
+\texttt{SpadeR} y \texttt{iNEXT} (Chao, Ma, Hsieh, \& Chiu, 2016; Hsieh,
+Ma, \& Chao, 2020), modificadas por Martínez Batlle (2020).
 
-La representatibidad de la parcela permanente comparada con el valor
-posible real de la riqueza de esta familia a nivel local?
-
-Estimar la riqueza que se conseguiría con más parcelas de censo en BCI?
+La variación en la composición y abundancia de especies de la comunidad,
+es medida utilizando el índice multiplicativo de diversidad beta basado
+en los números de Hill (Borcard et al., 2018). Finalmente, se examina la
+contribución a la diversidad beta por parte de las especies y los sitios
+en BCI, al analizar la varianza de la abundancia y riqueza de los
+cuadrantes y las especies. Estos valores fueron comparados con la
+varianza promedio, y se considera entonces que las especies cuya
+varianza promedio supera la mitad de la varianza promedio total,
+presentan una contribución importante a la diversidad beta de la
+comunidad (Borcard et al., 2018).
 
 \section{Resultados}\label{resultados}
 
 La familia Rubiaceae en Barro Colorado se encuentra representada por 31
-especies y 20 generos. El género \emph{Psychotria} presenta la mayor
-cantidad de especies (8). La tabla \ref{tab:abun_sp} indica las
-abundancias de las especies de toda la comunidad que en total suman
-41,838 individuos, con una abundancia media de 65 individuos y mediana
-ubicada en los 1,350 individuos. El mapa de cuadros de la figura
-\ref{fig:abun_sp_q} contiene la riqueza numérica de especies por
+especies y 20 géneros. El género \emph{Psychotria} presenta la mayor
+riqueza (8 especies). La tabla \ref{tab:abun_sp} resume las abundancias
+de las especies de toda la comunidad, que en total suman 41,838
+individuos, con una abundancia media de 65 individuos y mediana ubicada
+en los 1,350 individuos. El mapa de cuadros de la figura
+\ref{fig:abun_sp_q} presenta la riqueza numérica de las especies por
 cuadrante. Los valores de abundancia muestran un aparente patrón en la
 parte centro-occidental de BCI, en donde además se encuentran los sitios
-con la mayor abundancia de la familia {[}ver figura
-\ref{fig:mapa_cuadros_abun_rubic}{]}.
+con la mayor abundancia de la familia (ver figura
+\ref{fig:mapa_cuadros_abun_rubic}).
 
 \begin{longtable}[]{@{}lr@{}}
 \caption{\label{tab:abun_sp}Abundancia por especie.}\tabularnewline
@@ -470,7 +473,7 @@ Los valores para el coeficiente de Spearman presentados en el panel de
 correlación de la figura \ref{fig:panel_cor_suelo_abun_riq_rubic_spear}
 no mostraron evidencia de que exista relación entre la riqueza numérica
 de especies y la abundancia con las variables geomorfológicas notadas en
-la matríz de variables ambientales. Sin embargo, el mismo análisis
+la matriz de variables ambientales. Sin embargo, el mismo análisis
 sugiere una posible relación entre la abundancia numérica de especies y
 la compososición del suelo, mostrando relación positiva con valores
 altos de Aluminio y Fósforo. Así como negativa, para valores altos de pH
@@ -525,7 +528,7 @@ respectivamente. En estos gráficos se incluye el comportamiento
 predecido por el modelo de bara quebrada, representado por la línea roja
 formando la curva.
 
-Los resultados del PCA de los datos de la matríz de comunidad se
+Los resultados del PCA de los datos de la matriz de comunidad se
 encuentran resumidos en los diagramas de la figura
 \ref{fig:pca_biplot_sps}. El escalamiento 1, muestra muchos de los
 cuadrantes dispuestos alrededor del origen formado por los ejes, además
@@ -547,7 +550,7 @@ intersección, salvo aquellas que presentaron una abundancia reducida,
 las cuales aparecen asociadas a pequeños grupos de cuadrantes sin un
 patrón evidente. La disparidad en la incidencia de las especies podría
 estar reflejandose con su disposición en el diagrama. No obstante, estos
-resultados no coinciden con los arrojados por el PCA de la matríz de
+resultados no coinciden con los arrojados por el PCA de la matriz de
 distancias Hellinger (Fig. \ref{fig:pca_biplot_sps}).
 
 \section{PCoA}\label{pcoa}
@@ -604,6 +607,41 @@ también mucha abundancia. las especies dominantes están adaptadas a
 reclutar nuevos individuos con y sin interferencia de otras especies?
 Las especies menos abundantes están adaptadas a vivir apretujadas? Es
 todo esto casualidad?
+
+Las especies que contribuyen de manera significativa a la diversidad
+beta. Muchas de estas especies fueron consideradas ``indicadoras''
+debido a su abundancia. Con la excepción de la especie \emph{Macocnemum
+roseum}, la cual presenta una abundancia mucho menor a la de las demás
+especies que resultan de este análisis.
+
+Alseis blackiana Coussarea curvigemmia Faramea occidentalis Macrocnemum
+roseum Palicourea guianensis 0.18474561 0.15378542 0.05287862 0.03793339
+0.09128798 Pentagonia macrophylla Psychotria horizontalis Psychotria
+limonensis Psychotria marginata 0.03945305 0.11389433 0.03848514
+0.08084602
+
+\begin{figure}
+\centering
+\includegraphics{grafico_divrsdad_beta_hill.png}
+\caption{Gráfico de la diversidad beta multiplicativa en función de los
+números en la serie de Hill. Se observa que la riqueza de especies
+(número de Hill 0) presenta la mayor contribución a la medida de
+diversidad beta para la comunidad. Así sucede ya que la abundancia de
+las especies dominantes no varía drásticamente entre cuadrantes, y es
+principalmente su composición de especies lo que diferencia a los sitios
+entre sí. \label{fig:grafico_divrsdad_beta_hill}}
+\end{figure}
+
+El grado de reemplazo o diversidad beta entre\ldots{}. se midió
+utilizando del índice multiplicativo de diversidad beta aplicando
+
+el comportamiento de la dominancia que siguen las especies de la
+comunidad---- en cuanto a la dominancia de las especies
+
+La representatibidad de la parcela permanente comparada con el valor
+posible real de la riqueza de esta familia a nivel local?
+
+Estimar la riqueza que se conseguiría con más parcelas de censo en BCI?
 
 El grupo 2 (1 en Ward) contiene los sitios con tendencia a presentar
 valores altos de acidez {[}\ref{fig:mapa_cuadros_ph}{]} y concentración
@@ -692,9 +730,20 @@ Shannon; \(Hb2\): entropía de Shannon con 2 como base del logaritmo;
 \centering
 \includegraphics{rarefaccion_min_abun.png}
 \caption{Curva de rarefacción. Las barras horizontales muestran el valor
-de la riqueza estimada en cada sitio para un esfuerzo de muestreo
-equivalente a 341 individuos (abundancia en el cuadrante 50).
-\label{fig:rarefaccion_min_abun}}
+de la riqueza esperada en cada sitio al interpolar las muestras hacia la
+abundancia mínima observada (341 individuos), presente en el cuadrante
+\#50. \label{fig:rarefaccion_min_abun}}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{curva_extrapol_doble_esfuerzo.png}
+\caption{Curva de acumulación de especies hacia el doble de la
+abundancia encontrada en BCI. Se estima que la riqueza aumentaría en
+cuatro especies en consecuencia de duplicar el senso, o replicarlo en
+otra zona de Barro Colorado. El intervalo para un 95\% de confianza se
+representa con los márgenes verde pálido.
+\label{fig:curva_extrapol_doble_esfuerzo}}
 \end{figure}
 
 \section{Discusión}\label{discusiuxf3n}
@@ -714,7 +763,7 @@ ambientales medidas en BCI y es posible que exista algun otro factor que
 determina la ordenación de esta comunidad de plantas. La cobertura del
 dosel arbóreo podría ser una de estas variables a considerarse, puesto
 que las especies dominantes en la comunidad son a la vez tolerantes a la
-sombra (Grandtner \& Chevrette (2013)). la relación entre la abundancia
+sombra (Grandtner \& Chevrette, 2013). la relación entre la abundancia
 de la familia y el contenido de alumínio y fósforo. Esto coincidió con
 los análisis de la varianza explicada entre variables, aunque solo para
 la concentración de fósforo. Adicionalmente, la comunidad de rubiaceas
@@ -726,6 +775,22 @@ ambientales. Sin embargo, el pH y la mayoría de componentes del suele en
 BCI tienen valores bastante homogéneos y más bien se presentan pequeños
 gradientes entre algunos lugares, lo cual evita que este tipo de
 acercamiento sea concluyente.
+
+Algunas de las pruebas estadísticas empleadas en este estudio requieren
+del supuesto de independencia entre muestras, supuesto que es incumplido
+por los cuadrantes en BCI debido a su contigüidad. Sin embargo, esta
+condición permitió un acercamiento comparativo con las técnicas
+apropiadas para el análisis de muestras con cierto grado asociación
+entre sí. En BCI, tanto las variables ambientales como las comunidades
+de plantas se encuentran correlacionadas espacialmente. Por lo tanto,
+los patrones encontrados entre métodos contrastados son cuanto menos
+interesantes. El área correspondiente a BCI es bastante homogénea en
+cuanto a sus condiciones físicas, ya que fué diseñada para que así fuera
+(Baillie, Elsenbeer, Barthold, Grimm, \& Stallard, 2006). Como la misma
+se encuentra situada sobre el dorso de una cuesta de andesita, las
+variables edafológicas aquí presentes en su mayoría siguen un gradiente
+a lo largo de todo BCI, resultado de la meteorización de la roca
+original (Patino, Velbel, Price, \& Wade, 2003).
 
 Los análisis de agrupamiento pueden verse sesgados por la heterogeneidad
 morfométrica que pueden presentar las plantas de esta familia. Estas
@@ -753,6 +818,11 @@ reproducible}{Script reproducible}}\label{script-reproducible}
 Appelhans, T., Detsch, F., Reudenbach, C., \& Woellauer, S. (2019).
 \emph{Mapview: Interactive viewing of spatial data in r}. Retrieved from
 \url{https://CRAN.R-project.org/package=mapview}
+
+\hypertarget{ref-baillie_soil}{}
+Baillie, I., Elsenbeer, H., Barthold, F., Grimm, R., \& Stallard, R.
+(2006). \emph{Semi-detailed soil survey of barro colorado island,
+panama}.
 
 \hypertarget{ref-borcard_legendre}{}
 Borcard, D., Gillet, F., \& Legendre, P. (2018). \emph{Numerical Ecology
@@ -808,6 +878,11 @@ Grandtner, M., \& Chevrette, J. (2013). \emph{Dictionary of trees,
 volume 2: South america: Nomenclature, taxonomy and ecology}. Retrieved
 from \url{https://books.google.com.do/books?id=XALRl1qzcLMC}
 
+\hypertarget{ref-inext_chao}{}
+Hsieh, T. C., Ma, K. H., \& Chao, A. (2020). \emph{INEXT: Interpolation
+and extrapolation for species diversity}. Retrieved from
+\url{http://chao.stat.nthu.edu.tw/wordpress/software_download/}
+
 \hypertarget{ref-hubell_foster_1983}{}
 Hubbell, S. P., \& Foster, R. B. (1983). Diversity of canopy trees in a
 neotropical forest and implications for conservation. In T. Whitmore, A.
@@ -856,6 +931,12 @@ spatially explicit model for tropical tree diversity patterns.
 Oksanen, J., Blanchet, F. G., Friendly, M., Kindt, R., Legendre, P.,
 McGlinn, D., \ldots{} Wagner, H. (2019). \emph{Vegan: Community ecology
 package}. Retrieved from \url{https://CRAN.R-project.org/package=vegan}
+
+\hypertarget{ref-patino_weathering}{}
+Patino, L., Velbel, M., Price, J., \& Wade, J. (2003). Trace element
+mobility during spheroidal weathering of basalts and andesites in hawaii
+and guatemala. \emph{Chemical Geology}, \emph{202}.
+\url{https://doi.org/10.1016/j.chemgeo.2003.01.002}
 
 \hypertarget{ref-cita_sf}{}
 Pebesma, E. (2018). Simple Features for R: Standardized Support for
