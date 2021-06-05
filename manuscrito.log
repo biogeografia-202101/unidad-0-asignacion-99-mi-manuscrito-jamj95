@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.17)  4 JUN 2021 05:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.17)  4 JUN 2021 22:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -814,146 +814,167 @@ LaTeX Warning: Reference `informaci\IeC {\'o}n suplementaria' on page 2 undefin
 ed on input line 272.
 
 [2] [3]
-Overfull \hbox (1.1287pt too wide) in paragraph at lines 409--420
+<grupos_ward_complete_altura_corte2.png, id=89, 1028.34187pt x 499.8675pt>
+File: grupos_ward_complete_altura_corte2.png Graphic file (type png)
+<use grupos_ward_complete_altura_corte2.png>
+Package pdftex.def Info: grupos_ward_complete_altura_corte2.png  used on input 
+line 372.
+(pdftex.def)             Requested size: 469.76355pt x 228.34772pt.
+[4 <./grupos_ward_complete_altura_corte2.png (PNG copy)>]
+Overfull \hbox (1.1287pt too wide) in paragraph at lines 417--431
 []\T1/ppl/m/n/10.95 La fa-milia Ru-bi-aceae en Barro Col-orado se en-cuen-tra r
 ep-re-sen-tada por 31 es-pecies y 20 géneros.
  []
 
-[4]
-<manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf, id=109, 459.7175pt x 243.
-91125pt>
-File: manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pd
+<manuscrito_files/figure-latex/unnamed-chunk-2-1.pdf, id=97, 459.7175pt x 243.9
+1125pt>
+File: manuscrito_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pd
 f)
-<use manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf>
-Package pdftex.def Info: manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf  u
-sed on input line 467.
+<use manuscrito_files/figure-latex/unnamed-chunk-2-1.pdf>
+Package pdftex.def Info: manuscrito_files/figure-latex/unnamed-chunk-2-1.pdf  u
+sed on input line 434.
 (pdftex.def)             Requested size: 459.72337pt x 243.91435pt.
-[5] [6 <./manuscrito_files/figure-latex/unnamed-chunk-3-1.pdf>] [7]
-<grafico_divrsdad_beta_hill.png, id=148, 446.41782pt x 301.125pt>
+<mapa_cuadros_abun_rubic.png, id=98, 995.72pt x 762.85pt>
+File: mapa_cuadros_abun_rubic.png Graphic file (type png)
+<use mapa_cuadros_abun_rubic.png>
+Package pdftex.def Info: mapa_cuadros_abun_rubic.png  used on input line 441.
+(pdftex.def)             Requested size: 469.7661pt x 359.90144pt.
+<panel_cor_suelo_abun_riq_rubic_spear.png, id=101, 1110.0672pt x 624.4128pt>
+File: panel_cor_suelo_abun_riq_rubic_spear.png Graphic file (type png)
+<use panel_cor_suelo_abun_riq_rubic_spear.png>
+Package pdftex.def Info: panel_cor_suelo_abun_riq_rubic_spear.png  used on inpu
+t line 458.
+(pdftex.def)             Requested size: 375.79178pt x 211.38287pt.
+[5 <./manuscrito_files/figure-latex/unnamed-chunk-2-1.pdf>] [6 <./mapa_cuadros_
+abun_rubic.png> <./panel_cor_suelo_abun_riq_rubic_spear.png (PNG copy)>]
+<diagrama_caja_igualdad_medias_complete.png, id=123, 472.01344pt x 331.99031pt>
+
+File: diagrama_caja_igualdad_medias_complete.png Graphic file (type png)
+<use diagrama_caja_igualdad_medias_complete.png>
+Package pdftex.def Info: diagrama_caja_igualdad_medias_complete.png  used on in
+put line 489.
+(pdftex.def)             Requested size: 469.76515pt x 330.40897pt.
+[7 <./diagrama_caja_igualdad_medias_complete.png (PNG copy)>]
+<pca_biplot_suelo.png, id=136, 760.34062pt x 337.26pt>
+File: pca_biplot_suelo.png Graphic file (type png)
+<use pca_biplot_suelo.png>
+Package pdftex.def Info: pca_biplot_suelo.png  used on input line 534.
+(pdftex.def)             Requested size: 469.77045pt x 208.37343pt.
+<pca_biplot_sps.png, id=137, 685.8122pt x 337.26pt>
+File: pca_biplot_sps.png Graphic file (type png)
+<use pca_biplot_sps.png>
+Package pdftex.def Info: pca_biplot_sps.png  used on input line 544.
+(pdftex.def)             Requested size: 469.76807pt x 231.01656pt.
+<biplot_correspndncia_sps_escal_2_2.png, id=138, 703.87968pt x 478.78876pt>
+File: biplot_correspndncia_sps_escal_2_2.png Graphic file (type png)
+<use biplot_correspndncia_sps_escal_2_2.png>
+Package pdftex.def Info: biplot_correspndncia_sps_escal_2_2.png  used on input 
+line 551.
+(pdftex.def)             Requested size: 469.7496pt x 319.53021pt.
+<pcoa_sps_jacc_var_ambient.png, id=140, 534.49687pt x 376.40625pt>
+File: pcoa_sps_jacc_var_ambient.png Graphic file (type png)
+<use pcoa_sps_jacc_var_ambient.png>
+Package pdftex.def Info: pcoa_sps_jacc_var_ambient.png  used on input line 569.
+
+(pdftex.def)             Requested size: 469.77148pt x 330.82498pt.
+[8 <./pca_biplot_suelo.png (PNG copy)>] [9 <./pca_biplot_sps.png (PNG copy)> <.
+/biplot_correspndncia_sps_escal_2_2.png (PNG copy)>] [10 <./pcoa_sps_jacc_var_a
+mbient.png (PNG copy)>]
+<rda_triplot_var_selec_4_escal2.png, id=157, 767.86874pt x 660.21657pt>
+File: rda_triplot_var_selec_4_escal2.png Graphic file (type png)
+<use rda_triplot_var_selec_4_escal2.png>
+Package pdftex.def Info: rda_triplot_var_selec_4_escal2.png  used on input line
+ 602.
+(pdftex.def)             Requested size: 469.75839pt x 403.90012pt.
+[11 <./rda_triplot_var_selec_4_escal2.png (PNG copy)>]
+<grafico_divrsdad_beta_hill.png, id=166, 446.41782pt x 301.125pt>
 File: grafico_divrsdad_beta_hill.png Graphic file (type png)
 <use grafico_divrsdad_beta_hill.png>
-Package pdftex.def Info: grafico_divrsdad_beta_hill.png  used on input line 625
+Package pdftex.def Info: grafico_divrsdad_beta_hill.png  used on input line 644
 .
 (pdftex.def)             Requested size: 446.42352pt x 301.12885pt.
 
-Overfull \hbox (2.9459pt too wide) in paragraph at lines 641--643
+Overfull \hbox (2.9459pt too wide) in paragraph at lines 660--662
 []\T1/ppl/m/n/10.95 La rep-re-sen-tat-i-bidad de la parcela per-ma-nente com-pa
 rada con el valor posi-ble real de la riqueza
  []
 
-<mapa_cuadros_abun_rubic.png, id=150, 995.72pt x 762.85pt>
-File: mapa_cuadros_abun_rubic.png Graphic file (type png)
-<use mapa_cuadros_abun_rubic.png>
-Package pdftex.def Info: mapa_cuadros_abun_rubic.png  used on input line 652.
-(pdftex.def)             Requested size: 469.7661pt x 359.90144pt.
-<mapa_cuadros_ph.png, id=152, 995.72pt x 762.85pt>
+<mapa_cuadros_ph.png, id=168, 995.72pt x 762.85pt>
 File: mapa_cuadros_ph.png Graphic file (type png)
 <use mapa_cuadros_ph.png>
-Package pdftex.def Info: mapa_cuadros_ph.png  used on input line 659.
+Package pdftex.def Info: mapa_cuadros_ph.png  used on input line 671.
 (pdftex.def)             Requested size: 469.7661pt x 359.90144pt.
-<env_suelo_geomorf_pca_br_stick.png, id=153, 663.98062pt x 338.01282pt>
-File: env_suelo_geomorf_pca_br_stick.png Graphic file (type png)
-<use env_suelo_geomorf_pca_br_stick.png>
-Package pdftex.def Info: env_suelo_geomorf_pca_br_stick.png  used on input line
- 665.
-(pdftex.def)             Requested size: 469.75783pt x 239.13976pt.
-<pca_biplot_suelo.png, id=154, 760.34062pt x 337.26pt>
-File: pca_biplot_suelo.png Graphic file (type png)
-<use pca_biplot_suelo.png>
-Package pdftex.def Info: pca_biplot_suelo.png  used on input line 674.
-(pdftex.def)             Requested size: 469.77045pt x 208.37343pt.
-<pca_biplot_geomorf.png, id=155, 732.48656pt x 341.77687pt>
-File: pca_biplot_geomorf.png Graphic file (type png)
-<use pca_biplot_geomorf.png>
-Package pdftex.def Info: pca_biplot_geomorf.png  used on input line 681.
-(pdftex.def)             Requested size: 469.76218pt x 219.19016pt.
-<pca_biplot_sps.png, id=156, 685.8122pt x 337.26pt>
-File: pca_biplot_sps.png Graphic file (type png)
-<use pca_biplot_sps.png>
-Package pdftex.def Info: pca_biplot_sps.png  used on input line 688.
-(pdftex.def)             Requested size: 469.76807pt x 231.01656pt.
-<biplot_correspndncia_sps_escal_2.png, id=157, 978.65625pt x 526.96875pt>
-File: biplot_correspndncia_sps_escal_2.png Graphic file (type png)
-<use biplot_correspndncia_sps_escal_2.png>
-Package pdftex.def Info: biplot_correspndncia_sps_escal_2.png  used on input li
-ne 695.
-(pdftex.def)             Requested size: 469.7646pt x 252.95016pt.
-<pcoa_sps_jacc_var_ambient.png, id=158, 534.49687pt x 376.40625pt>
-File: pcoa_sps_jacc_var_ambient.png Graphic file (type png)
-<use pcoa_sps_jacc_var_ambient.png>
-Package pdftex.def Info: pcoa_sps_jacc_var_ambient.png  used on input line 703.
-
-(pdftex.def)             Requested size: 469.77148pt x 330.82498pt.
-<rda_triplot_var_selec_4_escal2.png, id=159, 767.86874pt x 660.21657pt>
-File: rda_triplot_var_selec_4_escal2.png Graphic file (type png)
-<use rda_triplot_var_selec_4_escal2.png>
-Package pdftex.def Info: rda_triplot_var_selec_4_escal2.png  used on input line
- 711.
-(pdftex.def)             Requested size: 469.75839pt x 403.90012pt.
-<panel_cor_indcs_diversidad1_columnas_quitadas.png, id=160, 496.85625pt x 341.7
+<panel_cor_indcs_diversidad1_columnas_quitadas.png, id=169, 496.85625pt x 341.7
 7687pt>
 File: panel_cor_indcs_diversidad1_columnas_quitadas.png Graphic file (type png)
 
 <use panel_cor_indcs_diversidad1_columnas_quitadas.png>
 Package pdftex.def Info: panel_cor_indcs_diversidad1_columnas_quitadas.png  use
-d on input line 720.
+d on input line 677.
 (pdftex.def)             Requested size: 469.75908pt x 323.1373pt.
-<rarefaccion_min_abun.png, id=161, 519.44063pt x 338.01282pt>
+<rarefaccion_min_abun.png, id=170, 519.44063pt x 338.01282pt>
 File: rarefaccion_min_abun.png Graphic file (type png)
 <use rarefaccion_min_abun.png>
-Package pdftex.def Info: rarefaccion_min_abun.png  used on input line 731.
+Package pdftex.def Info: rarefaccion_min_abun.png  used on input line 688.
 (pdftex.def)             Requested size: 469.75116pt x 305.67863pt.
-<curva_extrapol_doble_esfuerzo.png, id=162, 462.22687pt x 340.27126pt>
+<curva_extrapol_doble_esfuerzo.png, id=171, 462.22687pt x 340.27126pt>
 File: curva_extrapol_doble_esfuerzo.png Graphic file (type png)
 <use curva_extrapol_doble_esfuerzo.png>
 Package pdftex.def Info: curva_extrapol_doble_esfuerzo.png  used on input line 
-740.
+697.
 (pdftex.def)             Requested size: 462.22574pt x 340.27042pt.
-[8] [9 <./grafico_divrsdad_beta_hill.png>] [10 <./mapa_cuadros_abun_rubic.png>]
-[11 <./mapa_cuadros_ph.png>] [12 <./env_suelo_geomorf_pca_br_stick.png (PNG cop
-y)> <./pca_biplot_suelo.png (PNG copy)>] [13 <./pca_biplot_geomorf.png (PNG cop
-y)> <./pca_biplot_sps.png (PNG copy)>] [14 <./biplot_correspndncia_sps_escal_2.
-png (PNG copy)>] [15 <./pcoa_sps_jacc_var_ambient.png (PNG copy)>] [16 <./rda_t
-riplot_var_selec_4_escal2.png (PNG copy)>] [17 <./panel_cor_indcs_diversidad1_c
-olumnas_quitadas.png (PNG copy)>] [18 <./rarefaccion_min_abun.png (PNG copy)>] 
-[19 <./curva_extrapol_doble_esfuerzo.png (PNG copy)>]
+[12] [13 <./grafico_divrsdad_beta_hill.png>] [14 <./mapa_cuadros_ph.png>] [15 <
+./panel_cor_indcs_diversidad1_columnas_quitadas.png (PNG copy)>] [16 <./rarefac
+cion_min_abun.png (PNG copy)>] [17 <./curva_extrapol_doble_esfuerzo.png (PNG co
+py)>] [18]
+<env_suelo_geomorf_pca_br_stick.png, id=208, 663.98062pt x 338.01282pt>
+File: env_suelo_geomorf_pca_br_stick.png Graphic file (type png)
+<use env_suelo_geomorf_pca_br_stick.png>
+Package pdftex.def Info: env_suelo_geomorf_pca_br_stick.png  used on input line
+ 810.
+(pdftex.def)             Requested size: 469.75783pt x 239.13976pt.
+<pca_biplot_geomorf.png, id=209, 732.48656pt x 341.77687pt>
+File: pca_biplot_geomorf.png Graphic file (type png)
+<use pca_biplot_geomorf.png>
+Package pdftex.def Info: pca_biplot_geomorf.png  used on input line 821.
+(pdftex.def)             Requested size: 469.76218pt x 219.19016pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 809.
-
-Overfull \hbox (35.64655pt too wide) in paragraph at lines 867--870
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 827.
+[19 <./env_suelo_geomorf_pca_br_stick.png (PNG copy)>]
+Overfull \hbox (35.64655pt too wide) in paragraph at lines 885--888
 \T1/ppl/m/n/10.95 dices and sta-tis-ti-cal in-fer-ence. In \T1/ppl/m/it/10.95 E
 col-ogy\T1/ppl/m/n/10.95 . Re-trieved from [][]$http : / / sites . google . com
  / site / miqueldecaceres/$[][] 
  []
 
-[20]
-Overfull \hbox (1.02496pt too wide) in paragraph at lines 959--962
+[20 <./pca_biplot_geomorf.png (PNG copy)>]
+Overfull \hbox (1.02496pt too wide) in paragraph at lines 977--980
 \T1/ppl/m/n/10.95 species abun-dance in ecol-ogy. \T1/ppl/m/it/10.95 Na-ture\T1
 /ppl/m/n/10.95 , \T1/ppl/m/it/10.95 424\T1/ppl/m/n/10.95 (6952), 1035--1037. []
 []$https : / / doi . org / 10 . 1038 / nature01883$[][] 
  []
 
 [21]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 973.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 973.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 991.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 991.
 (./manuscrito.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 973.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 973.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 991.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 991.
 Package rerunfilecheck Info: File `manuscrito.out' has not changed.
-(rerunfilecheck)             Checksum: 7EF0429B8930BADF09AD1A2AF60061B5;2268.
+(rerunfilecheck)             Checksum: F67010E9A9264809162AE31C0AB31687;1887.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 973.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 991.
  ) 
 Here is how much of TeX's memory you used:
- 11008 strings out of 492982
- 153944 string characters out of 6134896
- 237983 words of memory out of 5000000
- 14329 multiletter control sequences out of 15000+600000
+ 11016 strings out of 492982
+ 154497 string characters out of 6134896
+ 235715 words of memory out of 5000000
+ 14337 multiletter control sequences out of 15000+600000
  29364 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,31p,639b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,6n,31p,642b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
@@ -965,10 +986,10 @@ hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive
 fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatin
 o/uplri8a.pfb>
-Output written on manuscrito.pdf (21 pages, 1430118 bytes).
+Output written on manuscrito.pdf (21 pages, 2107723 bytes).
 PDF statistics:
- 346 PDF objects out of 1000 (max. 8388607)
- 291 compressed objects within 3 object streams
+ 342 PDF objects out of 1000 (max. 8388607)
+ 284 compressed objects within 3 object streams
  84 named destinations out of 1000 (max. 500000)
- 215 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 

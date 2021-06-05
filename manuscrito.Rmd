@@ -14,8 +14,8 @@ title: |
 author:
 - name: "J. Alberto Meléndez Juan"
   affiliation: "Universidad Autónoma de Santo Domingo (UASD)"
-abstract: "Resumen del manuscrito"
-keywords: "palabra clave 1, palabra clave 2"
+abstract: "El estudio continuo de"
+keywords: "Asociación, Diversidad, Rubiaceae,"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 geometry: margin=1in
 fontfamily: mathpazo
@@ -28,6 +28,13 @@ header-includes:
   \usepackage{pdflscape}
   \newcommand{\blandscape}{\begin{landscape}}
   \newcommand{\elandscape}{\end{landscape}}
+  \usepackage{float} \floatplacement{figure}{H} 
+  \newcommand{\beginsupplement}{
+    \setcounter{table}{0}
+    \renewcommand{\thetable}{S\arabic{table}}
+    \setcounter{figure}{0}
+    \renewcommand{\thefigure}{S\arabic{figure}}
+    }
 ---
 
 ```{r, include=FALSE}
@@ -72,25 +79,27 @@ Para poder comparar la relación entre las especies según su abundancia númeri
 
 ##Análisis de agrupamiento
 
-Tanto el método jerarquico aglomerativo de asociación entre pares de cuadrantes (según su composición de especies) bajo el criterio de enlace completo y el método Ward basado en la varianza mínima, fueron utilizados en un acercamiento preliminar al análisis de agrupamiento para contrastar su eficacia en conseguir grupos consistentes y con significado ecológico [@borcard_legendre]. Estos generaron dendrogramas que posteriormente son comparados con la matriz de distancia de cuerdas [@legendre_galllagher_2001], utilizando correlación cofenética entre ambos para determinar el número ideal de grupos. Además, se utilizó remuestreo bootstrap y boostrap multiescalar para conocer la probabilidad de éxito en la inferencia del número de grupos y la identidad de sus componentes [@borcard_legendre]. Las reparticiones se basaron en una probabilidad de 91% o más de acierto para el método bootstrap y de un 95% para boostrap multiescalar.
+Tanto el método jerarquico aglomerativo de asociación entre pares de cuadrantes (según la composición de especies) bajo el criterio de enlace completo, y el método Ward basado en la varianza mínima, fueron utilizados en un acercamiento preliminar al análisis de agrupamiento para contrastar su eficacia en conseguir grupos consistentes y con significado ecológico [@borcard_legendre]. Estos generaron dendrogramas que posteriormente son comparados con la matriz de distancia de cuerdas [@legendre_galllagher_2001], utilizando correlación cofenética entre ambos para determinar el número ideal de grupos. Además, se utilizó remuestreo bootstrap y boostrap multiescalar para conocer la probabilidad de éxito en la inferencia del número de grupos y la identidad de sus componentes [@borcard_legendre]. Las reparticiones se basaron en una probabilidad de 91% o más de acierto para el método bootstrap y de un 95% para boostrap multiescalar.
 
+Puesto que se encontraron patrones consistentes en la composición y número de grupos entre los métodos examinados (ver figura \ref{fig:grupos_ward_complete_altura_corte2}), los análisis de agrupamiento posteriores se basaron en los producidos mediante enlace completo, para el cual se consideraron dos grupos compuestos por 20 y 30 cuadrantes, respectivamente.
 
-Puesto que se encontraron patrones consistentes en la composición y número de grupos entre los métodos examinados, los análisis de agrupamiento posteriores realizados en este trabajo se basaron en los producidos mediante enlace completo, para el cual se consideraron dos grupos compuestos por 20 y 30 cuadrantes, respectivamente.
-<!--
+Para conocer cuales especies son características o se encuentran asociadas a cada grupo, se utiliza la métrica del "valor indicador" o IndVal [@dufrene_legendre], la cual está basada en permutaciones aleatorias de los sitios según la ocurrencia de las especies y su abundancia. Así mismo, se estudia el grado de asociación de las especies con cierta preferencia por las combinaciones de cuadrantes consideradas como grupos, indicado por el coeficiente de correlación biserial puntual [@borcard_legendre].
+Se llevó acabo un acercamiento parecido al anterior durante las pruebas estadisticas de la hipotesis nula, sobre la base de que las especies que se encontraban en cuadrantes pertenecientes a un determinado grupo lo hacían por obra del azar. Esta prueba se logró mediante reordenación aleatoria de los valores de abundancia y comparando su distribución con los valores obtenidos anteriormente [@caceres2009associations]. Para estas pruebas de asociación y las subsiguientes se utilizó un nivel de significancia $\alpha = 0.05$.<!--
 Estos resultados sugieren 2 grupos con 95% o más de confianza en cada caso para el metodo Ward; 12 grupos sugeridos por los estandares establecidos para bootstrap y 10 grupos para bootstrap multiescalar para el método por medio de enlace completo.--><!--un grupo con 34 cuadrantes y un segundo conformado por 16 formulados por el método Ward, y dos grupos por enlace completo que incluyen 20 y 30 sitios.
 En cuanto a las anchuras de silueta promedio, en el método Ward el programa sugirió 2 grupos presentes, 2 para complete y 2 con un posible 3 para upgma. fue utilizado un mapa de calor para cada método con el fin de analizar de manera visual las distancias entre sitios y compararlas con los analisis estadisticos. 
 Los análisis de agrupamiento posteriores realizados en este trabajo se basaron en los métodos Ward y por enlace completo. La decisión se justifica al encontrarse patrones consistentes en la composición y número de grupos en ambos métodos. Los valores de correlación cofenética para el método Ward (0.657) tuvieron una diferencia absoluta menor al compararles con el método por enlace completo (0.615) que con el método upgma (0.723).--><!--
 
 otra vaina es que bootstrap y el corte del árbol basado en la altura para upgma dejaban pila de sitios afuera y eso no ta de na 
  
---><!--Pruebas T de Student y ? Wilcoxon homogeneizan las medias y medianas de las variables ambientales en los grupos identificados, con lo que busco determinar cuales valores podrían ser responsables(asociados) a la diferenciación en la composición de ambos grupos.-->
-
-Para conocer cuales especies son características o se encuentran asociadas a cada grupo, se utiliza la métrica del "valor indicador" o IndVal [@dufrene_legendre], la cual está basada en permutaciones aleatorias de los sitios según la ocurrencia de las especies y su abundancia. Así mismo, se estudia el grado de asociación de las especies con cierta preferencia por las combinaciones de cuadrantes consideradas como grupos, indicado por el coeficiente de correlación biserial puntual [@borcard_legendre].
-Se llevó acabo un acercamiento parecido al anterior durante las pruebas estadisticas de la hipotesis nula, sobre la base de que las especies que se encontraban en cuadrantes pertenecientes a un determinado grupo lo hacían por obra del azar. Esta prueba se logró mediante reordenación aleatoria de los valores de abundancia y comparando su distribución con los valores obtenidos anteriormente [@caceres2009associations]. Para estas pruebas de asociación y las subsiguientes se utilizó un nivel de significancia $\alpha = 0.05$.
+--><!--Pruebas T de Student y ? Wilcoxon homogeneizan las medias y medianas de las variables ambientales en los grupos identificados, con lo que busco determinar cuales valores podrían ser responsables(asociados) a la diferenciación en la composición de ambos grupos.
+-->
 
 ##Ordenación
 
 Las carasteristicas de la varianza en los datos ambientales en BCI fueron estudiados mediante análisis de sus componentes principales (PCA) [@borcard_legendre]. Este método permitió resumir la multidimensionalidad de las variables, explicar la varianza y los posibles patrones que estos podrían seguir. Esto se realizó también para la matriz de comunidad, con valores de abundancia normalizados por la transformada Hellinger, además de un análisis de correspondencia (CA) de la misma matriz.<!--\ref{fig:grafico_pca_suelo}se observan los cuadrantes agrupados por el método jerarquico UPGMA? y presentados sobre las escalas de varianza relativas del primer y segundo componentes principales.--> De manera alternativa, se realiza un análisis de las coordenadas principales (PCoA) para ayudar a conocer la relación entre las especies, utilizando el coeficiente de disimilaridad de Jaccard como medida, y a su vez usando los promedios ponderados por los valores de abundancia para permitir su representación en los diagramas *biplot* [@borcard_legendre].
+
+![Dendrogramas de los grupos producidos por Ward y Complete. \label{fig:grupos_ward_complete_altura_corte2}](grupos_ward_complete_altura_corte2.png)
+
 
 Se realizó un acercamiento restringido de la ordenación para probar el grado de dependencia de los datos de la matriz de comunidad con la matriz ambiental, mediante ajuste lineal en un análisis de redundancia (RDA) [@borcard_legendre], utilizando la matriz de comunidad transformada por Hellinger. Se seleccionaron las variables que presentaron cierto grado de asociación, y (a discreción y de manera secuencial) se excluyeron algunas de estas, con el objetivo de reducir el grado de colinealidad entre las variables independientes restantes.
 
@@ -100,16 +109,9 @@ Con la finalidad de asignar medidas apropiadas a la diversidad de especies, y ap
 
 La variación en la composición y abundancia de especies de la comunidad, es medida utilizando el índice multiplicativo de diversidad beta basado en los números de Hill [@borcard_legendre]. Finalmente, se examina la contribución a la diversidad beta por parte de las especies y los sitios en BCI, al analizar la varianza de la abundancia y riqueza de  los cuadrantes y las especies. Estos valores fueron comparados con la varianza promedio, y se considera entonces que las especies cuya varianza promedio supera la mitad de la varianza promedio total, presentan una contribución importante a la diversidad beta de la comunidad [@borcard_legendre].
 
-
 # Resultados
 
-La familia Rubiaceae en Barro Colorado se encuentra representada por 31 especies y 20 géneros. El género *Psychotria* presenta la mayor riqueza (8 especies). La tabla \ref{tab:abun_sp} resume las abundancias de las especies de toda la comunidad, que en total suman 41,838 individuos, con una abundancia media de 65 individuos y mediana ubicada en los 1,350 individuos. El gráfico de mosaicos de la figura \ref{fig:abun_sp_q} presenta la riqueza numérica de las especies por cuadrante. Los valores de abundancia muestran un aparente patrón en la parte centro-occidental de BCI, en donde además se encuentran los sitios con la mayor abundancia de la familia (ver figura \ref{fig:mapa_cuadros_abun_rubic}).<!--Las pruebas de asociación entre la abundancia numérica de las distintas especies arrojaron 20 combinaciones de especies con asociación positiva-->
-
-
-```{r,echo=FALSE}
-    knitr::kable(abun_sp,
-                 caption = "\\label{tab:abun_sp}Abundancia por especie.")
-```
+La familia Rubiaceae en Barro Colorado se encuentra representada por 31 especies y 20 géneros. El género *Psychotria* presenta la mayor riqueza (8 especies). La tabla \ref{tab:abun_sp} resume las abundancias de las especies de toda la comunidad, que en total suman 41,838 individuos, con una abundancia media de 65 individuos y mediana ubicada en los 1,350 individuos. El gráfico de mosaicos de la figura \ref{fig:abun_sp_q} presenta la riqueza numérica de las especies por cuadrante. En el mismo se observa la marcada diferencia entre las especies en cuanto a su incidencia. Además, el número de individuos de las especies más abundantes, como *Faramea occidentalis*, se mantiene prácticamente constante en todos los cuadrantes. Por otro lado, la abundancia de toda la comunidad muestra un aparente patrón en la parte centro-occidental de BCI, donde se encuentran los sitios con la mayor abundancia (ver figura \ref{fig:mapa_cuadros_abun_rubic}).<!--Las pruebas de asociación entre la abundancia numérica de las distintas especies arrojaron 20 combinaciones de especies con asociación positiva-->
 
 
 ``` {r, echo=FALSE, fig.cap="\\label{fig:abun_sp_q}Número de individuos de cada especie por cuadrante."}
@@ -117,41 +119,60 @@ abun_sp_q
 ```
 
 
-Los valores para el coeficiente de Spearman presentados en el panel de correlación de la figura \ref{fig:panel_cor_suelo_abun_riq_rubic_spear} no mostraron evidencia de que exista relación entre la riqueza numérica de especies y la abundancia con las variables geomorfológicas notadas en la matriz de variables ambientales. Sin embargo, el mismo análisis sugiere una posible relación entre la abundancia numérica de especies y la compososición del suelo, mostrando relación positiva con valores altos de Aluminio y Fósforo. Así como negativa, para valores altos de pH y concentraciones de otros elementos<!--(B, Ca, Cu, Fe, K, Mg, Mn, Zn y Nitrógeno mineralizado)-->.
-
-!Panel de correlacion de Spearman entre la diversidad/abundancia de rubiaceas y las variables edafológicas \label{fig:panel_cor_suelo_abun_riq_rubic_spear}](panel_cor_suelo_abun_riq_rubic_spear.png)
-
-<!--La figura \ref{fig:mapa_cuadros_ph} presenta la distribución de la ácidez en el suelo de BCI.-->Las variables fósforo y cobre obtuvieron valores de *P* 0.0000347 y 0.0127 "significativos" en las pruebas de correlación respecto a los grupos 1 y 2 formulados por complete.<!--fueron 0.0000347 y 0.000408 para wilcoxon(significativos). Para la de variables asociadas a la diferenciacion de los grupos fuevariable *Cu* fueron 0.0127 student y 0.0333 wilx. Otro valor de *P* algo "menos significativo" fue 0.0808, correspondiente a la abundancia de toda la comunidad.(0.0808 T, 0.0685 W); *Al* (0.0867 W); riqueza global (0.0314W)--> De manera similar, para los grupos producidos mediante Ward el valor *P* para la variable fósforo fue de 0.000370 y 0.00726 para cobre. Otros valores para otras variables fueron: 0.0341 (Manganeso), 0.0454 (hierro), 0.0243 y 0.0331 (riqueza y abundancia de todas las familias en BCI).<!--para student y 0.0129 para wilcoxon. Para *Cu*cobre fue 0.00726 sTdnt y 0.0115 Wilcx. valores casi significativos: riqueza global(0.0243 T, 0.0115 W);abundancia global(0.0331 T, 0.0375 W); *Mn*(0.0341 T, 0.0405 W); *Fe*(0.0454 T, 0.0688 W); *Ca* (0.0789 W)nivel de significancia p=0.01(significtv), y 0.1(casi significtv)-->
-<!--En complete, el grupo 1 (verde) pareciera asociarse con el cobre y el grupo 2 (gris) con el fósforo. Los sitios de ambos grupos son comparables con los mapas de concentración de P y Cu del aed_6 y parecen coincidir.
-Para Ward pasa algo muy parecido, solo que los colores de los grupos están invertidos 2(verde) y 1(gris).-->
-
-Las especies *Alseis blackiana* y *Psychotria limonensis* fueron las que obtuvieron un valor alto de confianza al examinar su potencial como especies indicadoras del grupo 1 (grupo 2 en Ward). Para el caso del grupo 2 (1 en Ward), las especies indicadoras fueron *Faramea occidentalis*, *Psychotria horizontalis* y *Coussarea curvigemmia*<!--esta ultima másomenos-->.
-La ocurrencia de *A. blackiana* y *Pentagonia macrophylla* indica su preferencia por el grupo 1 (complete). Por otra parte, en el grupo 2 (complete) siete especies resultan de interes por su ocurrencia: la muy dominante *F. occidentalis*; *Psychotria deflexa*, *P. racemosa*, *P. horizontalis*, *Posoqueria latifolia*, *Alibertia edulis* y *Coussarea curvigemmia*. En los grupos generados mediante Ward solo *F. occidentalis*, *P. horizontalis* y *A. blackiana* resultaron compatibles en las pruebas de fidelidad de asociación.
-
-# PCA
-
-En la figura \ref{fig:pca_biplot_suelo}, se aprecian tres grupos de cuadrantes en el recuadro rotulado como escalamiento 1 de los diagramas *Biplot* generados en el PCA de las variables de suelo, en el cual además, se observa que las variables Nitrógeno, Fósforo y pH aportan la mayor parte de la varianza. La relación entre estas variables se encuentra debidamente representada en el recuadro del escalamiento 2, por medio de los ángulos que forman sus vectores. En el caso de las variables geomorfológicas, algunos sitios están asociados a un alto porcentaje de llanura y hombrera, aunque la mayoría se encuentra más cerca del origen formado por los ejes de los componentes principales 1 y 2 (ver figura \ref{fig:pca_biplot_geomorf}).
-
-Los gráficos de barras de la figura \ref{fig:pca_suelo_geomorf_br_stick} muestran los componentes principales de la varianza en las variables de suelo y geomorfológia de BCI. La varianza acumulada de los PC1 y PC2 logran explicar el 73.1% y el 43.6% de la varianza total respectivamente. En estos gráficos se incluye el comportamiento predecido por el modelo de bara quebrada, representado por la línea roja formando la curva.
+![Abundancia de rubiaceas en BCI \label{fig:mapa_cuadros_abun_rubic}](mapa_cuadros_abun_rubic.png)
 
 
-Los resultados del PCA de los datos de la matriz de comunidad se encuentran resumidos en los diagramas de la figura \ref{fig:pca_biplot_sps}. El escalamiento 1, muestra muchos de los cuadrantes dispuestos alrededor del origen formado por los ejes, además de unos cuantos cuadrantes atípicos y más alejados. Por otro lado, las especies *A. blackiana*, *C. curvigemmia*, *P. marginalis* y *P. horizontalis*, presentan una contribución desproporcionada a la varianza total, en comparación con el resto de las especies.
+Los valores para el coeficiente de Spearman presentados en el panel de correlación de la figura \ref{fig:panel_cor_suelo_abun_riq_rubic_spear}, no mostraron evidencia de que exista relación entre la riqueza y la abundancia especies con las variables geomorfológicas notadas en la matriz de variables ambientales. Sin embargo, el mismo análisis sugiere una posible relación entre la abundancia numérica de especies y la compososición del suelo, mostrando relación positiva con valores altos de aluminio y fósforo. Así como negativa, para valores altos de pH y concentraciones de otros elementos<!--(B, Ca, Cu, Fe, K, Mg, Mn, Zn y Nitrógeno mineralizado)-->.
+
+![Panel de correlacion de Spearman entre la diversidad/abundancia de rubiaceas y las variables edafológicas \label{fig:panel_cor_suelo_abun_riq_rubic_spear}](panel_cor_suelo_abun_riq_rubic_spear.png){width=80%}
+
+Las pruebas de correlación entre los grupos 1 y 2 formulados por complete, resultaron significativas respecto a la variable fósforo. Por otro lado, el contenido de cobre y la abundancia global promedio, es decir, la media correspondiente a todas las plantas en BCI, son significativamente diferentes entre los sitios de ambos grupos, para un nivel de significancia de $\alpha= 0.1$ (ver \ref{fig:diagrama_caja_igualdad_medias_complete}).<!--La figura \ref{fig:mapa_cuadros_ph} presenta la distribución de la ácidez en el suelo de BCI.
+--><!--*P* 0.0000347 y 0.0127 "significativos". fueron 0.0000347 y 0.000408 para wilcoxon(significativos). Para la de variables asociadas a la diferenciacion de los grupos fuevariable *Cu* fueron 0.0127 student y 0.0333 wilx. Otro valor de *P* algo "menos significativo" fue 0.0808, correspondiente a la abundancia de toda la comunidad.(0.0808 T, 0.0685 W); *Al* (0.0867 W); riqueza global (0.0314W) De manera similar, para los grupos producidos mediante Ward el valor *P* para la variable fósforo fue de 0.000370 y 0.00726 para cobre. Otros valores para otras variables fueron: 0.0341 (Manganeso), 0.0454 (hierro), 0.0243 y 0.0331 (riqueza y abundancia de todas las familias en BCI).--><!--para student y 0.0129 para wilcoxon. Para *Cu*cobre fue 0.00726 sTdnt y 0.0115 Wilcx. valores casi significativos: riqueza global(0.0243 T, 0.0115 W);abundancia global(0.0331 T, 0.0375 W); *Mn*(0.0341 T, 0.0405 W); *Fe*(0.0454 T, 0.0688 W); *Ca* (0.0789 W)nivel de significancia p=0.01(significtv), y 0.1(casi significtv)
+
+--><!--En complete, el grupo 1 (verde) pareciera asociarse con el cobre y el grupo 2 (gris) con el fósforo. Los sitios de ambos grupos coinciden con los que presentaron mayor de concentración de estos elementos del aed_6 y coincidir. Para Ward pasa algo muy parecido, solo que los colores de los grupos están invertidos 2(verde) y 1(gris).-->
+
+Las especies *Alseis blackiana* y *Psychotria limonensis* fueron las que obtuvieron un valor alto de confianza al examinar su potencial como especies indicadoras del grupo 1. Para el caso del grupo 2, las especies indicadoras fueron *Faramea occidentalis*, *Psychotria horizontalis* y *Coussarea curvigemmia*<!--esta ultima másomenos-->. La ocurrencia de *A. blackiana* y *Pentagonia macrophylla* indica su preferencia por el grupo 1. Por otra parte, en el grupo 2 (complete) siete especies resultan de interes por su ocurrencia: la muy dominante *F. occidentalis*; *Psychotria deflexa*, *P. racemosa*, *P. horizontalis*, *Posoqueria latifolia*, *Alibertia edulis* y *Coussarea curvigemmia*. En los grupos generados mediante Ward solo *F. occidentalis*, *P. horizontalis* y *A. blackiana* resultaron compatibles en las pruebas de fidelidad de asociación.
+
+El grupo 2 contiene los sitios con tendencia a presentar valores altos de acidez [\ref{fig:mapa_cuadros_ph}] y contenido de aluminio. Es probable que las especies indicadoras del grupo con un mayor contenido de cobre estén mostrando preferencia por estas condiciones ambientales. Indicios de esto, además, pudieron observarse en los valores del índice de correlación de Spearman, el cual indicaba una relación significativamente negativa entre la abundancia y el pH. No obstante, el pH y la mayoría de componentes del suelo en BCI tienen valores bastante homogéneos, y más bien se presentan pequeños gradientes entre los cuadrantes, lo cual evita que este tipo de acercamiento sea concluyente.
+
+![Diagramas de caja de las variables que tuvieron un efecto, según las pruebas de igualdad de medias. Los valores que presentan las medianas de la variable fósforo son muy distintos entre el grupo 1 (verde) y el grupo 2 (gris). \label{fig:diagrama_caja_igualdad_medias_complete}](diagrama_caja_igualdad_medias_complete.png)
 
 
-# CA Esto puede ser interezante, discutir
+![pH del suelo en los cuadros de 1ha \label{fig:mapa_cuadros_ph}](mapa_cuadros_ph.png)
 
 
-La varianza explicada por los componentes principales 1 y 2 en el CA para las especies *Psychotria graciliflora* y *Psychotria grandis* se muestran aparentemente asociadas en el escalamiento 2 de la figura \ref{fig:biplot_correspndncia_sps_escal_2}.<!--Sus respectivas abundancias dentro de la comunidad también tienen valores comparables (65, 57).--> Además, se observa que casi todas las especies se encuentran próximas al punto de intersección, salvo aquellas que presentaron una abundancia reducida, las cuales aparecen asociadas a pequeños grupos de cuadrantes sin un patrón evidente. La disparidad en la incidencia de las especies podría estar reflejandose con su disposición en el diagrama. No obstante, estos resultados no coinciden con los arrojados por el PCA de la matriz de distancias Hellinger (Fig. \ref{fig:pca_biplot_sps}).
+<!--
+| Grupos   |  Especies indicadoras                        |
+|----------|:----------------------:|:-------------------------:|:-----------------------:|
+|  Grupo 1 |   *Alseis blackiana*   |  *Psychotria limonensis*  |
+| Grupo 2  | *Faramea occidentalis* | *Psychotria horizontalis* | *Coussarea curvigemmia* |-->
+
+En el diagrama rotulado como escalamiento 1 de la figura \ref{fig:pca_biplot_suelo}, se observan tres grupos de cuadrantes diferenciados entre sí. Un grupo de sitios con un alto grado de acidez y contenido en aluminio, otro grupo caracterizado por la presencia de elementos metálicos, y un tercero, con una cantidad de fósforo, nitrógeno y valor de pH mayor. En el caso de las variables geomorfológicas, algunos sitios están asociados a un alto porcentaje de llanura y hombrera, aunque la mayoría se encuentra más cerca del origen formado por los ejes de los componentes principales 1 y 2 (ver figura \ref{fig:pca_biplot_geomorf}).
+
+Los resultados del PCA de los datos de la matriz de comunidad se encuentran resumidos en los diagramas de la figura \ref{fig:pca_biplot_sps}. El escalamiento 1, muestra muchos de los cuadrantes dispuestos alrededor del origen formado por los ejes, lo que indica una contribución a la varianza relativamente equitativa por parte de las especies. Sin embargo, aparecen también unos cuantos cuadrantes con valores atípicos y más alejados. Se nota como las especies *A. blackiana*, *C. curvigemmia*, *P. marginalis* y *P. horizontalis*, presentan una contribución desproporcionada a la varianza total, en comparación con el resto de las especies.
+
+El escalamiento 2 de la figura \ref{fig:biplot_correspndncia_sps_escal_2_2} en el análisis de correspondencia mostró que las especies *Psychotria graciliflora* y *Psychotria grandis* se encuentran asociadas. Ambas especies, además, tienen valores de abundancia parecidos dentro de la comunidad (65 y 57 individuos, respectivamente). Casi todas las demás especies se encuentran próximas al punto de intersección, salvo aquellas que presentaron una abundancia reducida, y en consecuencia aparecen cercanas a los pocos cuadrantes en los que se encuentran mejor representadas. La disparidad en la incidencia de las especies se refleja en su disposición en el diagrama. Sin embargo, estos resultados no coinciden del todo con los arrojados por el PCA de la matriz de distancias Hellinger.
+
+![Biplots generados en el PCA de las variables de suelo. Se observa que las variables nitrógeno, fósforo y pH aportan la mayor parte de la varianza explicada. La relación entre las variables se encuentra debidamente representada en el recuadro del escalamiento 2, por medio de los ángulos que forman sus vectores.  \label{fig:pca_biplot_suelo}](pca_biplot_suelo.png)
 
 
-# PCoA
+![Biplots producidos por PCA de los datos de comunidad transformados a distancias Hellinger. \label{fig:pca_biplot_sps}](pca_biplot_sps.png)
 
-Los resultados del análisis de coordenadas principales mostrado en la fig. \ref{fig:pcoa_sps_jacc_var_ambient} contienen la relación entre las especies y los cuadrantes por medio de las distancias de Jaccard. En el *biplot* se incluye, además, los vectores de las variables ambientales, en los que se observa asociación entre el contenido de cobre, manganeso y fósforo con algunos sitios y especies. También, algunas especies se presentan aparentemente asociadas entre sí, como también a algunos cuadrantes. Aunque otra vez, es probable que la aparente asociación aparezca debido a la combinación de una incidencia restringida por parte de estas especies y al grado de autocorrelación entre los cuadrantes.
 
-# RDA
+![Biplot del análisis de correspondencia de los datos de abundancia de las especies de Rubiaceae. \label{fig:biplot_correspndncia_sps_escal_2_2}](biplot_correspndncia_sps_escal_2_2.png)
 
-En cuanto a los *triplots* generados por RDA mostrados en la figura \ref{fig:rda_triplot_var_selec_4_escal2} se destacan los  la distancia euclídea conservada entre las especies. Estas últimas se disponen en forma de abanico¿ algunas resultan aberraciones, muy alejadas del punto de intercepto, sitios emjambrados en el origen y las especies en dispuestas en forma de abanico a su alrededor. Esto indica poca asociación entre las especies, no se encuentra un patrón evidente entre la mayoría.
-Se destaca un grupo de cuadrantes en los cuales *Psychotria horizontalis* y *Psychotria marginata* se encuentran asociadas. Al parecer, este grupo de cuadrantes constituye un microhabitat encontrado sobre una pequeña meseta en la parte nor-oriental de BCI, y se diferencia además por una alta concentración de fósforo y aluminio en el suelo. La especie *Alseis blackiana* presenta asociación con el contenido de metales como  manganeso, hierro y cobre en el suelo, esto coincide con los resultados del PCA, y podría ser considerada como una especie indicadora de estas condiciones ambientales.
+
+Se observa asociación entre el contenido de cobre, manganeso y fósforo con algunos sitios y especies, en el *biplot* del análisis de coordenadas principales de la figura \ref{fig:pcoa_sps_jacc_var_ambient}. También, algunas de las especies menos abundantes de la comunidad se presentan asociadas a algunos sitios comunes entre las mismas. Es probable que esta aparente asociación aparezca debido a la combinación de una incidencia restringida por parte de estas especies y al alto grado de autocorrelación entre los cuadrantes.
+
+Se destacan los patrones encontrados en los resultados de las pruebas de asociación y los arrojados por el análisis de redundancia. En los *triplots* producidos por RDA (figura \ref{fig:rda_triplot_var_selec_4_escal2}), se observó que *Psychotria horizontalis* y *Psychotria marginata* se encuentran asociadas a un grupo de cuadrantes, los que a su vez, constituyen un microhabitat encontrado sobre una pequeña meseta en la parte nor-oriental de BCI, y se diferencian además, por una elevada concentración de fósforo y aluminio en el suelo. Por otro lado, la especie *Alseis blackiana* presenta asociación con el contenido de metales como manganeso, hierro y cobre. Esto último coincide con los resultados vistos en el PCA, y podría estar indicando cierto grado de preferencia por esta especie a estas condiciones ambientales. 
+
+los vectores representando los datos de las especies se disponen en forma de abanico
+
+En cuanto a los *triplots* generados por RDA mostrados en la se destacan los la distancia euclídea conservada entre las especies se disponen en ¿ algunas resultan aberraciones, muy alejadas del punto de intercepto, sitios emjambrados en el origen, y las especies dispuestas en forma de abanico a su alrededor. Esto indica poca asociación entre las especies, no se encuentra un patrón evidente entre la mayoría. 
+Se destaca 
+
+![Triplot del RDA de los valores de abundancia transformados. Las variables ambientales que se observan fueron las seleccionadas para restringir la varianza explicada de los datos de comunidad. \label{fig:rda_triplot_var_selec_4_escal2}](rda_triplot_var_selec_4_escal2.png)
+
 
 # Diversidad
 
@@ -190,27 +211,10 @@ Estimar la riqueza que se conseguiría con más parcelas de censo en BCI?
 
 <!--Excluir el potasio modificó la relación entre el aluminio y el pH....... comentar.-->
 
-El grupo 2 (1 en Ward) contiene los sitios con tendencia a presentar valores altos de acidez [\ref{fig:mapa_cuadros_ph}] y concentración de aluminio.<!--Indicios de esto pudieron observarse en los valores del indice de correlación de Spearman el cual indicaba una relación significativa? de la abundancia con la ácidez y el pH.-->
 
 
 
-![Abundancia de rubiaceas en BCI \label{fig:mapa_cuadros_abun_rubic}](mapa_cuadros_abun_rubic.png)
 
-![pH del suelo en los cuadros de 1ha \label{fig:mapa_cuadros_ph}](mapa_cuadros_ph.png)
-
-![Componentes príncipales de la varianza en las variables de suelo y geomorfología en BCI (La escala denominada "*Inertia*" representa la suma de los cuadrados de toda la varianza). \label{fig:pca_suelo_geomorf_br_stick}](env_suelo_geomorf_pca_br_stick.png)
-
-![Biplots generados en el PCA de las variables de suelo. \label{fig:pca_biplot_suelo}](pca_biplot_suelo.png)
-
-![Biplots generados por PCA de las variables geomorfológicas. \label{fig:pca_biplot_geomorf}](pca_biplot_geomorf.png)
-
-![Biplots producidos por PCA de los datos de comunidad transformados a distancias Hellinger. \label{fig:pca_biplot_sps}](pca_biplot_sps.png)
-
-![Biplot en el cual se resume el análisis de correspondencia de los datos de abundancia de especies de Rubiaceae. \label{fig:biplot_correspndncia_sps_escal_2}](biplot_correspndncia_sps_escal_2.png)
-
-![Biplot de PCoA de las distancias de Jaccard. Las distancias entre especies están ponderadas en base a sus valores de abundancia. \label{fig:pcoa_sps_jacc_var_ambient}](pcoa_sps_jacc_var_ambient.png)
-
-![Triplot del RDA de los valores de abundancia transformados. Las variables ambientales que se observan fueron las seleccionadas para restringir la varianza explicada de los datos de comunidad. \label{fig:rda_triplot_var_selec_4_escal2}](rda_triplot_var_selec_4_escal2.png)
 
 ![Correlación entre diversidad/equidad y algunas de las variables ambientales destacadas. $N0$: riqueza de especies; $H$: entropía de Shannon; $Hb2$: entropía de Shannon con 2 como base del logaritmo; $N1$ y $N2$: Números de Hill; $N1b2$: Número de Hill 1 en base log 2; $J$: Equidad de Pielou; $E10$ y $E20$: ratios de Hill 1 y 2.  \label{fig:panel_cor_indics_diversidad1_columnnas_quitadas}](panel_cor_indcs_diversidad1_columnas_quitadas.png)
 
@@ -223,23 +227,48 @@ El grupo 2 (1 en Ward) contiene los sitios con tendencia a presentar valores alt
 # Discusión
 
 <!--Las variables cobre y fósforo en el suelo producieron una diferenciación entre los grupos determinados.-->La determinación de las especies indicadoras *Faramea occidentalis* y *Alseis blackiana* de los grupos uno y dos podría estár asociada a la evidente dominancia que presentan estas especies en la comunidad de rubiaceas. Especialmente *F. occidentalis*, cuya abundancia alcanza valores extremos dentro de todo BCI e incluso podría estar inclinando los resultados de estos analisis?. Esto se vuelve razonable al tomarse en cuenta el hecho de que muchas especies se presentaban con pocos valores de abundancia, varias incluso representadas por un solo individuo.
-Las especies con preferencia por el grupo 1 evaden sistemáticamente al grupo 2 y viceversa. Esta diferenciación en la ocurrencia de las especies no se explica del todo con las variables ambientales medidas en BCI y es posible que exista algun otro factor que determina la ordenación de esta comunidad de plantas. La cobertura del dosel arbóreo podría ser una de estas variables a considerarse, puesto que las especies dominantes en la comunidad son a la vez tolerantes a la sombra [@grandtner2013dictionary].
-<!--Los análisis de asociación realizados indicaban que el contenido de aluminio y la acidez del suelo pareciera estar caracterizando la incidencia de la familia Rubiaceae frente a otras especies de plantas.El índice de correlación de Spearman indicaba--> la relación entre la abundancia de la familia y el contenido de alumínio y fósforo. Esto coincidió con los análisis de la varianza explicada entre variables, aunque solo para la concentración de fósforo. Adicionalmente, la comunidad de rubiaceas pareciera poder dividirse en dos grupos relativamente bien diferenciados entre sí por sus diferencias en el contenido de *Cu* y *P* del suelo. <!--Otros trabajos anteriores se han referido a la tolerancia de esta familia hacia los metales pesados()-->. Es probable que las especies indicadoras del grupo con un mayor contenido de cobre estén mostrando preferencia por estas condiciones ambientales. Sin embargo, el pH y la mayoría de componentes del suele en BCI tienen valores bastante homogéneos y más bien se presentan pequeños gradientes entre algunos lugares, lo cual evita que este tipo de acercamiento sea concluyente.
 
-Algunas de las pruebas estadísticas empleadas en este estudio requieren del supuesto de independencia entre muestras, supuesto que es incumplido por los cuadrantes en BCI debido a su contigüidad. Sin embargo, esta condición permitió un acercamiento comparativo con las técnicas apropiadas para el análisis de muestras con cierto grado asociación entre sí. En BCI, tanto las variables ambientales como las comunidades de plantas se encuentran correlacionadas espacialmente. Por lo tanto, los patrones encontrados entre métodos contrastados son cuanto menos interesantes. El área correspondiente a BCI es bastante homogénea en cuanto a sus condiciones físicas, ya que fué diseñada para que así fuera [@baillie_soil]. Como la misma se encuentra situada sobre el dorso de una cuesta de andesita, las variables edafológicas aquí presentes en su mayoría siguen un gradiente a lo largo de todo BCI, resultado de la meteorización de la roca original [@patino_weathering].
+El contenido de alumínio y fósforo pareciera estar caracterizando la abundancia relativa de las especies de la familia Rubiaceae. Adicionalmente, esta comunidad podría dividirse en dos grupos más o menos diferenciados entre sí por sus diferencias en el contenido de *Cu* y *P* del suelo. <!--Esto coincidió con los análisis de la varianza explicada entre variables, aunque solo para la concentración de fósforo.-->
+
+Las especies con preferencia por el grupo 1 evaden sistemáticamente al grupo 2 y viceversa. Esta diferenciación en la ocurrencia de las especies no se explica del todo con las variables ambientales medidas en BCI y es posible que exista algun otro factor que determina la ordenación de esta comunidad de plantas. La cobertura del dosel arbóreo podría ser una de estas variables a considerarse, puesto que las especies dominantes en la comunidad son a la vez tolerantes a la sombra [@grandtner2013dictionary]. Además, los análisis de agrupamiento aquí realizados pudieron haberse visto sesgados por la heterogeneidad morfométrica que pueden presentar las plantas de esta familia. Estas especies presentan diversos hábitos de crecimiento, desde porte herbáceo y arbustivo a árboles relativamente grandes. Esto hace que el hecho de que se incluya el criterio de dap de 10 mm en el momento de ser censadas podría estar excluyendo especies clave en el rompecabezas.
+
+<!--Los análisis de asociación realizados indicaban que el contenido de aluminio y la acidez del suelo pareciera estar caracterizando la incidencia de la familia Rubiaceae frente a otras especies de plantas.El índice de correlación de Spearman indicaba-->
+
+
+Trabajos anteriores se han referido a la tolerancia de esta familia hacia los metales pesados().
+
+Algunas de las pruebas estadísticas empleadas en este estudio requieren del supuesto de independencia entre muestras, supuesto que es incumplido por los cuadrantes en BCI debido a su contigüidad. Sin embargo, esta condición permitió un acercamiento comparativo con las técnicas apropiadas para el análisis de muestras con cierto grado asociación entre sí. Además, en BCI, tanto las variables ambientales como las comunidades de plantas se encuentran correlacionadas espacialmente. El área correspondiente a la parcela es bastante homogénea en cuanto a sus condiciones físicas, ya que fué diseñada para que así fuera [@baillie_soil]. Como la misma se encuentra situada sobre el dorso de una cuesta de andesita, las variables edafológicas aquí presentes en su mayoría siguen un gradiente a lo largo de todo BCI, resultado de la meteorización de la roca original [@patino_weathering].
+
+Por lo tanto, es razonable considerar que los patrones encontrados entre métodos contrastados son evidencia del grado de importancia que presentan las condiciones ambientales (especialmente las relacionadas con la composición química del suelo) en la estructuración de las comunidades de especies de Rubiaceae.
 
 <!--El grado de asociación presente entre cuadrantes medido utilizando el indice de disimilaridad de Jaccard arrojó distintos valores para el grado de exclusividad entre sitios. Se encontró que estos valores eran más altos para los lugares más alejados entre sí, presentaban una media alta, además de valores extremos a lo largo de las observaciones en la serie de cuadrantes-->
-Los análisis de agrupamiento pueden verse sesgados por la heterogeneidad morfométrica que pueden presentar las plantas de esta familia. Estas especies presentan diversos hábitos de crecimiento, desde porte herbáceo y arbustivo a árboles relativamente grandes. Esto hace que el hecho de que se incluya el criterio de dap de 10 mm en el momento de ser censadas podría estar excluyendo especies clave en el rompecabezas.
 
-<!--![Distribución de la riqueza de rubiaceas en BCI \label{fig:mapa_cuadros_riq}](mapa_cuadros_riq_rubic.png)
+<!--
 ![Diagrama PCA de los grupos de cuadrantes según variables de suelo \label{fig:grafico_pca_suelo}](grafico_pca_suelo.png)-->
 
 # Agradecimientos
 
 # Información de soporte
 
+\beginsupplement
 
-\ldots
+```{r,echo=FALSE}
+    knitr::kable(abun_sp,
+                 caption = "\\label{tab:abun_sp}Abundancia total por especie.")
+```
+
+
+![Componentes príncipales de la varianza en las variables de suelo y geomorfología en BCI. En estos gráficos se incluye el comportamiento de la varianza explicada, predecido por el modelo de bara quebrada, representado por la línea roja formando la curva. (La escala denominada "*Inertia*" representa la suma de los cuadrados de toda la varianza). \label{fig:pca_suelo_geomorf_br_stick}](env_suelo_geomorf_pca_br_stick.png)
+
+
+![Biplots generados por PCA de las variables geomorfológicas. \label{fig:pca_biplot_geomorf}](pca_biplot_geomorf.png)
+
+
+![Biplot de PCoA de las distancias de Jaccard. Las distancias entre especies están ponderadas en base a sus valores de abundancia. \label{fig:pcoa_sps_jacc_var_ambient}](pcoa_sps_jacc_var_ambient.png)
+
+
+![Distribución de la riqueza de rubiaceas en BCI \label{fig:mapa_cuadros_riq}](mapa_cuadros_riq_rubic.png)
+
 
 # *Script* reproducible
 
