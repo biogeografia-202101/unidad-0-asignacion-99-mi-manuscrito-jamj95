@@ -10,12 +10,11 @@ output:
     extra_dependencies: ["amsmath"]
 title: | 
         | Asociación y abundancia relativa de especies de la familia Rubiaceae en la parcela permanente Isla Barro Colorado
-
 author:
 - name: "J. Alberto Meléndez Juan"
   affiliation: "Universidad Autónoma de Santo Domingo (UASD)"
-abstract: "El estudio del grado de ordenación y riqueza de las comunidades de especies  depende en gran medida de interacciónes entre las distintas especies y su hábitat. En este trabajo se estudian los patrones de asociación entre las especies de la familia Rubiaceae y como varía la diversidad con respecto a las características del hábitat. Se encontró que la comunidad presenta disparidad en la abundancia, con especies muy dominantes y muchas otras pobremente representadas. Las ocurrencias de especies como *Psychotria horizontalis* y *Psychotria marginata* están asociadas con la cantidad de alumínio y fósforo en el suelo. La especie *Alseis blackiana* presenta asociación con el contenido de los metales manganeso, hierro y cobre. Los resultados sugieren que la especialización a ciertas condiciones puede verse reflejada en la asociación al hábitat incluso en una escala muy local. Más allá de su significado ecológico, la distribución de las poblaciones de estas plantas tolerantes podría servir para indicar ocurrencias anormales en la concentración de metales pesados en el ambiente"
-keywords: "Asociación, Diversidad, Rubiaceae,"
+abstract: "**Resumen** El estudio del grado de ordenación y riqueza de las comunidades de especies  depende en gran medida de interacciónes entre las distintas especies y su hábitat. En este trabajo se estudian los patrones de asociación entre las especies de la familia Rubiaceae y como varía la diversidad con respecto a las características del hábitat. Se encontró que la comunidad presenta disparidad en la abundancia, con especies muy dominantes y muchas otras pobremente representadas. Las ocurrencias de especies como *Psychotria horizontalis* y *Psychotria marginata* están asociadas con la cantidad de alumínio y fósforo en el suelo. La especie *Alseis blackiana* presenta asociación con el contenido de los metales manganeso, hierro y cobre. Los resultados sugieren que la especialización a ciertas condiciones puede verse reflejada en la asociación al hábitat incluso en una escala muy local. Más allá de su significado ecológico, la distribución de las poblaciones de estas plantas tolerantes podría servir para indicar ocurrencias anormales en la concentración de metales pesados en el ambiente."
+keywords: "Especies dominantes, Diversidad, Rubiaceae"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 geometry: margin=1in
 fontfamily: mathpazo
@@ -35,6 +34,8 @@ header-includes:
     \setcounter{figure}{0}
     \renewcommand{\thefigure}{S\arabic{figure}}
     }
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r, include=FALSE}
@@ -45,7 +46,7 @@ source("aed_Rub.R", local = knitr::knit_global())
 
 Las comunidades vegetales de los bosques neotropicales ejemplifican la diversidad y complejidad ecológica de la región tropical. El estudio continuo de su riqueza y abundancia relativa permite identificar las especies raras, las cuales son más vulnerables a los cambios en su hábitat y por lo tanto propensas a extinguirse localmente [@Volkov_2003]. Adicionalmente, monitorear la diversidad como propiedad de las comunidades vivientes resulta de suma importancia para analizar el efecto que tiene la transformación de los ecosistemas en las comunidades naturales. Claramente existe entonces la necesidad de conocer como se encuentran asociadas las especies entre sí dentro de las comunidades ecológicas para ayudar a comprender los factores que inciden en su conservación [@moreno2001manual].
 
-La familia Rubiaceae es un importante grupo de plantas vasculares de distribución cosmopolita con una marcada diversidad en regiones tropicales y subtropicales [@davis2009global]. Muchas de las especies que componen esta familia se encuentran adaptadas a la vida en la penúmbra, y prosperan bajo la sombra del dosel selvático<!--neotropical, región en la cual son especialmente diversas-->. En estas selvas tropicales, el grado de ordenación y riqueza de las comunidades que componen el sotobosque dependen en gran medida de interacciónes entre las distintas especies [@TORRESLEITE2019151487], además de factores ambientales de su hábitat, ya que muchas de estas especies estan adaptadas a rangos elevados de ácidez y otras condiciones específicas de los componentes del suelo, como la concentración de distintos metales [@article].
+La familia Rubiaceae es un importante grupo de plantas vasculares de distribución cosmopolita con una marcada diversidad en regiones tropicales y subtropicales [@davis2009global]. Muchas de las especies que componen esta familia se encuentran adaptadas a la vida en la penúmbra, y prosperan bajo la sombra del dosel selvático<!--neotropical, región en la cual son especialmente diversas-->. En estas selvas tropicales, el grado de ordenación y riqueza de las comunidades que componen el sotobosque, depende en gran medida de interacciónes entre las distintas especies [@TORRESLEITE2019151487]. También, este grado de ordenación se asocia con factores ambientales de su hábitat, ya que muchas de estas especies estan adaptadas a rangos elevados de ácidez y otras condiciones específicas de los componentes del suelo, como la concentración de distintos metales [@article].
 
 Es preciso señalar que trabajos anteriores [@article_condit] sobre el bosque tropical panameño y el grado de reemplazo entre especies de distintas comunidades o diversidad beta, sugieren que la disimilaridad tiende a aumentar en función de la distancia a la cual se encuentran separadas en el espacio. Sin embargo, estos trabajos no restan importancia a la variabilidad del hábitat y se toman en cuenta en este estudio, ya que un acercamiento inicial a los datos de abundancia de las distintas especies de Rubiaceae en Barro Colorado arrojó indicios de posibles patrones acerca de su distribución, y se plantea la posibilidad de que existan especies con algún grado de asociación respecto a las variables ambientales que allí imperan.
 
@@ -169,7 +170,7 @@ algunas resultan aberraciones lol, muy alejadas del punto de intercepto, sitios 
 ![Triplot del RDA de los valores de abundancia transformados. Las variables ambientales que se observan son aquellas que fueron seleccionadas para restringir la varianza explicada de los datos de comunidad. \label{fig:rda_triplot_var_selec_4_escal2}](rda_triplot_var_selec_4_escal2.png){height=70%}
 
 
-La riqueza de la familia Rubiaceae aumenta en función del contenido de hierro, nitrógeno y nitrógeno mineralizado. La equidad pareciera tambien estar asociada con estas variables, además de que la misma es mayor hacia el norte de bci (\ref{fig:panel_cor_indics_diversidad1_columnnas_quitadas}).
+La riqueza de la familia Rubiaceae aumenta en función del contenido de hierro, nitrógeno y nitrógeno mineralizado. La equidad pareciera tambien estar asociada con estas variables, además de que la misma es mayor hacia el norte de BCI (\ref{fig:panel_cor_indics_diversidad1_columnnas_quitadas}).
 
 Aparte del cuadrante #50, los sitios con la mayor riqueza presentan también mucha abundancia. El cuadrante #1, con la menor riqueza, presenta una de las mayores dominancias. Sucede algo similar en el cuadrante #28, aunque en este caso el valor riqueza de especies presentado no es tan bajo, sino que en comparación, contiene una desorbitada abundancia (1414 individuos).
 
@@ -213,14 +214,13 @@ Por lo tanto, es razonable considerar que los patrones encontrados entre método
 
 Las especies con preferencia por el grupo 1 evaden sistemáticamente al grupo 2 y viceversa. Esta diferenciación en la ocurrencia de las especies menos comunes no se explica del todo con las variables ambientales medidas en BCI y es posible que exista algun otro factor que determina la ordenación de esta comunidad de plantas. La cobertura del dosel arbóreo podría ser una de estas variables a considerarse, puesto que las especies dominantes en la comunidad son a la vez tolerantes a la sombra [@grandtner2013dictionary].
 
-Los resultados expuestos en este trabajo muestran como el estudio de la estructura de las comunidades ecológicas puede presentar complicasiones cuando nos enfrentamos a taxónes muy diversos, para los cuales las medidas de abundancia relativa convencionales podrían ver su eficacia limitada [@https://doi.org/10.1111/j.1366-9516.2004.00069.x]. Además, los análisis de agrupamiento aquí realizados pudieron haberse visto sesgados por la heterogeneidad morfométrica que pueden presentar las especies de Rubiaceae. Estas plantas pueden tener diversos hábitos de crecimiento, desde porte herbáceo y arbustivo a árboles relativamente grandes. Esto hace que el hecho de que se incluya el criterio de dap de 10 mm en el momento de ser censadas podría estar excluyendo especies clave en el rompecabezas.
+Los resultados expuestos en este trabajo muestran como el estudio de la estructura de las comunidades ecológicas puede presentar complicasiones cuando nos enfrentamos a taxónes muy diversos, para los cuales las medidas de abundancia relativa convencionales podrían ver su eficacia limitada [@https://doi.org/10.1111/j.1366-9516.2004.00069.x]. Además, los análisis de agrupamiento aquí realizados pudieron haberse visto sesgados por la heterogeneidad morfométrica que presentan las especies de Rubiaceae. Estas plantas pueden tener diversos hábitos de crecimiento, desde porte herbáceo y arbustivo a árboles relativamente grandes. Esto hace que el hecho de que se incluya el criterio de dap de 10 mm en el momento de ser censadas podría estar excluyendo especies clave en el rompecabezas.
 
 <!--Los análisis de asociación realizados indicaban que el contenido de aluminio y la acidez del suelo pareciera estar caracterizando la incidencia de la familia Rubiaceae frente a otras especies de plantas.El índice de correlación de Spearman indicaba-->
 
 <!--El grado de asociación presente entre cuadrantes medido utilizando el indice de disimilaridad de Jaccard arrojó distintos valores para el grado de exclusividad entre sitios. Se encontró que estos valores eran más altos para los lugares más alejados entre sí, presentaban una media alta, además de valores extremos a lo largo de las observaciones en la serie de cuadrantes-->
 
-
-\section {Información de soporte} \label{inf_supletary}
+\section*{Información de soporte} \label{inf_supletary}
 
 \beginsupplement
 
@@ -250,8 +250,77 @@ Los resultados expuestos en este trabajo muestran como el estudio de la estructu
 ![Curva de acumulación de especies hacia el doble de la abundancia encontrada en BCI. Se estima que la riqueza aumentaría en cuatro especies en consecuencia de duplicar el senso, o replicarlo en otra zona de Barro Colorado. El intervalo para un 95% de confianza se representa con los márgenes verde pálido. \label{fig:curva_extrapol_doble_esfuerzo}](curva_extrapol_doble_esfuerzo.png){height=45%}
 
 
-# *Script* reproducible
+# *Script* reproducible {-}
 
-\ldots
+## aed_Rub.R {-}
+
+```{r, code=readLines('aed_Rub.R'), eval=FALSE}
+```
+
+## aed5_correlacion_variables_ambientales.R {-}
+
+```{r, code=readLines('aed5_correlacion_variables_ambientales.R'), eval=FALSE}
+```
+
+## mapas_abundancia_riqueza_rubiaceae.R {-}
+
+```{r, code=readLines('mapas_abundancia_riqueza_rubiaceae.R'), eval=FALSE}
+```
+
+## intento_correlacion_densidad.R {-}
+
+```{r, code=readLines('intento_correlacion_densidad.R'), eval=FALSE}
+```
+
+## medicion_asociacion.R {-}
+
+```{r, code=readLines('medicion_asociacion.R'), eval=FALSE}
+```
+
+## medicion_asociacion_especies.R {-}
+
+```{r, code=readLines('medicion_asociacion_especies.R'), eval=FALSE}
+```
+
+## a_agrupamiento1.R {-}
+
+```{r, code=readLines('a_agrupamiento1.R'), eval=FALSE}
+```
+
+## a_agrupamiento2.R {-}
+
+```{r, code=readLines('a_agrupamiento2.R'), eval=FALSE}
+```
+
+## a_agrupamiento3_variabls_ambientls.R {-}
+
+```{r, code=readLines('a_agrupamiento3_variabls_ambientls.R'), eval=FALSE}
+```
+
+## a_agrupamiento4_sps_ind_pref.R {-}
+
+```{r, code=readLines('a_agrupamiento4_sps_ind_pref.R'), eval=FALSE}
+```
+
+## t_ordenacion_1.R {-}
+
+```{r, code=readLines('t_ordenacion_1.R'), eval=FALSE}
+```
+
+## t_ordenacion_2.R {-}
+
+```{r, code=readLines('t_ordenacion_2.R'), eval=FALSE}
+```
+
+## diversidad_1_alpha.R {-}
+
+```{r, code=readLines('diversidad_1_alpha.R'), eval=FALSE}
+```
+
+## diversidad_2_beta.R {-}
+
+```{r, code=readLines('diversidad_2_beta.R'), eval=FALSE}
+```
+
 
 # Referencias
